@@ -1,0 +1,27 @@
+{
+ "schema_version": "daycover.recommendation-config.v1",
+ "version": "reco-v1",
+ "status": "advisory_candidates_not_registered_contracts",
+ "reference_contract": "daycover-pilot-m1-2026.11-v1",
+ "reference_annual_premium_cents": 10400,
+ "bands": {
+  "M1_FIXED": {"label": "M1 frozen design (reference)", "registered_contract": "daycover-pilot-m1-2026.11-v1",
+   "rules": {"haze_tier1_payout": 30.0, "haze_tier2_payout": 60.0, "haze_cap_amount_per_year": 150.0, "rain_payout": 30.0}, "combined_cap_sgd": 180},
+  "LITE_90": {"label": "candidate: half-size benefits", "registered_contract": null,
+   "rules": {"haze_tier1_payout": 15.0, "haze_tier2_payout": 30.0, "haze_cap_amount_per_year": 75.0, "rain_payout": 15.0}, "combined_cap_sgd": 90},
+  "PLUS_270": {"label": "candidate: 1.5x benefits", "registered_contract": null,
+   "rules": {"haze_tier1_payout": 45.0, "haze_tier2_payout": 90.0, "haze_cap_amount_per_year": 225.0, "rain_payout": 45.0}, "combined_cap_sgd": 270}
+ },
+ "assumptions": {
+  "basis": "assumption_not_verified",
+  "rain_paying_year_probability": {"low": 0.05, "central": 0.15, "high": 0.30},
+  "haze_years": "replay of psi_daily region-years 2014-2025 under each candidate's exact trigger/cap rules; rain and haze independent",
+  "price_rule": "reference annual premium x (candidate expected payout / M1 expected payout), same scenario; loading held constant; NOT an approved price",
+  "margin_scenarios": {"low": 0.30, "central": 0.45, "high": 0.60},
+  "assumed_weather_sales_drop": {"low": 0.2, "central": 0.4, "high": 0.6},
+  "max_premium_share_of_low_digital_sales": 0.03,
+  "target_cushion_loss_days": 2.0,
+  "min_observed_days": 30,
+  "history_window_days": 90
+ }
+}

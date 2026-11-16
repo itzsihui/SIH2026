@@ -1,0 +1,10 @@
+{
+ "schema_version": "daycover.environments.v1",
+ "note": "Secrets are never stored here; only the NAMES of environment variables. All providers are local mocks in every environment.",
+ "environments": {
+  "dev":     {"auth_mode": "demo",  "backend": "sqlite",   "db": "var/dev.sqlite3",     "pg_schema": null,                   "provider_namespace": "local_mock_only", "provider_secret_env": "DAYCOVER_DEV_MOCK_SECRET",     "rate_limit_per_min": 6000, "max_body_bytes": 1048576, "log_level": "DEBUG"},
+  "test":    {"auth_mode": "local", "backend": "sqlite",   "db": "var/test.sqlite3",    "pg_schema": null,                   "provider_namespace": "local_mock_only", "provider_secret_env": "DAYCOVER_TEST_MOCK_SECRET",    "rate_limit_per_min": 6000, "max_body_bytes": 1048576, "log_level": "INFO"},
+  "staging_local": {"auth_mode": "local", "backend": "postgres", "db": null, "pg_schema": "daycover_pilot_staging_local", "provider_namespace": "local_mock_only", "provider_secret_env": "DAYCOVER_STAGING_MOCK_SECRET", "rate_limit_per_min": 600, "max_body_bytes": 262144,  "log_level": "INFO"}
+ },
+ "forbidden": ["real_provider", "production", "live_keys"]
+}

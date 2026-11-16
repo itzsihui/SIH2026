@@ -59,6 +59,10 @@ class Cursor:
     def __init__(self, cursor):
         self.cursor = cursor
 
+    @property
+    def rowcount(self):
+        return self.cursor.rowcount
+
     def fetchone(self):
         return row_data(self.cursor.fetchone())
 
