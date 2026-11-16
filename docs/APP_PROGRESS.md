@@ -63,7 +63,7 @@ Full list: `docs/MOCK_VS_REAL.md` in `harsh-pandhe/sih2026-fin2`.
 ## Still open
 
 - **Pick one contract** (M1 S$104 vs Plan 4 candidate) with the team and Income. Our system switches with one admin call.
-- **Engine token** with the four scopes above, and **switch the bridge on**.
+- **Engine token** (step 5, not the principal id), and **switch the payout bridge on**.
 - Wording: we collect weekly; the engine text says monthly GIRO (same yearly total).
 - Production would need: a real signing key for the APK, a test on a real iPhone, real Singpass, a licensed wallet or bank, and an approved insurer.
 
