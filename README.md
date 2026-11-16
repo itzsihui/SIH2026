@@ -13,7 +13,7 @@ A weather-income cover for Singapore's hawkers. When public NEA data shows haze 
 **Auto-deploy:** Railway redeploys on every push to `main` of this repo. It builds from the `ML pipeline` folder:
 - Root Directory: `ML pipeline`
 - Build: `pip install -r requirements-daycover.txt`
-- Start: `uvicorn src.daycover.api:app --host 0.0.0.0 --port $PORT`
+- Start: `python -m scripts.migrate_pilot_ledger && uvicorn src.daycover.api:app --host 0.0.0.0 --port $PORT` (the migration step is needed for Postgres and is safe to re-run)
 
 So backend changes go in `ML pipeline/` here and land on `main` (via PR). Changes made only in other repos or branches are **not** deployed.
 
@@ -21,7 +21,7 @@ Mobile app builds point at the API with:
 ```
 flutter build apk --dart-define=API_BASE=https://sih2026-production-5cd1e09d.up.railway.app
 ```
-Simulation only: no real payments. The pilot ledger is SQLite unless `DAYCOVER_PILOT_BACKEND=postgres` and `DAYCOVER_PILOT_DATABASE_URL` are set in Railway, so it resets on every redeploy.
+Simulation only: no real payments. The pilot ledger uses Railway Postgres when `DAYCOVER_PILOT_BACKEND=postgres` and `DAYCOVER_PILOT_DATABASE_URL=${{Postgres.DATABASE_URL}}` are set; otherwise it falls back to SQLite, which resets on every redeploy. Check with `/api/v1/ledger/health`.
 
 ## Where things are
 - Team build code lives here. Suggested layout, to be agreed:
