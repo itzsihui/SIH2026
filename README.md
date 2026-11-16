@@ -23,6 +23,11 @@ flutter build apk --dart-define=API_BASE=https://sih2026-production-5cd1e09d.up.
 ```
 Simulation only: no real payments. The pilot ledger uses Railway Postgres when `DAYCOVER_PILOT_BACKEND=postgres` and `DAYCOVER_PILOT_DATABASE_URL=${{Postgres.DATABASE_URL}}` are set; otherwise it falls back to SQLite, which resets on every redeploy. Check with `/api/v1/ledger/health`.
 
+## Part 1 app (DayCover Pay)
+- **Download the Android app:** https://daycover-pay.vercel.app/DayCover.apk
+- Web app for iPhone and browsers: https://daycover-pay.vercel.app/app/
+- Progress, money flow and what is left: [docs/APP_PROGRESS.md](docs/APP_PROGRESS.md)
+
 ## Where things are
 - Team build code lives here. Suggested layout, to be agreed:
   - `engine/` trigger rules, data adapter, simulated payout ledger and audit log
