@@ -20,7 +20,7 @@ Demo logins and the mock Singpass people are on the sign-in screen of the app. A
 
 ## Tested end to end (live, over mobile data, no cable)
 
-84 automated checks against the live system all pass, plus a payment made through the app's own screens. Covered: hawker sign-up and onboarding, consents, the cap and rate, customer top-up and payment by wallet and by bank, set-amount and permanent QR, refused and duplicate payments, hawker withdraw and send, customer send and request, rewards, signed payouts and rate cards from the engine, the insurer portal, the admin locks, and every web page. Camera scan to pay works on Android (fixed today: the release build was breaking the scanner).
+Final build: **version 1.0.1** (APK and web app). 84 automated checks against the live system all pass, plus payments made through the app's own screens on an Android phone and on a PC browser (web app at phone size). Covered: hawker sign-up and onboarding, consents, the cap and rate, customer top-up and payment by wallet and by bank, set-amount and permanent QR, refused and duplicate payments, hawker withdraw and send, customer send and request, rewards, signed payouts and rate cards from the engine, the insurer portal, the admin locks, and every web page. Camera scan to pay works on Android (fixed today: the release build was breaking the scanner).
 
 ## What the app does
 
@@ -51,7 +51,8 @@ Demo logins and the mock Singpass people are on the sign-in screen of the app. A
 | Signed payout into our wallet, `POST /api/engine/payouts` | **Working** with the exact payload `app_wallet_bridge.py` builds. Repeat = `duplicate:true`, bad signature 401, unknown stall 404, over S$200 400, stall in its 28-day wait = `rejected` with a reason. No payout has come from the engine itself yet: please switch the bridge on (`DAYCOVER_APP_WALLET_BRIDGE=1` and `ENGINE_SHARED_SECRET`). |
 | Rate card push, `POST /api/engine/rate-cards` | **Working.** |
 | Stall id mapping | `HC###` ids are mapped by centre **name**; always send `centre_name`. `HC123 Zion Riverside` is not in our list. |
-| Quote, daily sales (`transactions/ingest`, `collections/suggested-cap`), Sunday confirmation (`collections/.../confirm`) | **Waiting on a token.** Our backend reads it from `RAILWAY_TOKEN`. It needs the scopes `coverage:read`, `transactions:read`, `transactions:retain` and `billing:collect`, and a grant for every stall (a `coverage:read`-only token covers the quote only). |
+| Quote, `POST /api/v1/quotes` | **Wired, waiting on the token.** The 5 onboarded stalls (HC001 to HC005, `LOCAL-STALL-…` ids from Si Hui) are mapped in our backend, and we send exactly `{"stall_id", "contract_version"}`. What we received (`LOCAL-PRINCIPAL-…`) is the service account's **principal id**, and the engine answers `401 Invalid or expired credential` to it. We need the **token** printed by step 5: `manage_local_identity service-token <PRINCIPAL_ID> --scope coverage:read --ttl 86400`. Once it is set as `RAILWAY_TOKEN` on our backend, those 5 stalls are priced by the engine; every other stall keeps the engine's contract rule. More stalls can be added without code via `RAILWAY_STALL_MAP`. |
+| Daily sales (`transactions/ingest`, `collections/suggested-cap`), Sunday confirmation (`collections/.../confirm`) | **Not wired.** These need a token with `transactions:read`, `transactions:retain` and `billing:collect` as well. |
 
 ## Mock vs real (short)
 
