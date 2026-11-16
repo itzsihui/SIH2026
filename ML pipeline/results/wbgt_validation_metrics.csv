@@ -1,0 +1,2 @@
+dataset,sample_count,mae_celsius,rmse_celsius,r2_score,mean_bias_celsius
+NEA 2025 WBGT Validation Set,10,0.273,0.324,0.987,0.101

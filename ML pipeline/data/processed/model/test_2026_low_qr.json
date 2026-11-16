@@ -1,0 +1,122 @@
+{
+ "rules": {
+  "version": "train-2026.11-v1",
+  "haze_t1_psi": 101,
+  "haze_t1_consecutive_days": 2,
+  "haze_t1_units": 1.0,
+  "haze_t2_psi": 151,
+  "haze_t2_units": 2.0,
+  "haze_cap_days": 5,
+  "rain_daily_mm": 70.0,
+  "rain_units": 1.0,
+  "rain_cap_days": 2,
+  "total_cap_days": 6,
+  "exclude_closures": true
+ },
+ "world": "low_qr",
+ "rain_years_factor": {
+  "2010": 1.327,
+  "2011": 1.006,
+  "2012": 0.864,
+  "2013": 0.995,
+  "2014": 0.633,
+  "2015": 0.236,
+  "2016": 0.593,
+  "2017": 0.927,
+  "2018": 0.704,
+  "2019": 0.478,
+  "2020": 1.018,
+  "2021": 2.184,
+  "2022": 0.978,
+  "2023": 1.121,
+  "2024": 1.003,
+  "2025": 1.961
+ },
+ "haze_expected_units": 1.1272727272727274,
+ "takeup_100": {
+  "stalls_insured": 6385,
+  "stalls_paid": 6385,
+  "share_paid": 1.0,
+  "payout_median_paid": 120.0,
+  "payout_max": 630.0,
+  "premium_jan_oct": 682053,
+  "claims_jan_oct": 1106155,
+  "expenses": 136411,
+  "result_before_reins": -560512,
+  "reins_premium": 147223,
+  "reins_recovery": 421658,
+  "result_after_reins": -286077,
+  "loss_ratio": 1.622,
+  "expected_claims_jan_oct": 456331
+ },
+ "takeup_30": {
+  "stalls_insured": 1916,
+  "stalls_paid": 1916,
+  "share_paid": 1.0,
+  "payout_median_paid": 120.0,
+  "payout_max": 630.0,
+  "premium_jan_oct": 206829,
+  "claims_jan_oct": 333905,
+  "expenses": 41366,
+  "result_before_reins": -168442,
+  "reins_premium": 44508,
+  "reins_recovery": 126335,
+  "result_after_reins": -86615,
+  "loss_ratio": 1.614,
+  "expected_claims_jan_oct": 138380
+ },
+ "takeup_15": {
+  "stalls_insured": 958,
+  "stalls_paid": 958,
+  "share_paid": 1.0,
+  "payout_median_paid": 120.0,
+  "payout_max": 630.0,
+  "premium_jan_oct": 104749,
+  "claims_jan_oct": 169490,
+  "expenses": 20950,
+  "result_before_reins": -85691,
+  "reins_premium": 22495,
+  "reins_recovery": 64366,
+  "result_after_reins": -43820,
+  "loss_ratio": 1.618,
+  "expected_claims_jan_oct": 70083
+ },
+ "pricing": {
+  "expected_portfolio_claims_full_book": 547597,
+  "p95": 1711195,
+  "p99": 1721230,
+  "reins_load": 1.121,
+  "gross_rate_min": 3.735,
+  "gross_rate_max": 4.467,
+  "expected_units_mean": 2.772,
+  "sim_share_of_years_with_claims_below_2026": 0.826,
+  "sim_share_of_years_insurer_loses_before_reins": 0.181
+ },
+ "book": {
+  "stalls": 6665,
+  "eligible": 6385,
+  "cover_mix": {
+   "20": 3839,
+   "30": 1122,
+   "45": 617,
+   "60": 524,
+   "90": 283
+  },
+  "weekly_premium_median": 1.71,
+  "weekly_premium_p90": 4.63,
+  "deduction_per_sale_median": 0.021,
+  "payout_vs_true_loss_median": 0.43795620437956206,
+  "cover_above_true_loss_share": 0.028347689898198903
+ },
+ "events_2026": {
+  "centres_with_payout": 119,
+  "haze_days_paid_per_region": {
+   "central": 5,
+   "east": 5,
+   "north": 5,
+   "south": 5,
+   "west": 5
+  },
+  "rain_paid_centre_days": 111
+ }
+}

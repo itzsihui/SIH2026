@@ -1,0 +1,257 @@
+{
+ "flat": {
+  "years": [
+   {
+    "year": 2019,
+    "premium": 776726,
+    "claims": 958650,
+    "loss_ratio": 1.23,
+    "reins_recovery": 301886,
+    "profit": -184768,
+    "weekly_premium_median": 2.56,
+    "stalls_paid": 6321,
+    "payout_median": 150.0,
+    "haze_units": 3.99,
+    "rain_days": 0.87
+   },
+   {
+    "year": 2020,
+    "premium": 889924,
+    "claims": 184080,
+    "loss_ratio": 0.21,
+    "reins_recovery": 0,
+    "profit": 391041,
+    "weekly_premium_median": 2.99,
+    "stalls_paid": 6136,
+    "payout_median": 30.0,
+    "haze_units": 0.0,
+    "rain_days": 0.97
+   },
+   {
+    "year": 2021,
+    "premium": 830711,
+    "claims": 189630,
+    "loss_ratio": 0.23,
+    "reins_recovery": 0,
+    "profit": 322825,
+    "weekly_premium_median": 2.77,
+    "stalls_paid": 6321,
+    "payout_median": 30.0,
+    "haze_units": 0.0,
+    "rain_days": 1.0
+   },
+   {
+    "year": 2022,
+    "premium": 776589,
+    "claims": 167790,
+    "loss_ratio": 0.22,
+    "reins_recovery": 0,
+    "profit": 298991,
+    "weekly_premium_median": 2.59,
+    "stalls_paid": 5593,
+    "payout_median": 30.0,
+    "haze_units": 0.0,
+    "rain_days": 0.9
+   },
+   {
+    "year": 2023,
+    "premium": 736609,
+    "claims": 258090,
+    "loss_ratio": 0.35,
+    "reins_recovery": 0,
+    "profit": 177277,
+    "weekly_premium_median": 2.44,
+    "stalls_paid": 6321,
+    "payout_median": 30.0,
+    "haze_units": 0.45,
+    "rain_days": 1.0
+   },
+   {
+    "year": 2024,
+    "premium": 699088,
+    "claims": 189630,
+    "loss_ratio": 0.27,
+    "reins_recovery": 0,
+    "profit": 225486,
+    "weekly_premium_median": 2.27,
+    "stalls_paid": 6321,
+    "payout_median": 30.0,
+    "haze_units": 0.0,
+    "rain_days": 1.0
+   },
+   {
+    "year": 2025,
+    "premium": 675942,
+    "claims": 189630,
+    "loss_ratio": 0.28,
+    "reins_recovery": 0,
+    "profit": 209606,
+    "weekly_premium_median": 2.18,
+    "stalls_paid": 6321,
+    "payout_median": 30.0,
+    "haze_units": 0.0,
+    "rain_days": 0.99
+   },
+   {
+    "year": 2026,
+    "premium": 542196,
+    "claims": 1103430,
+    "loss_ratio": 2.04,
+    "reins_recovery": 657508,
+    "profit": -126257,
+    "weekly_premium_median": 2.09,
+    "stalls_paid": 6321,
+    "payout_median": 180.0,
+    "haze_units": 5.0,
+    "rain_days": 0.77
+   }
+  ],
+  "total": {
+   "premium": 5927785,
+   "claims": 3240930,
+   "reins_recovery": 959394,
+   "profit": 1314201
+  },
+  "hawker_2026": {
+   "stalls": 6321,
+   "premium_jan_oct_median": 90.8,
+   "payout_median": 180.0,
+   "payout_per_premium_dollar": 2.04,
+   "weather_loss_median": 2045,
+   "paid_more_than_lost": 0,
+   "share_of_loss_covered_median": 0.085
+  }
+ },
+ "stall": {
+  "years": [
+   {
+    "year": 2019,
+    "premium": 714289,
+    "claims": 872545,
+    "loss_ratio": 1.22,
+    "reins_recovery": 261600,
+    "profit": -170369,
+    "weekly_premium_median": 2.1,
+    "stalls_paid": 6305,
+    "payout_median": 132.5,
+    "haze_units": 3.99,
+    "rain_days": 0.87
+   },
+   {
+    "year": 2020,
+    "premium": 819223,
+    "claims": 183010,
+    "loss_ratio": 0.22,
+    "reins_recovery": 0,
+    "profit": 353528,
+    "weekly_premium_median": 2.32,
+    "stalls_paid": 5299,
+    "payout_median": 30.0,
+    "haze_units": 0.0,
+    "rain_days": 0.97
+   },
+   {
+    "year": 2021,
+    "premium": 768253,
+    "claims": 187900,
+    "loss_ratio": 0.24,
+    "reins_recovery": 0,
+    "profit": 294009,
+    "weekly_premium_median": 2.18,
+    "stalls_paid": 5452,
+    "payout_median": 30.0,
+    "haze_units": 0.0,
+    "rain_days": 1.0
+   },
+   {
+    "year": 2022,
+    "premium": 721450,
+    "claims": 164900,
+    "loss_ratio": 0.23,
+    "reins_recovery": 0,
+    "profit": 276189,
+    "weekly_premium_median": 2.06,
+    "stalls_paid": 4811,
+    "payout_median": 30.0,
+    "haze_units": 0.0,
+    "rain_days": 0.9
+   },
+   {
+    "year": 2023,
+    "premium": 685906,
+    "claims": 250222,
+    "loss_ratio": 0.36,
+    "reins_recovery": 0,
+    "profit": 162592,
+    "weekly_premium_median": 1.97,
+    "stalls_paid": 5733,
+    "payout_median": 35.0,
+    "haze_units": 0.45,
+    "rain_days": 1.0
+   },
+   {
+    "year": 2024,
+    "premium": 661164,
+    "claims": 187900,
+    "loss_ratio": 0.28,
+    "reins_recovery": 0,
+    "profit": 210657,
+    "weekly_premium_median": 1.94,
+    "stalls_paid": 5452,
+    "payout_median": 30.0,
+    "haze_units": 0.0,
+    "rain_days": 1.0
+   },
+   {
+    "year": 2025,
+    "premium": 628361,
+    "claims": 187900,
+    "loss_ratio": 0.3,
+    "reins_recovery": 0,
+    "profit": 190070,
+    "weekly_premium_median": 1.85,
+    "stalls_paid": 5452,
+    "payout_median": 30.0,
+    "haze_units": 0.0,
+    "rain_days": 0.99
+   },
+   {
+    "year": 2026,
+    "premium": 503342,
+    "claims": 1006160,
+    "loss_ratio": 2.0,
+    "reins_recovery": 585803,
+    "profit": -117942,
+    "weekly_premium_median": 1.75,
+    "stalls_paid": 6284,
+    "payout_median": 150.0,
+    "haze_units": 5.0,
+    "rain_days": 0.77
+   }
+  ],
+  "total": {
+   "premium": 5501988,
+   "claims": 3040537,
+   "reins_recovery": 847403,
+   "profit": 1198734
+  },
+  "hawker_2026": {
+   "stalls": 6321,
+   "premium_jan_oct_median": 75.8,
+   "payout_median": 150.0,
+   "payout_per_premium_dollar": 2.0,
+   "weather_loss_median": 2045,
+   "paid_more_than_lost": 0,
+   "share_of_loss_covered_median": 0.07
+  }
+ },
+ "shadow": {
+  "short_storm_wettest_hour_ge_20mm_days_per_centre_year": 28.89,
+  "rain_ge_80mm_days_per_centre_year": 2.01,
+  "rain_ge_70mm_days_per_centre_year": 3.24,
+  "heat_2026_single_reading_ge_33_days_per_centre": 16.4,
+  "heat_2026_rolling_hour_ge_32.5_days_per_centre": 14.2,
+  "heat_2026_rolling_hour_ge_32.0_days_per_centre": 35.2
+ },
+ "rule_version": "2026.11-draft2"
+}

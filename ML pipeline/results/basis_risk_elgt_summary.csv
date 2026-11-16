@@ -1,0 +1,14 @@
+metric,value
+Mean Baseline Daily Gross Turnover (SGD),S$650.01
+Median Baseline Daily Net Margin (SGD),S$295.12
+Mean Net Revenue Drop on Rain Trigger (>=50mm),38.3%
+Mean Net Revenue Drop on Haze Trigger (PSI>=151),54.9%
+Expected Loss Given Rain Trigger (ELGT - SGD),S$216.79
+95% CI for Loss Given Rain Trigger (SGD),S$142.28 - S$307.61
+Expected Loss Given Haze Trigger (ELGT - SGD),S$275.41
+95% CI for Loss Given Haze Trigger (SGD),S$173.60 - S$389.43
+DayCover+ Fixed Payout Amount (SGD),S$60.00
+Mean Protection Ratio on Rain Trigger (% of lost margin covered),28.8%
+Mean Protection Ratio on Haze Trigger (% of lost margin covered),22.7%
+Physical False-Negative Rate (Task 1 Empirical Missed Trigger %),4.46% (Task 1 empirical majority neighbour mesh)
+Economic False-Positive Rate (Loss < S$40 on trigger day),0.00%

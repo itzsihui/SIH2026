@@ -1,0 +1,536 @@
+station_id,station_name,year,days_sampled,r50_days_count,r50_annualized,r30_days_count,r30_annualized,reached_4day_cap,reached_2day_cap
+S07,Lornie Road,2017,63,0,0.0,5,28.99,False,False
+S07,Lornie Road,2018,57,1,6.41,4,25.63,True,True
+S07,Lornie Road,2019,62,1,5.89,5,29.46,True,True
+S07,Lornie Road,2020,66,1,5.53,3,16.6,True,True
+S07,Lornie Road,2023,47,1,7.77,2,15.54,True,True
+S07,Lornie Road,2024,67,3,16.35,11,59.97,True,True
+S07,Lornie Road,2025,66,3,16.6,5,27.67,True,True
+S07,Lornie Road,2026,61,2,11.98,7,41.91,True,True
+S08,Upper Thomson Road,2017,59,2,12.38,7,43.33,True,True
+S08,Upper Thomson Road,2018,56,1,6.52,4,26.09,True,True
+S08,Upper Thomson Road,2019,65,2,11.24,4,22.48,True,True
+S08,Upper Thomson Road,2020,67,1,5.45,4,21.81,True,True
+S08,Upper Thomson Road,2021,68,0,0.0,5,26.86,False,False
+S08,Upper Thomson Road,2022,70,3,15.65,9,46.96,True,True
+S08,Upper Thomson Road,2023,69,2,10.59,9,47.64,True,True
+S08,Upper Thomson Road,2024,66,2,11.07,6,33.2,True,True
+S08,Upper Thomson Road,2025,71,2,10.29,7,36.01,True,True
+S08,Upper Thomson Road,2026,61,1,5.99,4,23.95,True,True
+S104,Woodlands Avenue 9,2017,48,2,15.22,6,45.66,True,True
+S104,Woodlands Avenue 9,2018,48,3,22.83,6,45.66,True,True
+S104,Woodlands Avenue 9,2019,65,1,5.62,8,44.95,True,True
+S104,Woodlands Avenue 9,2020,67,0,0.0,4,21.81,False,False
+S104,Woodlands Avenue 9,2021,58,0,0.0,1,6.3,False,False
+S104,Woodlands Avenue 9,2022,68,1,5.37,7,37.6,True,True
+S104,Woodlands Avenue 9,2023,68,0,0.0,2,10.74,False,False
+S104,Woodlands Avenue 9,2024,69,2,10.59,11,58.23,True,True
+S104,Woodlands Avenue 9,2025,47,1,7.77,4,31.09,True,True
+S104,Woodlands Avenue 9,2026,61,2,11.98,4,23.95,True,True
+S107,East Coast Parkway,2017,61,1,5.99,5,29.94,True,True
+S107,East Coast Parkway,2018,57,0,0.0,1,6.41,False,False
+S107,East Coast Parkway,2019,63,1,5.8,5,28.99,True,True
+S107,East Coast Parkway,2020,65,2,11.24,4,22.48,True,True
+S107,East Coast Parkway,2021,65,1,5.62,1,5.62,True,True
+S107,East Coast Parkway,2022,70,1,5.22,4,20.87,True,True
+S107,East Coast Parkway,2023,69,1,5.29,3,15.88,True,True
+S107,East Coast Parkway,2024,63,3,17.39,7,40.58,True,True
+S107,East Coast Parkway,2025,71,3,15.43,6,30.87,True,True
+S107,East Coast Parkway,2026,60,0,0.0,0,0.0,False,False
+S109,Ang Mo Kio Avenue 5,2017,60,2,12.18,8,48.7,True,True
+S109,Ang Mo Kio Avenue 5,2018,52,1,7.02,3,21.07,True,True
+S109,Ang Mo Kio Avenue 5,2019,54,2,13.53,5,33.82,True,True
+S109,Ang Mo Kio Avenue 5,2020,65,1,5.62,3,16.86,True,True
+S109,Ang Mo Kio Avenue 5,2021,65,0,0.0,6,33.72,False,False
+S109,Ang Mo Kio Avenue 5,2022,63,4,23.19,6,34.79,True,True
+S109,Ang Mo Kio Avenue 5,2023,61,2,11.98,5,29.94,True,True
+S109,Ang Mo Kio Avenue 5,2024,69,1,5.29,6,31.76,True,True
+S109,Ang Mo Kio Avenue 5,2025,68,3,16.11,7,37.6,True,True
+S109,Ang Mo Kio Avenue 5,2026,61,2,11.98,2,11.98,True,True
+S111,Scotts Road,2017,20,0,0.0,0,0.0,False,False
+S111,Scotts Road,2018,55,1,6.64,3,19.92,True,True
+S111,Scotts Road,2019,63,0,0.0,3,17.39,False,False
+S111,Scotts Road,2020,66,1,5.53,2,11.07,True,True
+S111,Scotts Road,2021,67,2,10.9,6,32.71,True,True
+S111,Scotts Road,2022,66,1,5.53,5,27.67,True,True
+S111,Scotts Road,2023,65,2,11.24,5,28.1,True,True
+S111,Scotts Road,2024,69,3,15.88,7,37.05,True,True
+S111,Scotts Road,2025,69,3,15.88,6,31.76,True,True
+S111,Scotts Road,2026,61,1,5.99,6,35.93,True,True
+S112,Lim Chu Kang Road,2017,67,0,0.0,3,16.35,False,False
+S112,Lim Chu Kang Road,2018,49,3,22.36,7,52.18,True,True
+S112,Lim Chu Kang Road,2019,48,0,0.0,3,22.83,False,False
+S112,Lim Chu Kang Road,2020,58,3,18.89,5,31.49,True,True
+S112,Lim Chu Kang Road,2021,67,0,0.0,3,16.35,False,False
+S112,Lim Chu Kang Road,2022,70,1,5.22,4,20.87,True,True
+S112,Lim Chu Kang Road,2023,67,0,0.0,7,38.16,False,False
+S112,Lim Chu Kang Road,2024,51,2,14.32,8,57.29,True,True
+S112,Lim Chu Kang Road,2025,71,1,5.14,3,15.43,True,True
+S112,Lim Chu Kang Road,2026,61,3,17.96,7,41.91,True,True
+S113,Marine Parade Road,2017,69,0,0.0,5,26.47,False,False
+S113,Marine Parade Road,2018,57,0,0.0,1,6.41,False,False
+S113,Marine Parade Road,2019,65,3,16.86,4,22.48,True,True
+S113,Marine Parade Road,2020,67,2,10.9,4,21.81,True,True
+S113,Marine Parade Road,2021,68,2,10.74,5,26.86,True,True
+S113,Marine Parade Road,2022,69,0,0.0,5,26.47,False,False
+S113,Marine Parade Road,2023,69,1,5.29,4,21.17,True,True
+S113,Marine Parade Road,2024,66,3,16.6,8,44.27,True,True
+S113,Marine Parade Road,2025,71,4,20.58,6,30.87,True,True
+S113,Marine Parade Road,2026,61,0,0.0,2,11.98,False,False
+S114,Choa Chu Kang Avenue 4,2017,69,3,15.88,4,21.17,True,True
+S114,Choa Chu Kang Avenue 4,2018,58,2,12.59,7,44.08,True,True
+S114,Choa Chu Kang Avenue 4,2019,57,2,12.82,5,32.04,True,True
+S114,Choa Chu Kang Avenue 4,2020,66,1,5.53,6,33.2,True,True
+S114,Choa Chu Kang Avenue 4,2021,61,4,23.95,8,47.9,True,True
+S114,Choa Chu Kang Avenue 4,2022,70,0,0.0,6,31.31,False,False
+S114,Choa Chu Kang Avenue 4,2023,67,3,16.35,5,27.26,True,True
+S114,Choa Chu Kang Avenue 4,2024,59,2,12.38,6,37.14,True,True
+S114,Choa Chu Kang Avenue 4,2026,16,1,22.83,2,45.66,True,True
+S115,Tuas South Avenue 3,2017,68,0,0.0,2,10.74,False,False
+S115,Tuas South Avenue 3,2018,51,2,14.32,4,28.65,True,True
+S115,Tuas South Avenue 3,2019,55,2,13.28,5,33.2,True,True
+S115,Tuas South Avenue 3,2020,64,2,11.41,6,34.24,True,True
+S115,Tuas South Avenue 3,2021,64,3,17.12,5,28.54,True,True
+S115,Tuas South Avenue 3,2022,68,1,5.37,3,16.11,True,True
+S115,Tuas South Avenue 3,2023,63,1,5.8,5,28.99,True,True
+S115,Tuas South Avenue 3,2024,68,4,21.49,9,48.34,True,True
+S115,Tuas South Avenue 3,2025,68,3,16.11,7,37.6,True,True
+S115,Tuas South Avenue 3,2026,61,2,11.98,3,17.96,True,True
+S116,West Coast Highway,2017,69,0,0.0,2,10.59,False,False
+S116,West Coast Highway,2018,55,0,0.0,1,6.64,False,False
+S116,West Coast Highway,2019,61,0,0.0,2,11.98,False,False
+S116,West Coast Highway,2020,62,1,5.89,5,29.46,True,True
+S116,West Coast Highway,2021,68,4,21.49,7,37.6,True,True
+S116,West Coast Highway,2022,67,2,10.9,10,54.51,True,True
+S116,West Coast Highway,2023,66,1,5.53,6,33.2,True,True
+S116,West Coast Highway,2024,65,3,16.86,8,44.95,True,True
+S116,West Coast Highway,2025,20,1,18.26,3,54.79,True,True
+S116,West Coast Highway,2026,55,1,6.64,3,19.92,True,True
+S117,Banyan Road,2017,68,2,10.74,5,26.86,True,True
+S117,Banyan Road,2018,53,1,6.89,4,27.57,True,True
+S117,Banyan Road,2019,62,0,0.0,3,17.67,False,False
+S117,Banyan Road,2020,65,4,22.48,8,44.95,True,True
+S117,Banyan Road,2023,62,1,5.89,2,11.78,True,True
+S117,Banyan Road,2024,64,4,22.83,6,34.24,True,True
+S117,Banyan Road,2025,67,3,16.35,8,43.61,True,True
+S117,Banyan Road,2026,61,0,0.0,1,5.99,False,False
+S119,Nicoll Highway,2017,64,1,5.71,3,17.12,True,True
+S119,Nicoll Highway,2018,51,1,7.16,3,21.49,True,True
+S119,Nicoll Highway,2019,62,0,0.0,4,23.56,False,False
+S119,Nicoll Highway,2020,64,1,5.71,5,28.54,True,True
+S119,Nicoll Highway,2021,53,3,20.67,5,34.46,True,True
+S119,Nicoll Highway,2022,67,4,21.81,5,27.26,True,True
+S119,Nicoll Highway,2023,69,0,0.0,4,21.17,False,False
+S119,Nicoll Highway,2024,69,3,15.88,9,47.64,True,True
+S119,Nicoll Highway,2025,69,4,21.17,10,52.93,True,True
+S119,Nicoll Highway,2026,61,0,0.0,2,11.98,False,False
+S121,Old Choa Chu Kang Road,2017,59,0,0.0,4,24.76,False,False
+S121,Old Choa Chu Kang Road,2018,56,2,13.04,4,26.09,True,True
+S121,Old Choa Chu Kang Road,2019,61,0,0.0,5,29.94,False,False
+S121,Old Choa Chu Kang Road,2020,67,2,10.9,4,21.81,True,True
+S121,Old Choa Chu Kang Road,2021,66,4,22.14,7,38.74,True,True
+S121,Old Choa Chu Kang Road,2022,70,1,5.22,4,20.87,True,True
+S121,Old Choa Chu Kang Road,2023,65,4,22.48,7,39.33,True,True
+S121,Old Choa Chu Kang Road,2024,62,3,17.67,7,41.24,True,True
+S121,Old Choa Chu Kang Road,2025,30,1,12.18,4,48.7,True,True
+S121,Old Choa Chu Kang Road,2026,16,0,0.0,4,91.31,False,False
+S123,Towner Road,2017,70,2,10.44,4,20.87,True,True
+S123,Towner Road,2018,58,1,6.3,3,18.89,True,True
+S123,Towner Road,2019,61,2,11.98,4,23.95,True,True
+S123,Towner Road,2020,66,1,5.53,3,16.6,True,True
+S123,Towner Road,2021,66,2,11.07,5,27.67,True,True
+S123,Towner Road,2022,70,4,20.87,6,31.31,True,True
+S123,Towner Road,2023,67,3,16.35,8,43.61,True,True
+S123,Towner Road,2024,43,3,25.48,5,42.47,True,True
+S123,Towner Road,2025,71,4,20.58,10,51.44,True,True
+S123,Towner Road,2026,61,2,11.98,3,17.96,True,True
+S201,S201,2020,37,0,0.0,2,19.74,False,False
+S201,S201,2021,68,5,26.86,8,42.97,True,True
+S201,S201,2022,70,3,15.65,9,46.96,True,True
+S201,S201,2023,69,3,15.88,10,52.93,True,True
+S201,S201,2024,70,4,20.87,10,52.18,True,True
+S201,S201,2025,70,4,20.87,9,46.96,True,True
+S201,S201,2026,60,2,12.18,4,24.35,True,True
+S203,S203,2020,33,1,11.07,3,33.2,True,True
+S203,S203,2021,68,3,16.11,9,48.34,True,True
+S203,S203,2022,70,3,15.65,6,31.31,True,True
+S203,S203,2023,69,5,26.47,8,42.35,True,True
+S203,S203,2024,66,4,22.14,9,49.81,True,True
+S203,S203,2025,71,4,20.58,13,66.88,True,True
+S203,S203,2026,51,1,7.16,2,14.32,True,True
+S207,S207,2020,36,1,10.15,6,60.88,True,True
+S207,S207,2021,68,1,5.37,4,21.49,True,True
+S207,S207,2022,70,1,5.22,5,26.09,True,True
+S207,S207,2023,69,2,10.59,6,31.76,True,True
+S207,S207,2024,69,3,15.88,10,52.93,True,True
+S207,S207,2025,17,2,42.97,2,42.97,True,True
+S208,S208,2020,37,3,29.61,3,29.61,True,True
+S208,S208,2021,68,0,0.0,6,32.23,False,False
+S208,S208,2022,70,0,0.0,2,10.44,False,False
+S208,S208,2023,69,0,0.0,2,10.59,False,False
+S208,S208,2024,70,1,5.22,4,20.87,True,True
+S208,S208,2025,71,3,15.43,7,36.01,True,True
+S208,S208,2026,61,1,5.99,1,5.99,True,True
+S209,S209,2020,33,1,11.07,1,11.07,True,True
+S209,S209,2021,67,2,10.9,5,27.26,True,True
+S209,S209,2022,70,5,26.09,8,41.74,True,True
+S209,S209,2023,67,2,10.9,5,27.26,True,True
+S209,S209,2024,70,3,15.65,7,36.52,True,True
+S209,S209,2025,71,4,20.58,7,36.01,True,True
+S209,S209,2026,61,0,0.0,5,29.94,False,False
+S210,S210,2020,36,0,0.0,1,10.15,False,False
+S210,S210,2021,68,2,10.74,5,26.86,True,True
+S210,S210,2022,69,3,15.88,7,37.05,True,True
+S210,S210,2023,69,1,5.29,6,31.76,True,True
+S210,S210,2024,67,2,10.9,10,54.51,True,True
+S210,S210,2025,64,1,5.71,4,22.83,True,True
+S210,S210,2026,59,3,18.57,5,30.95,True,True
+S211,S211,2020,34,0,0.0,1,10.74,False,False
+S211,S211,2021,68,2,10.74,5,26.86,True,True
+S211,S211,2022,69,2,10.59,7,37.05,True,True
+S211,S211,2023,69,1,5.29,6,31.76,True,True
+S211,S211,2024,69,3,15.88,12,63.52,True,True
+S211,S211,2025,68,1,5.37,6,32.23,True,True
+S211,S211,2026,61,3,17.96,4,23.95,True,True
+S212,S212,2020,37,3,29.61,7,69.1,True,True
+S212,S212,2021,68,0,0.0,3,16.11,False,False
+S212,S212,2022,70,1,5.22,4,20.87,True,True
+S212,S212,2023,69,1,5.29,5,26.47,True,True
+S212,S212,2024,41,2,17.82,5,44.54,True,True
+S213,S213,2020,37,0,0.0,1,9.87,False,False
+S213,S213,2021,67,5,27.26,7,38.16,True,True
+S213,S213,2022,70,3,15.65,5,26.09,True,True
+S213,S213,2023,69,1,5.29,10,52.93,True,True
+S213,S213,2024,70,5,26.09,11,57.4,True,True
+S213,S213,2025,71,4,20.58,8,41.15,True,True
+S213,S213,2026,61,1,5.99,5,29.94,True,True
+S214,S214,2020,35,0,0.0,1,10.44,False,False
+S214,S214,2021,68,2,10.74,6,32.23,True,True
+S214,S214,2022,70,0,0.0,5,26.09,False,False
+S214,S214,2023,69,0,0.0,1,5.29,False,False
+S214,S214,2024,70,3,15.65,7,36.52,True,True
+S214,S214,2025,71,2,10.29,9,46.3,True,True
+S214,S214,2026,61,0,0.0,1,5.99,False,False
+S215,GEYLANG EAST CENTRAL,2018,51,0,0.0,0,0.0,False,False
+S215,GEYLANG EAST CENTRAL,2019,65,0,0.0,3,16.86,False,False
+S215,GEYLANG EAST CENTRAL,2020,65,1,5.62,4,22.48,True,True
+S215,GEYLANG EAST CENTRAL,2021,68,2,10.74,4,21.49,True,True
+S215,GEYLANG EAST CENTRAL,2022,70,2,10.44,7,36.52,True,True
+S215,GEYLANG EAST CENTRAL,2023,69,0,0.0,4,21.17,False,False
+S215,GEYLANG EAST CENTRAL,2024,63,2,11.6,7,40.58,True,True
+S215,GEYLANG EAST CENTRAL,2025,71,4,20.58,8,41.15,True,True
+S215,GEYLANG EAST CENTRAL,2026,60,1,6.09,2,12.18,True,True
+S216,S216,2020,37,2,19.74,3,29.61,True,True
+S216,S216,2021,68,4,21.49,6,32.23,True,True
+S216,S216,2022,70,5,26.09,7,36.52,True,True
+S216,S216,2023,69,4,21.17,6,31.76,True,True
+S216,S216,2024,70,4,20.87,8,41.74,True,True
+S216,S216,2025,71,3,15.43,9,46.3,True,True
+S216,S216,2026,61,2,11.98,8,47.9,True,True
+S217,S217,2020,37,2,19.74,3,29.61,True,True
+S217,S217,2021,67,3,16.35,5,27.26,True,True
+S217,S217,2022,70,4,20.87,7,36.52,True,True
+S217,S217,2023,69,3,15.88,8,42.35,True,True
+S217,S217,2024,70,4,20.87,10,52.18,True,True
+S217,S217,2025,70,4,20.87,9,46.96,True,True
+S217,S217,2026,61,2,11.98,6,35.93,True,True
+S218,S218,2020,37,0,0.0,4,39.49,False,False
+S218,S218,2021,68,3,16.11,5,26.86,True,True
+S218,S218,2022,70,3,15.65,8,41.74,True,True
+S218,S218,2023,69,3,15.88,7,37.05,True,True
+S218,S218,2024,70,4,20.87,8,41.74,True,True
+S218,S218,2025,13,1,28.1,2,56.19,True,True
+S218,S218,2026,60,3,18.26,7,42.61,True,True
+S219,S219,2020,37,2,19.74,3,29.61,True,True
+S219,S219,2021,68,1,5.37,4,21.49,True,True
+S219,S219,2022,70,3,15.65,7,36.52,True,True
+S219,S219,2023,69,3,15.88,7,37.05,True,True
+S219,S219,2024,70,1,5.22,9,46.96,True,True
+S219,S219,2025,71,4,20.58,8,41.15,True,True
+S219,S219,2026,61,2,11.98,4,23.95,True,True
+S220,S220,2020,37,1,9.87,3,29.61,True,True
+S220,S220,2021,68,0,0.0,2,10.74,False,False
+S220,S220,2022,70,2,10.44,6,31.31,True,True
+S220,S220,2023,69,1,5.29,2,10.59,True,True
+S220,S220,2024,70,1,5.22,5,26.09,True,True
+S220,S220,2025,71,2,10.29,8,41.15,True,True
+S220,S220,2026,60,3,18.26,6,36.52,True,True
+S221,S221,2020,37,1,9.87,4,39.49,True,True
+S221,S221,2021,68,3,16.11,7,37.6,True,True
+S221,S221,2022,70,4,20.87,5,26.09,True,True
+S221,S221,2023,69,2,10.59,6,31.76,True,True
+S221,S221,2024,70,5,26.09,8,41.74,True,True
+S221,S221,2025,71,5,25.72,8,41.15,True,True
+S221,S221,2026,61,1,5.99,5,29.94,True,True
+S222,S222,2020,37,0,0.0,1,9.87,False,False
+S222,S222,2021,68,3,16.11,9,48.34,True,True
+S222,S222,2022,70,2,10.44,6,31.31,True,True
+S222,S222,2023,69,2,10.59,7,37.05,True,True
+S222,S222,2024,70,5,26.09,9,46.96,True,True
+S222,S222,2025,71,5,25.72,9,46.3,True,True
+S222,S222,2026,61,0,0.0,2,11.98,False,False
+S223,S223,2020,37,0,0.0,1,9.87,False,False
+S223,S223,2021,68,4,21.49,8,42.97,True,True
+S223,S223,2022,70,2,10.44,6,31.31,True,True
+S223,S223,2023,69,3,15.88,9,47.64,True,True
+S223,S223,2024,68,4,21.49,9,48.34,True,True
+S223,S223,2025,71,2,10.29,9,46.3,True,True
+S223,S223,2026,61,2,11.98,4,23.95,True,True
+S224,S224,2020,35,0,0.0,3,31.31,False,False
+S224,S224,2021,68,2,10.74,3,16.11,True,True
+S224,S224,2022,70,0,0.0,2,10.44,False,False
+S224,S224,2023,69,2,10.59,5,26.47,True,True
+S224,S224,2024,70,0,0.0,8,41.74,False,False
+S224,S224,2025,60,0,0.0,5,30.44,False,False
+S224,S224,2026,14,0,0.0,0,0.0,False,False
+S226,S226,2020,37,0,0.0,2,19.74,False,False
+S226,S226,2021,67,1,5.45,5,27.26,True,True
+S226,S226,2022,70,1,5.22,5,26.09,True,True
+S226,S226,2023,69,1,5.29,9,47.64,True,True
+S226,S226,2024,68,4,21.49,7,37.6,True,True
+S226,S226,2025,68,2,10.74,8,42.97,True,True
+S226,S226,2026,61,1,5.99,3,17.96,True,True
+S227,S227,2020,35,0,0.0,1,10.44,False,False
+S227,S227,2021,68,1,5.37,2,10.74,True,True
+S227,S227,2022,70,4,20.87,9,46.96,True,True
+S227,S227,2023,69,3,15.88,7,37.05,True,True
+S227,S227,2024,70,4,20.87,13,67.83,True,True
+S227,S227,2025,71,4,20.58,6,30.87,True,True
+S227,S227,2026,61,2,11.98,4,23.95,True,True
+S228,S228,2020,36,1,10.15,4,40.58,True,True
+S228,S228,2021,66,3,16.6,8,44.27,True,True
+S228,S228,2022,70,1,5.22,5,26.09,True,True
+S228,S228,2023,69,4,21.17,10,52.93,True,True
+S228,S228,2024,70,7,36.52,11,57.4,True,True
+S228,S228,2025,71,3,15.43,12,61.73,True,True
+S228,S228,2026,61,2,11.98,4,23.95,True,True
+S229,S229,2020,37,0,0.0,2,19.74,False,False
+S229,S229,2021,68,5,26.86,10,53.71,True,True
+S229,S229,2022,70,4,20.87,6,31.31,True,True
+S229,S229,2023,69,5,26.47,7,37.05,True,True
+S229,S229,2024,70,5,26.09,10,52.18,True,True
+S229,S229,2025,71,2,10.29,9,46.3,True,True
+S229,S229,2026,61,4,23.95,7,41.91,True,True
+S230,S230,2020,34,0,0.0,3,32.23,False,False
+S230,S230,2021,68,4,21.49,7,37.6,True,True
+S230,S230,2022,70,3,15.65,7,36.52,True,True
+S230,S230,2023,69,5,26.47,8,42.35,True,True
+S230,S230,2024,70,5,26.09,11,57.4,True,True
+S230,S230,2025,71,4,20.58,13,66.88,True,True
+S230,S230,2026,61,3,17.96,4,23.95,True,True
+S24,Upper Changi Road North,2017,64,0,0.0,6,34.24,False,False
+S24,Upper Changi Road North,2018,57,0,0.0,1,6.41,False,False
+S24,Upper Changi Road North,2019,65,1,5.62,3,16.86,True,True
+S24,Upper Changi Road North,2020,67,0,0.0,2,10.9,False,False
+S24,Upper Changi Road North,2021,68,0,0.0,6,32.23,False,False
+S24,Upper Changi Road North,2022,70,1,5.22,4,20.87,True,True
+S24,Upper Changi Road North,2023,63,1,5.8,4,23.19,True,True
+S24,Upper Changi Road North,2024,69,3,15.88,7,37.05,True,True
+S24,Upper Changi Road North,2025,68,3,16.11,8,42.97,True,True
+S24,Upper Changi Road North,2026,60,2,12.18,4,24.35,True,True
+S33,Jurong Pier Road,2017,65,0,0.0,3,16.86,False,False
+S33,Jurong Pier Road,2018,54,1,6.76,8,54.11,True,True
+S33,Jurong Pier Road,2019,64,0,0.0,5,28.54,False,False
+S33,Jurong Pier Road,2020,66,3,16.6,9,49.81,True,True
+S33,Jurong Pier Road,2021,68,5,26.86,8,42.97,True,True
+S33,Jurong Pier Road,2022,66,3,16.6,7,38.74,True,True
+S33,Jurong Pier Road,2023,59,2,12.38,3,18.57,True,True
+S33,Jurong Pier Road,2024,66,4,22.14,8,44.27,True,True
+S33,Jurong Pier Road,2025,70,4,20.87,7,36.52,True,True
+S33,Jurong Pier Road,2026,61,1,5.99,6,35.93,True,True
+S35,Old Toh Tuck Road,2017,70,0,0.0,3,15.65,False,False
+S35,Old Toh Tuck Road,2018,50,0,0.0,4,29.22,False,False
+S35,Old Toh Tuck Road,2019,64,0,0.0,4,22.83,False,False
+S35,Old Toh Tuck Road,2020,61,0,0.0,3,17.96,False,False
+S35,Old Toh Tuck Road,2021,46,2,15.88,5,39.7,True,True
+S35,Old Toh Tuck Road,2022,56,3,19.57,6,39.13,True,True
+S35,Old Toh Tuck Road,2023,67,4,21.81,7,38.16,True,True
+S35,Old Toh Tuck Road,2024,69,5,26.47,10,52.93,True,True
+S35,Old Toh Tuck Road,2025,20,0,0.0,1,18.26,False,False
+S35,Old Toh Tuck Road,2026,61,2,11.98,3,17.96,True,True
+S40,Mandai Lake Road,2017,68,2,10.74,10,53.71,True,True
+S40,Mandai Lake Road,2018,58,3,18.89,5,31.49,True,True
+S40,Mandai Lake Road,2019,64,1,5.71,4,22.83,True,True
+S40,Mandai Lake Road,2020,66,2,11.07,4,22.14,True,True
+S40,Mandai Lake Road,2021,68,0,0.0,3,16.11,False,False
+S40,Mandai Lake Road,2022,70,4,20.87,9,46.96,True,True
+S40,Mandai Lake Road,2023,63,3,17.39,4,23.19,True,True
+S40,Mandai Lake Road,2024,65,3,16.86,6,33.72,True,True
+S40,Mandai Lake Road,2025,71,2,10.29,7,36.01,True,True
+S40,Mandai Lake Road,2026,61,1,5.99,3,17.96,True,True
+S43,Kim Chuan Road,2017,65,2,11.24,7,39.33,True,True
+S43,Kim Chuan Road,2018,58,1,6.3,2,12.59,True,True
+S43,Kim Chuan Road,2019,65,2,11.24,3,16.86,True,True
+S43,Kim Chuan Road,2020,67,2,10.9,3,16.35,True,True
+S43,Kim Chuan Road,2021,68,2,10.74,6,32.23,True,True
+S43,Kim Chuan Road,2022,70,5,26.09,7,36.52,True,True
+S43,Kim Chuan Road,2023,68,1,5.37,6,32.23,True,True
+S43,Kim Chuan Road,2024,69,4,21.17,9,47.64,True,True
+S43,Kim Chuan Road,2025,65,5,28.1,7,39.33,True,True
+S43,Kim Chuan Road,2026,61,1,5.99,4,23.95,True,True
+S44,Nanyang Avenue,2017,51,1,7.16,4,28.65,True,True
+S44,Nanyang Avenue,2018,58,1,6.3,6,37.78,True,True
+S44,Nanyang Avenue,2019,62,1,5.89,5,29.46,True,True
+S44,Nanyang Avenue,2020,67,3,16.35,8,43.61,True,True
+S44,Nanyang Avenue,2021,68,3,16.11,6,32.23,True,True
+S44,Nanyang Avenue,2022,70,0,0.0,3,15.65,False,False
+S44,Nanyang Avenue,2023,57,2,12.82,6,38.45,True,True
+S44,Nanyang Avenue,2024,61,5,29.94,8,47.9,True,True
+S44,Nanyang Avenue,2025,70,2,10.44,11,57.4,True,True
+S44,Nanyang Avenue,2026,61,1,5.99,6,35.93,True,True
+S50,Clementi Road,2017,61,0,0.0,4,23.95,False,False
+S50,Clementi Road,2018,54,1,6.76,3,20.29,True,True
+S50,Clementi Road,2019,61,1,5.99,4,23.95,True,True
+S50,Clementi Road,2020,67,0,0.0,4,21.81,False,False
+S50,Clementi Road,2021,67,1,5.45,6,32.71,True,True
+S50,Clementi Road,2022,69,3,15.88,6,31.76,True,True
+S50,Clementi Road,2023,69,2,10.59,9,47.64,True,True
+S50,Clementi Road,2024,69,5,26.47,8,42.35,True,True
+S50,Clementi Road,2025,67,3,16.35,9,49.06,True,True
+S50,Clementi Road,2026,61,1,5.99,2,11.98,True,True
+S60,Sentosa,2017,24,0,0.0,1,15.22,False,False
+S60,Sentosa,2018,52,1,7.02,1,7.02,True,True
+S60,Sentosa,2019,58,0,0.0,4,25.19,False,False
+S60,Sentosa,2020,54,0,0.0,3,20.29,False,False
+S60,Sentosa,2022,23,1,15.88,2,31.76,True,True
+S60,Sentosa,2023,66,0,0.0,6,33.2,False,False
+S60,Sentosa,2024,60,3,18.26,8,48.7,True,True
+S60,Sentosa,2025,61,1,5.99,5,29.94,True,True
+S60,Sentosa,2026,61,1,5.99,3,17.96,True,True
+S64,Bukit Panjang Road,2017,71,1,5.14,7,36.01,True,True
+S64,Bukit Panjang Road,2018,58,1,6.3,6,37.78,True,True
+S64,Bukit Panjang Road,2019,65,1,5.62,6,33.72,True,True
+S64,Bukit Panjang Road,2022,23,0,0.0,2,31.76,False,False
+S64,Bukit Panjang Road,2023,69,3,15.88,11,58.23,True,True
+S64,Bukit Panjang Road,2024,69,2,10.59,8,42.35,True,True
+S64,Bukit Panjang Road,2025,65,1,5.62,4,22.48,True,True
+S64,Bukit Panjang Road,2026,61,1,5.99,5,29.94,True,True
+S66,Kranji Way,2017,63,0,0.0,3,17.39,False,False
+S66,Kranji Way,2018,51,2,14.32,6,42.97,True,True
+S66,Kranji Way,2019,61,3,17.96,5,29.94,True,True
+S66,Kranji Way,2020,66,2,11.07,4,22.14,True,True
+S66,Kranji Way,2021,66,1,5.53,4,22.14,True,True
+S66,Kranji Way,2022,68,2,10.74,6,32.23,True,True
+S66,Kranji Way,2023,69,0,0.0,6,31.76,False,False
+S66,Kranji Way,2024,66,3,16.6,13,71.94,True,True
+S66,Kranji Way,2025,71,1,5.14,3,15.43,True,True
+S66,Kranji Way,2026,61,2,11.98,6,35.93,True,True
+S69,Upper Peirce Reservoir Park,2017,65,2,11.24,9,50.57,True,True
+S69,Upper Peirce Reservoir Park,2018,52,2,14.05,5,35.12,True,True
+S69,Upper Peirce Reservoir Park,2019,49,0,0.0,0,0.0,False,False
+S69,Upper Peirce Reservoir Park,2020,60,0,0.0,1,6.09,False,False
+S69,Upper Peirce Reservoir Park,2021,62,0,0.0,5,29.46,False,False
+S69,Upper Peirce Reservoir Park,2022,69,2,10.59,4,21.17,True,True
+S69,Upper Peirce Reservoir Park,2023,68,2,10.74,5,26.86,True,True
+S69,Upper Peirce Reservoir Park,2024,62,4,23.56,9,53.02,True,True
+S69,Upper Peirce Reservoir Park,2025,71,2,10.29,9,46.3,True,True
+S69,Upper Peirce Reservoir Park,2026,61,1,5.99,5,29.94,True,True
+S71,Kent Ridge Road,2017,61,2,11.98,4,23.95,True,True
+S71,Kent Ridge Road,2018,54,2,13.53,3,20.29,True,True
+S71,Kent Ridge Road,2019,42,0,0.0,2,17.39,False,False
+S71,Kent Ridge Road,2020,66,3,16.6,4,22.14,True,True
+S71,Kent Ridge Road,2021,67,2,10.9,9,49.06,True,True
+S71,Kent Ridge Road,2022,70,1,5.22,6,31.31,True,True
+S71,Kent Ridge Road,2023,69,3,15.88,8,42.35,True,True
+S71,Kent Ridge Road,2024,66,5,27.67,7,38.74,True,True
+S71,Kent Ridge Road,2025,71,3,15.43,10,51.44,True,True
+S71,Kent Ridge Road,2026,61,1,5.99,2,11.98,True,True
+S77,Alexandra Road,2017,70,2,10.44,6,31.31,True,True
+S77,Alexandra Road,2018,58,0,0.0,2,12.59,False,False
+S77,Alexandra Road,2019,65,0,0.0,4,22.48,False,False
+S77,Alexandra Road,2020,67,2,10.9,4,21.81,True,True
+S77,Alexandra Road,2021,68,2,10.74,6,32.23,True,True
+S77,Alexandra Road,2022,70,1,5.22,5,26.09,True,True
+S77,Alexandra Road,2023,69,1,5.29,7,37.05,True,True
+S77,Alexandra Road,2024,69,4,21.17,8,42.35,True,True
+S77,Alexandra Road,2025,71,2,10.29,9,46.3,True,True
+S77,Alexandra Road,2026,61,1,5.99,2,11.98,True,True
+S78,Poole Road,2017,71,0,0.0,7,36.01,False,False
+S78,Poole Road,2018,58,0,0.0,2,12.59,False,False
+S78,Poole Road,2019,65,3,16.86,5,28.1,True,True
+S78,Poole Road,2020,67,1,5.45,6,32.71,True,True
+S78,Poole Road,2021,68,2,10.74,5,26.86,True,True
+S78,Poole Road,2022,70,2,10.44,5,26.09,True,True
+S78,Poole Road,2023,68,1,5.37,5,26.86,True,True
+S78,Poole Road,2024,67,3,16.35,9,49.06,True,True
+S78,Poole Road,2025,66,2,11.07,6,33.2,True,True
+S78,Poole Road,2026,61,0,0.0,1,5.99,False,False
+S79,Somerset Road,2017,68,2,10.74,5,26.86,True,True
+S79,Somerset Road,2018,58,0,0.0,2,12.59,False,False
+S79,Somerset Road,2019,64,0,0.0,0,0.0,False,False
+S79,Somerset Road,2020,67,1,5.45,4,21.81,True,True
+S79,Somerset Road,2021,68,1,5.37,6,32.23,True,True
+S79,Somerset Road,2022,70,2,10.44,6,31.31,True,True
+S79,Somerset Road,2023,68,1,5.37,4,21.49,True,True
+S79,Somerset Road,2024,58,4,25.19,8,50.38,True,True
+S79,Somerset Road,2025,71,4,20.58,7,36.01,True,True
+S79,Somerset Road,2026,61,0,0.0,5,29.94,False,False
+S81,Punggol Central,2017,71,3,15.43,10,51.44,True,True
+S81,Punggol Central,2018,58,2,12.59,4,25.19,True,True
+S81,Punggol Central,2019,65,2,11.24,4,22.48,True,True
+S81,Punggol Central,2020,67,1,5.45,4,21.81,True,True
+S81,Punggol Central,2021,68,0,0.0,2,10.74,False,False
+S81,Punggol Central,2022,70,3,15.65,5,26.09,True,True
+S81,Punggol Central,2023,69,0,0.0,3,15.88,False,False
+S81,Punggol Central,2024,69,1,5.29,6,31.76,True,True
+S81,Punggol Central,2025,71,2,10.29,6,30.87,True,True
+S81,Punggol Central,2026,61,2,11.98,3,17.96,True,True
+S84,Simei Avenue,2017,66,0,0.0,3,16.6,False,False
+S84,Simei Avenue,2018,53,1,6.89,2,13.78,True,True
+S84,Simei Avenue,2019,48,0,0.0,0,0.0,False,False
+S84,Simei Avenue,2020,60,1,6.09,3,18.26,True,True
+S84,Simei Avenue,2021,67,2,10.9,8,43.61,True,True
+S84,Simei Avenue,2022,68,2,10.74,5,26.86,True,True
+S84,Simei Avenue,2023,66,2,11.07,6,33.2,True,True
+S84,Simei Avenue,2024,66,2,11.07,7,38.74,True,True
+S84,Simei Avenue,2025,71,4,20.58,8,41.15,True,True
+S84,Simei Avenue,2026,61,0,0.0,2,11.98,False,False
+S88,Toa Payoh North,2017,69,1,5.29,8,42.35,True,True
+S88,Toa Payoh North,2018,58,1,6.3,5,31.49,True,True
+S88,Toa Payoh North,2019,65,2,11.24,5,28.1,True,True
+S88,Toa Payoh North,2020,67,1,5.45,2,10.9,True,True
+S88,Toa Payoh North,2021,68,3,16.11,7,37.6,True,True
+S88,Toa Payoh North,2022,70,4,20.87,7,36.52,True,True
+S88,Toa Payoh North,2023,67,2,10.9,6,32.71,True,True
+S88,Toa Payoh North,2024,68,4,21.49,8,42.97,True,True
+S88,Toa Payoh North,2025,68,4,21.49,6,32.23,True,True
+S88,Toa Payoh North,2026,61,2,11.98,5,29.94,True,True
+S89,Tuas Road,2017,55,1,6.64,4,26.56,True,True
+S89,Tuas Road,2018,58,2,12.59,6,37.78,True,True
+S89,Tuas Road,2019,65,2,11.24,7,39.33,True,True
+S89,Tuas Road,2020,67,4,21.81,8,43.61,True,True
+S89,Tuas Road,2021,68,2,10.74,6,32.23,True,True
+S89,Tuas Road,2022,70,1,5.22,4,20.87,True,True
+S89,Tuas Road,2023,66,2,11.07,4,22.14,True,True
+S89,Tuas Road,2024,69,6,31.76,9,47.64,True,True
+S89,Tuas Road,2025,5,1,73.05,2,146.1,True,True
+S90,Bukit Timah Road,2017,69,1,5.29,4,21.17,True,True
+S90,Bukit Timah Road,2018,58,2,12.59,4,25.19,True,True
+S90,Bukit Timah Road,2019,65,1,5.62,4,22.48,True,True
+S90,Bukit Timah Road,2020,66,1,5.53,4,22.14,True,True
+S90,Bukit Timah Road,2021,68,4,21.49,7,37.6,True,True
+S90,Bukit Timah Road,2022,69,2,10.59,5,26.47,True,True
+S90,Bukit Timah Road,2023,69,1,5.29,9,47.64,True,True
+S90,Bukit Timah Road,2024,66,3,16.6,9,49.81,True,True
+S90,Bukit Timah Road,2025,71,2,10.29,8,41.15,True,True
+S90,Bukit Timah Road,2026,60,1,6.09,4,24.35,True,True
+S900,Seletar Aerospace View,2017,62,3,17.67,9,53.02,True,True
+S900,Seletar Aerospace View,2018,57,4,25.63,6,38.45,True,True
+S900,Seletar Aerospace View,2019,64,0,0.0,3,17.12,False,False
+S900,Seletar Aerospace View,2020,65,1,5.62,1,5.62,True,True
+S900,Seletar Aerospace View,2021,67,0,0.0,2,10.9,False,False
+S900,Seletar Aerospace View,2022,70,3,15.65,8,41.74,True,True
+S900,Seletar Aerospace View,2023,68,1,5.37,6,32.23,True,True
+S900,Seletar Aerospace View,2024,67,1,5.45,7,38.16,True,True
+S900,Seletar Aerospace View,2025,71,3,15.43,4,20.58,True,True
+S900,Seletar Aerospace View,2026,56,1,6.52,3,19.57,True,True
+S94,Pasir Ris Street 51,2017,70,2,10.44,7,36.52,True,True
+S94,Pasir Ris Street 51,2018,58,1,6.3,2,12.59,True,True
+S94,Pasir Ris Street 51,2019,65,1,5.62,2,11.24,True,True
+S94,Pasir Ris Street 51,2020,67,1,5.45,2,10.9,True,True
+S94,Pasir Ris Street 51,2021,68,1,5.37,6,32.23,True,True
+S94,Pasir Ris Street 51,2022,70,1,5.22,4,20.87,True,True
+S94,Pasir Ris Street 51,2023,69,0,0.0,5,26.47,False,False
+S94,Pasir Ris Street 51,2024,64,2,11.41,7,39.95,True,True
+S94,Pasir Ris Street 51,2025,71,5,25.72,8,41.15,True,True
+S94,Pasir Ris Street 51,2026,61,1,5.99,4,23.95,True,True

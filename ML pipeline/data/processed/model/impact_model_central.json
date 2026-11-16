@@ -1,0 +1,56 @@
+{
+ "curves": {
+  "rain": [
+   0.0,
+   0.049862651855772655,
+   0.10054840577974755,
+   0.1366527819783796,
+   0.15934178352531048,
+   0.21124774540205937
+  ],
+  "haze": [
+   0.0,
+   0.042195925170480764,
+   NaN,
+   NaN
+  ]
+ },
+ "rain_bins": [
+  -0.1,
+  10,
+  30,
+  50,
+  70,
+  100,
+  "inf"
+ ],
+ "psi_bins": [
+  0,
+  100,
+  150,
+  200,
+  "inf"
+ ],
+ "validation": [
+  {
+   "model": "pooled (k=1)",
+   "MAE_on_2025_bad_days": 0.2048900358775653,
+   "corr_with_true_sensitivity (synthetic truth)": NaN
+  },
+  {
+   "model": "no pooling (raw k)",
+   "MAE_on_2025_bad_days": 0.20432591196401298,
+   "corr_with_true_sensitivity (synthetic truth)": 0.6399250319788803
+  },
+  {
+   "model": "partial pooling (EB)",
+   "MAE_on_2025_bad_days": 0.20384164754218226,
+   "corr_with_true_sensitivity (synthetic truth)": 0.7252198326586797
+  },
+  {
+   "model": "GBM on stall features",
+   "MAE_on_2025_bad_days": 0.20481431612600723,
+   "corr_with_true_sensitivity (synthetic truth)": 0.20365501112782838
+  }
+ ]
+}

@@ -1,0 +1,121 @@
+centre_id,nearest_hotspot_km,nearest_hotspot,hotspot_within_1km,nearest_flood_prone_km,nearest_flood_prone,flood_prone_within_1km,pub_flag
+HC001,1.782,King's Road (from Prince Road to Lutheran Road),0,0.829,Junction of Commonwealth Drive and Commonwealth Ave,1,within_1km
+HC002,1.362,Junction of Craig Road and Tanjong Pagar Road,0,0.65,Indus Road (from Havelock Road to Ganges Avenue),2,within_1km
+HC003,2.414,Junction of Cavenagh Road and Kramat Lane,0,0.219,St John's Headquarters at junction of Beach Road and Java Road,3,within_500m
+HC004,4.23,Service Rd off Upper Paya Lebar Road (near Lim Teck Boo Road),0,0.669,Langsat Road Area (from Lor 102 Changi to Lor 106 Changi),3,within_1km
+HC005,2.06,Junction of Craig Road and Tanjong Pagar Road,0,0.283,Indus Road (from Havelock Road to Ganges Avenue),3,within_500m
+HC006,1.253,Junction of Cavenagh Road and Kramat Lane,0,1.099,Derbyshire Road / Cambridge Road / Farrer Park Field,0,none
+HC007,0.745,King's Road (from Prince Road to Lutheran Road),2,2.102,Junction of Stevens Road and Balmoral Road,0,within_1km
+HC008,4.016,Service Rd off Upper Paya Lebar Road (near Lim Teck Boo Road),0,0.742,Jalan Benaan Kapal,1,within_1km
+HC009,0.78,Junction of Craig Road and Tanjong Pagar Road,1,0.385,South Bridge Road / Upper Hokien Street / Upper Pickering Street,1,within_500m
+HC010,2.46,Junction of Cavenagh Road and Kramat Lane,0,0.354,Jalan Besar Area,3,within_500m
+HC011,1.849,King's Road (from Prince Road to Lutheran Road),0,1.242,Junction of Commonwealth Drive and Commonwealth Ave,0,none
+HC012,1.99,Junction of Ang Mo Kio Avenue 3 and Ang Mo Kio Avenue 8,0,2.111,Mimosa Walk (near canal),0,none
+HC013,3.228,Junction of Lorong Kismis and Kismis Place,0,2.896,Second Chin Bee Road,0,none
+HC014,2.043,Jalan Boon Lay (from International Road to Enterprise Road),0,2.032,Second Chin Bee Road,0,none
+HC015,4.691,Jalan Nipah,0,1.32,Lorong H Telok Kurau (near canal),0,none
+HC016,5.164,Service Rd off Upper Paya Lebar Road (near Lim Teck Boo Road),0,1.221,Service Road off Mountbatten Rd (near Jalan Seaview),0,none
+HC017,3.529,Yishun Ave 5 (slip road to Yishun Ave 2),0,2.024,Admiralty Road West (from Sembawang Drive to Dock Road West),0,none
+HC018,1.091,Junction of Craig Road and Tanjong Pagar Road,0,0.483,South Bridge Road / Upper Hokien Street / Upper Pickering Street,1,within_500m
+HC019,6.18,Yishun Ave 5 (slip road to Yishun Ave 2),0,3.278,Admiralty Road West (from Sembawang Drive to Dock Road West),0,none
+HC020,5.7,Yishun Ave 5 (slip road to Yishun Ave 2),0,3.708,Admiralty Road West (from Sembawang Drive to Dock Road West),0,none
+HC021,3.123,King's Road (from Prince Road to Lutheran Road),0,0.729,Margaret Drive / Tanglin Road,2,within_1km
+HC022,2.472,Jalan Nipah,0,0.903,Bedok South Rd (slip road to Bedok South Ave 1),1,within_1km
+HC023,1.31,Jalan Nipah,0,0.751,Upper East Coast Road (near Parbury Avenue),3,within_1km
+HC024,3.915,Service Rd off Upper Paya Lebar Road (near Lim Teck Boo Road),0,0.88,Rose Lane,2,within_1km
+HC025,5.287,Jalan Nipah,0,4.15,Mindef's Changi Camp at junction of Changi Village Road and Farnborough Road,0,none
+HC026,1.316,Junction of Cavenagh Road and Kramat Lane,0,0.415,Waterloo Street / Bencoolen Street / Prinsep Street,2,within_500m
+HC027,2.864,Junction of Craig Road and Tanjong Pagar Road,0,0.567,Prince Philip Avenue / Jervois Road,2,within_1km
+HC028,3.0,Service Rd off Upper Paya Lebar Road (near Lim Teck Boo Road),0,1.617,Sennett Estate (Siang Kuang Avenue / Puay Hee Avenue / Wan Tho Avenue / Jalan Kemboja / Mulberry Avenue),0,none
+HC029,0.503,Junction of Craig Road and Tanjong Pagar Road,1,0.472,South Bridge Road / Upper Hokien Street / Upper Pickering Street,1,within_500m
+HC030,1.42,Jalan Boon Lay (from International Road to Enterprise Road),0,0.856,Second Chin Bee Road,1,within_1km
+HC031,2.343,Jalan Nipah,0,1.767,State Land at junction of New Upper Changi Road and Tanah Merah Kechil Avenue,0,none
+HC032,3.08,Junction of Lorong Kismis and Kismis Place,0,3.375,Second Chin Bee Road,0,none
+HC033,3.885,Junction of Craig Road and Tanjong Pagar Road,0,1.834,Jalan Mat Jambol,0,none
+HC034,2.285,Junction of Craig Road and Tanjong Pagar Road,0,0.864,State Land at junction of Alexandra Road and Lower Delta Road,1,within_1km
+HC035,0.776,Junction of Lor 1 and Lor 2 Toa Payoh,1,1.724,Jalan Taman,0,within_1km
+HC036,0.538,Junction of Lor 1 and Lor 2 Toa Payoh,1,1.385,Jalan Mashor,0,within_1km
+HC037,2.627,Junction of Craig Road and Tanjong Pagar Road,0,0.666,State Land at junction of Alexandra Road and Lower Delta Road,1,within_1km
+HC038,0.169,Junction of Craig Road and Tanjong Pagar Road,1,1.039,South Bridge Road / Upper Hokien Street / Upper Pickering Street,0,within_500m
+HC039,0.755,Junction of Lor 1 and Lor 2 Toa Payoh,1,1.908,Jalan Mashor,0,within_1km
+HC040,1.339,Junction of Lor 1 and Lor 2 Toa Payoh,0,1.375,Jalan Taman,0,none
+HC041,0.921,Junction of Lor 1 and Lor 2 Toa Payoh,1,1.74,Jalan Taman,0,within_1km
+HC042,2.273,Junction of Lor 1 and Lor 2 Toa Payoh,0,2.02,Jalan Mashor,0,none
+HC043,1.208,Junction of Ang Mo Kio Avenue 3 and Ang Mo Kio Avenue 8,0,2.961,Mimosa Walk (near canal),0,none
+HC044,1.03,Junction of Ang Mo Kio Avenue 3 and Ang Mo Kio Avenue 8,0,2.272,Mimosa Walk (near canal),0,none
+HC045,0.779,Junction of Ang Mo Kio Avenue 3 and Ang Mo Kio Avenue 8,1,1.642,Mimosa Walk (near canal),0,within_1km
+HC046,0.63,Junction of Ang Mo Kio Avenue 3 and Ang Mo Kio Avenue 8,1,1.275,Mimosa Walk (near canal),0,within_1km
+HC047,1.262,Junction of Ang Mo Kio Avenue 3 and Ang Mo Kio Avenue 8,0,2.555,Mimosa Walk (near canal),0,none
+HC048,1.58,Junction of Ang Mo Kio Avenue 3 and Ang Mo Kio Avenue 8,0,2.247,Mimosa Walk (near canal),0,none
+HC049,0.42,Junction of Ang Mo Kio Avenue 3 and Ang Mo Kio Avenue 8,1,1.949,Mimosa Walk (near canal),0,within_500m
+HC050,1.103,Junction of Ang Mo Kio Avenue 3 and Ang Mo Kio Avenue 8,0,2.857,Mimosa Walk (near canal),0,none
+HC051,2.178,Jalan Nipah,0,1.001,Bedok South Rd (slip road to Bedok South Ave 1),0,none
+HC052,2.597,Jalan Nipah,0,1.741,Bedok South Rd (slip road to Bedok South Ave 1),0,none
+HC053,3.204,Jalan Nipah,0,1.948,Bedok South Rd (slip road to Bedok South Ave 1),0,none
+HC054,1.697,Jalan Nipah,0,0.862,State Land at junction of New Upper Changi Road and Tanah Merah Kechil Avenue,1,within_1km
+HC055,3.475,Service Rd off Upper Paya Lebar Road (near Lim Teck Boo Road),0,1.911,Lorong H Telok Kurau (near canal),0,none
+HC056,2.017,Jalan Nipah,0,0.237,Bedok South Rd (slip road to Bedok South Ave 1),2,within_500m
+HC057,2.529,Junction of Lor 1 and Lor 2 Toa Payoh,0,0.755,Jalan Taman,1,within_1km
+HC058,1.09,Junction of Cavenagh Road and Kramat Lane,0,0.504,Derbyshire Road / Cambridge Road / Farrer Park Field,2,within_1km
+HC059,1.324,Jalan Boon Lay (from International Road to Enterprise Road),0,1.501,Second Chin Bee Road,0,none
+HC060,2.547,Service Rd off Upper Paya Lebar Road (near Lim Teck Boo Road),0,1.38,Rose Lane,0,none
+HC061,2.875,Junction of Craig Road and Tanjong Pagar Road,0,0.833,State Land at junction of Alexandra Road and Lower Delta Road,2,within_1km
+HC062,2.428,Junction of Craig Road and Tanjong Pagar Road,0,0.61,State Land at junction of Alexandra Road and Lower Delta Road,3,within_1km
+HC063,3.858,King's Road (from Prince Road to Lutheran Road),0,1.247,Margaret Drive / Tanglin Road,0,none
+HC064,1.903,Junction of Cavenagh Road and Kramat Lane,0,0.368,CTE (slip road to Moulmein Road),2,within_500m
+HC065,4.669,Junction of Lorong Kismis and Kismis Place,0,8.218,Second Chin Bee Road,0,none
+HC066,8.059,Jalan Nipah,0,0.354,Mindef's Changi Camp at junction of Changi Village Road and Farnborough Road,1,within_500m
+HC067,1.755,Service Rd off Upper Paya Lebar Road (near Lim Teck Boo Road),0,1.834,Sennett Estate (Siang Kuang Avenue / Puay Hee Avenue / Wan Tho Avenue / Jalan Kemboja / Mulberry Avenue),0,none
+HC068,1.874,Service Rd off Upper Paya Lebar Road (near Lim Teck Boo Road),0,1.62,Sennett Estate (Siang Kuang Avenue / Puay Hee Avenue / Wan Tho Avenue / Jalan Kemboja / Mulberry Avenue),0,none
+HC069,3.418,Lorong Gambir (from Lorong Penchalak to Gambir Walk),0,1.038,Lorong Buangkok Area,0,none
+HC070,2.21,Service Rd off Upper Paya Lebar Road (near Lim Teck Boo Road),0,1.742,Sennett Estate (Siang Kuang Avenue / Puay Hee Avenue / Wan Tho Avenue / Jalan Kemboja / Mulberry Avenue),0,none
+HC071,2.483,Junction of Lorong Kismis and Kismis Place,0,2.427,Junction of Neo Pee Teck Lane and Pasir Panjang Road,0,none
+HC072,2.542,Junction of Lorong Kismis and Kismis Place,0,2.355,Junction of Neo Pee Teck Lane and Pasir Panjang Road,0,none
+HC073,3.599,Junction of Lorong Kismis and Kismis Place,0,1.352,Junction of Neo Pee Teck Lane and Pasir Panjang Road,0,none
+HC074,0.59,King's Road (from Prince Road to Lutheran Road),1,2.02,Junction of Commonwealth Drive and Commonwealth Ave,0,within_1km
+HC075,3.359,Service Rd off Upper Paya Lebar Road (near Lim Teck Boo Road),0,0.434,Service road off Changi Road (near Chin Cheng Ave),3,within_500m
+HC076,2.741,Lorong Gambir (from Lorong Penchalak to Gambir Walk),0,0.752,Jalan Taman,2,within_1km
+HC077,3.324,Service Rd off Upper Paya Lebar Road (near Lim Teck Boo Road),0,0.526,Langsat Road Area (from Lor 102 Changi to Lor 106 Changi),3,within_1km
+HC078,2.481,Bukit Timah Road (from Wilby Road to Blackmore Drive),0,1.566,Junction of Commonwealth Drive and Commonwealth Ave,0,none
+HC079,3.371,Service Rd off Upper Paya Lebar Road (near Lim Teck Boo Road),0,0.606,Rose Lane,2,within_1km
+HC080,1.801,Junction of Craig Road and Tanjong Pagar Road,0,0.229,Indus Road (from Havelock Road to Ganges Avenue),2,within_500m
+HC081,2.234,King's Road (from Prince Road to Lutheran Road),0,1.015,Junction of Commonwealth Drive and Commonwealth Ave,0,none
+HC082,3.322,Jalan Nipah,0,2.697,State Land at junction of New Upper Changi Road and Tanah Merah Kechil Avenue,0,none
+HC083,1.744,Service Rd off Upper Paya Lebar Road (near Lim Teck Boo Road),0,0.486,Service road off Tampines Road (near Jalan Teliti),1,within_500m
+HC084,4.57,Service Rd off Upper Paya Lebar Road (near Lim Teck Boo Road),0,0.423,Jalan Benaan Kapal,1,within_500m
+HC085,1.322,Service Rd off Upper Paya Lebar Road (near Lim Teck Boo Road),0,0.702,Service road off Tampines Road (near Jalan Teliti),1,within_1km
+HC086,1.824,Junction of Craig Road and Tanjong Pagar Road,0,0.248,State Land at junction of Alexandra Road and Lower Delta Road,1,within_500m
+HC087,3.77,King's Road (from Prince Road to Lutheran Road),0,1.105,Margaret Drive / Tanglin Road,0,none
+HC088,1.183,Junction of Craig Road and Tanjong Pagar Road,0,0.737,South Bridge Road / Upper Hokien Street / Upper Pickering Street,2,within_1km
+HC089,1.445,Enterprise Road (from Wan Lee Road to Jalan Boon Lay),0,2.182,Second Chin Bee Road,0,none
+HC090,2.842,Jalan Boon Lay (from International Road to Enterprise Road),0,2.442,Second Chin Bee Road,0,none
+HC091,1.289,Junction of Lor 1 and Lor 2 Toa Payoh,0,1.983,Jalan Taman,0,none
+HC092,3.414,Lorong Gambir (from Lorong Penchalak to Gambir Walk),0,1.344,Jalan Besar Area,0,none
+HC093,2.79,Junction of Lorong Kismis and Kismis Place,0,2.369,Junction of Neo Pee Teck Lane and Pasir Panjang Road,0,none
+HC094,0.917,Junction of Craig Road and Tanjong Pagar Road,1,0.03,South Bridge Road / Upper Hokien Street / Upper Pickering Street,1,within_500m
+HC095,1.579,Junction of Lor 1 and Lor 2 Toa Payoh,0,0.847,CTE (slip road to Moulmein Road),1,within_1km
+HC096,1.478,Junction of Lor 1 and Lor 2 Toa Payoh,0,0.786,CTE (slip road to Moulmein Road),1,within_1km
+HC097,1.55,Junction of Yishun Ave 7 and Yishun St 22,0,5.067,Mimosa Walk (near canal),0,none
+HC098,0.303,Yishun Ave 5 (slip road to Yishun Ave 2),1,4.104,Admiralty Road West (from Sembawang Drive to Dock Road West),0,within_500m
+HC099,2.623,King's Road (from Prince Road to Lutheran Road),0,0.418,Margaret Drive / Tanglin Road,2,within_500m
+HC100,2.051,Punggol Way (slip road to TPE),0,1.858,Lorong Buangkok Area,0,none
+HC101,3.344,Punggol Way (slip road to TPE),0,0.93,Lorong Buangkok Area,1,within_1km
+HC102,0.638,Punggol Way (slip road to TPE),1,4.097,Lorong Buangkok Area,0,within_1km
+HC103,2.077,Junction of Yishun Ave 7 and Yishun St 22,0,2.469,Admiralty Road West (from Sembawang Drive to Dock Road West),0,none
+HC104,1.022,Punggol Way (slip road to TPE),0,4.815,Lorong Buangkok Area,0,none
+HC105,5.701,Junction of Lorong Kismis and Kismis Place,0,8.048,Second Chin Bee Road,0,none
+HC106,3.238,Punggol Way (slip road to TPE),0,1.597,Lorong Buangkok Area,0,none
+HC107,3.403,Junction of Lorong Kismis and Kismis Place,0,4.041,Second Chin Bee Road,0,none
+HC108,0.745,Lorong Gambir (from Lorong Penchalak to Gambir Walk),1,1.242,Sennett Estate (Siang Kuang Avenue / Puay Hee Avenue / Wan Tho Avenue / Jalan Kemboja / Mulberry Avenue),0,within_1km
+HC109,1.164,Junction of Lorong Kismis and Kismis Place,0,5.138,Junction of Commonwealth Drive and Commonwealth Ave,0,none
+HC110,0.506,Junction of Craig Road and Tanjong Pagar Road,1,0.703,South Bridge Road / Upper Hokien Street / Upper Pickering Street,1,within_1km
+HC111,5.333,King's Road (from Prince Road to Lutheran Road),0,0.265,Jalan Mat Jambol,1,within_500m
+HC112,0.69,Jalan Nipah,1,1.429,Upper East Coast Road (near Parbury Avenue),0,within_1km
+HC113,1.562,Junction of Cavenagh Road and Kramat Lane,0,0.221,Former Boys' Brigade HQ at Zion Road,2,within_500m
+HC114,0.389,Junction of Craig Road and Tanjong Pagar Road,1,0.593,South Bridge Road / Upper Hokien Street / Upper Pickering Street,1,within_500m
+HC115,0.664,Junction of Ang Mo Kio Avenue 3 and Ang Mo Kio Avenue 8,1,2.461,Mimosa Walk (near canal),0,within_1km
+HC116,2.882,Jalan Nipah,0,1.239,Bedok South Rd (slip road to Bedok South Ave 1),0,none
+HC117,2.055,Junction of Ang Mo Kio Avenue 3 and Ang Mo Kio Avenue 8,0,2.24,Mimosa Walk (near canal),0,none
+HC118,2.299,Junction of Ang Mo Kio Avenue 3 and Ang Mo Kio Avenue 8,0,3.704,Mimosa Walk (near canal),0,none
+HC119,2.542,King's Road (from Prince Road to Lutheran Road),0,0.073,Junction of Commonwealth Drive and Commonwealth Ave,1,within_500m
+HC120,1.772,Junction of Cavenagh Road and Kramat Lane,0,0.369,People's Association HQ at King George's Avenue,4,within_500m

@@ -1,0 +1,200 @@
+{
+  "rule_version": "2026.11-draft2",
+  "representative_stalls": 123,
+  "maximum_annual_portfolio_payout_sgd": 22140.0,
+  "expense_share": 0.2,
+  "target_contribution_share": 0.1,
+  "illustrative_reinsurance": {
+    "annual_aggregate_attachment_sgd": 9594.0,
+    "annual_limit_sgd": 10000.0,
+    "base_ceded_premium_per_policy_sgd": 15.0
+  },
+  "collection_assumptions": {
+    "base_success_fee_sgd": 0.2,
+    "failed_fee_sgd": 1.0,
+    "share_with_one_recovered_failure": 0.05
+  },
+  "collection_sensitivity": [
+    {
+      "success_fee_sgd": 0.05,
+      "weekly_collection_annual_cost_sgd": 5.2,
+      "monthly_collection_annual_cost_sgd": 1.2
+    },
+    {
+      "success_fee_sgd": 0.2,
+      "weekly_collection_annual_cost_sgd": 13.0,
+      "monthly_collection_annual_cost_sgd": 3.0
+    },
+    {
+      "success_fee_sgd": 0.5,
+      "weekly_collection_annual_cost_sgd": 28.6,
+      "monthly_collection_annual_cost_sgd": 6.6
+    }
+  ],
+  "pricing": {
+    "sample_observed": {
+      "overlap_claims_per_policy_sgd": 30.11,
+      "mean_rain_imputation_per_portfolio_sgd": 1956.67,
+      "full_claims_per_policy_sgd": 43.65,
+      "mean_recovery_per_policy_sgd": 11.56,
+      "quote_sensitivity": [
+        {
+          "ceded_per_policy_sgd": 10.0,
+          "net_reinsurance_cost_per_policy_sgd": -1.56,
+          "weekly_price_at_target_sgd": 1.24
+        },
+        {
+          "ceded_per_policy_sgd": 15.0,
+          "net_reinsurance_cost_per_policy_sgd": 3.44,
+          "weekly_price_at_target_sgd": 1.38
+        },
+        {
+          "ceded_per_policy_sgd": 20.0,
+          "net_reinsurance_cost_per_policy_sgd": 8.44,
+          "weekly_price_at_target_sgd": 1.52
+        }
+      ],
+      "premium_grid": [
+        {
+          "weekly_sgd": 1.5,
+          "annual_sgd": 78.0,
+          "expense_per_policy_sgd": 15.6,
+          "contribution_before_reinsurance_sgd": 15.75,
+          "contribution_after_ceded_premium_without_recovery_sgd": 0.75,
+          "contribution_after_reinsurance_sgd": 12.32,
+          "contribution_after_reinsurance_pct": 15.79
+        },
+        {
+          "weekly_sgd": 2.0,
+          "annual_sgd": 104.0,
+          "expense_per_policy_sgd": 20.8,
+          "contribution_before_reinsurance_sgd": 36.55,
+          "contribution_after_ceded_premium_without_recovery_sgd": 21.55,
+          "contribution_after_reinsurance_sgd": 33.12,
+          "contribution_after_reinsurance_pct": 31.84
+        },
+        {
+          "weekly_sgd": 2.5,
+          "annual_sgd": 130.0,
+          "expense_per_policy_sgd": 26.0,
+          "contribution_before_reinsurance_sgd": 57.35,
+          "contribution_after_ceded_premium_without_recovery_sgd": 42.35,
+          "contribution_after_reinsurance_sgd": 53.92,
+          "contribution_after_reinsurance_pct": 41.48
+        },
+        {
+          "weekly_sgd": 3.0,
+          "annual_sgd": 156.0,
+          "expense_per_policy_sgd": 31.2,
+          "contribution_before_reinsurance_sgd": 78.15,
+          "contribution_after_ceded_premium_without_recovery_sgd": 63.15,
+          "contribution_after_reinsurance_sgd": 74.72,
+          "contribution_after_reinsurance_pct": 47.9
+        }
+      ]
+    },
+    "pooled_poisson": {
+      "overlap_claims_per_policy_sgd": 42.45,
+      "mean_rain_imputation_per_portfolio_sgd": 3474.91,
+      "full_claims_per_policy_sgd": 55.99,
+      "mean_recovery_per_policy_sgd": 12.94,
+      "quote_sensitivity": [
+        {
+          "ceded_per_policy_sgd": 10.0,
+          "net_reinsurance_cost_per_policy_sgd": -2.94,
+          "weekly_price_at_target_sgd": 1.54
+        },
+        {
+          "ceded_per_policy_sgd": 15.0,
+          "net_reinsurance_cost_per_policy_sgd": 2.06,
+          "weekly_price_at_target_sgd": 1.68
+        },
+        {
+          "ceded_per_policy_sgd": 20.0,
+          "net_reinsurance_cost_per_policy_sgd": 7.06,
+          "weekly_price_at_target_sgd": 1.82
+        }
+      ],
+      "premium_grid": [
+        {
+          "weekly_sgd": 1.5,
+          "annual_sgd": 78.0,
+          "expense_per_policy_sgd": 15.6,
+          "contribution_before_reinsurance_sgd": 3.41,
+          "contribution_after_ceded_premium_without_recovery_sgd": -11.59,
+          "contribution_after_reinsurance_sgd": 1.35,
+          "contribution_after_reinsurance_pct": 1.74
+        },
+        {
+          "weekly_sgd": 2.0,
+          "annual_sgd": 104.0,
+          "expense_per_policy_sgd": 20.8,
+          "contribution_before_reinsurance_sgd": 24.21,
+          "contribution_after_ceded_premium_without_recovery_sgd": 9.21,
+          "contribution_after_reinsurance_sgd": 22.15,
+          "contribution_after_reinsurance_pct": 21.3
+        },
+        {
+          "weekly_sgd": 2.5,
+          "annual_sgd": 130.0,
+          "expense_per_policy_sgd": 26.0,
+          "contribution_before_reinsurance_sgd": 45.01,
+          "contribution_after_ceded_premium_without_recovery_sgd": 30.01,
+          "contribution_after_reinsurance_sgd": 42.95,
+          "contribution_after_reinsurance_pct": 33.04
+        },
+        {
+          "weekly_sgd": 3.0,
+          "annual_sgd": 156.0,
+          "expense_per_policy_sgd": 31.2,
+          "contribution_before_reinsurance_sgd": 65.81,
+          "contribution_after_ceded_premium_without_recovery_sgd": 50.81,
+          "contribution_after_reinsurance_sgd": 63.75,
+          "contribution_after_reinsurance_pct": 40.87
+        }
+      ]
+    }
+  },
+  "stress_at_base_weekly_premium": {
+    "weekly_sgd": 2.0,
+    "cases": {
+      "2015_haze_only": {
+        "gross_claims_sgd": 18450.0,
+        "recovery_sgd": 8856.0,
+        "retained_claims_sgd": 9594.0,
+        "result_without_reinsurance_sgd": -8585.4,
+        "result_with_reinsurance_sgd": -1574.4
+      },
+      "2015_haze_plus_max_rain": {
+        "gross_claims_sgd": 22140.0,
+        "recovery_sgd": 10000.0,
+        "retained_claims_sgd": 12140.0,
+        "result_without_reinsurance_sgd": -12275.4,
+        "result_with_reinsurance_sgd": -4120.4
+      },
+      "2019_with_observed_rain": {
+        "gross_claims_sgd": 15240.0,
+        "recovery_sgd": 5646.0,
+        "retained_claims_sgd": 9594.0,
+        "result_without_reinsurance_sgd": -5375.4,
+        "result_with_reinsurance_sgd": -1574.4
+      },
+      "2019_with_pooled_rain": {
+        "gross_claims_sgd": 17107.18,
+        "recovery_sgd": 7513.18,
+        "retained_claims_sgd": 9594.0,
+        "result_without_reinsurance_sgd": -7242.58,
+        "result_with_reinsurance_sgd": -1574.4
+      }
+    }
+  },
+  "subsidy": {
+    "credit_per_month_sgd": 2.0,
+    "months": 6,
+    "budget_sgd": {
+      "50": 600.0,
+      "100": 1200.0,
+      "200": 2400.0
+    }
+  }
+}

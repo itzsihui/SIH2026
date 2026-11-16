@@ -1,0 +1,33 @@
+{
+  "simulation_1_collection": {
+    "n_stalls": 10000,
+    "mean_weekly_collected_sgd": 2.2100000000000004,
+    "mean_annual_collected_sgd": 114.92000000000002,
+    "target_annual_premium_sgd": 114.92,
+    "collection_efficiency_pct": 100.00000000000003,
+    "stalls_hitting_full_cap_pct": 100.0,
+    "stalls_underfunded_pct": 0.0,
+    "median_days_to_reach_cap": 0.8000083747869701
+  },
+  "simulation_2_solvency": {
+    "mean_gross_claims_sgd": 894540.0,
+    "max_gross_claims_sgd": 3100000.0,
+    "cvar_99_gross_claims_sgd": 3100000.0,
+    "max_retained_claims_sgd": 2200000.0,
+    "cvar_99_retained_claims_sgd": 2200000.0,
+    "mean_reinsurance_recoveries_sgd": 241890.0,
+    "max_reinsurance_recoveries_sgd": 900000.0,
+    "mean_net_margin_sgd": -12650.0,
+    "prob_underwriting_loss_pct": 20.52,
+    "mean_net_loss_ratio_pct": 75.88953488372094
+  },
+  "simulation_3_esg": {
+    "mean_kg_food_waste_prevented": 1432502.8262838582,
+    "mean_ingredient_cost_saved_sgd": 3156420.2892267304,
+    "mean_co2e_tonnes_avoided": 2721.75536993933
+  },
+  "simulation_4_velocity": {
+    "mean_lunch_footfall_drop_pct": 83.19828044942703,
+    "stalls_exhibiting_over_50pct_drop": 100.0
+  }
+}

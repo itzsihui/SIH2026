@@ -1,0 +1,39 @@
+__pycache__/
+*.pyc
+.venv/
+.env
+*.key
+data/raw/rain_cache/
+node_modules/
+dist/
+**/build/
+**/.dart_tool/
+mobile/lib_backup_pre_cleanup/
+mobile/legacy_unused/
+data/raw/full/
+data/processed/*.csv.gz
+data/processed/synthetic/*/stall_day_*.csv.gz
+data/processed/**/*.csv.gz
+data/processed/synthetic/
+
+var/
+
+# Local prompts and handoff notes (existing tracked docs stay tracked).
+/prompts.md
+*.local.md
+/docs/MILESTONE*_CONTEXT.md
+/docs/MILESTONE*_CONCLUSION.md
+
+# Local handoff copies retained in the Desktop project folder.
+/MILESTONE*_CONTEXT.md
+/MILESTONE*_CONCLUSION.md
+
+# Focused Part 2 workspace: local recovery material and supplied raw dataset.
+/.local-reference/
+/dataset/*.csv
+/dataset/*.csv.gz
+/.pytest_cache/
+
+# Historical handoff copies are local notes even under reference folders.
+**/MILESTONE*_CONTEXT.md
+**/MILESTONE*_CONCLUSION.md

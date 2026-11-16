@@ -1,0 +1,6 @@
+persona_key,persona_name,portfolio_share_pct,stall_count,daily_digital_tx,days_to_hit_weekly_cap,avg_annual_premium_paid_sgd,avg_annual_claims_received_sgd,avg_annual_triggers,net_annual_hawker_balance_sgd,social_fund_topup_sgd
+drinks_chicken_rice,High-Volume Drinks / Chicken Rice,25.0,2458,266.0,0.4,93.26,44.0,1.44,-49.26,0.0
+cooked_food_noodle,Medium-Volume Cooked Food / Noodle,45.0,4470,96.0,1.2,74.83,37.59,1.22,-37.24,0.0
+elderly_pioneer,Elderly Pioneer Hawker (Kueh / Traditional),15.0,1506,5.0,7.0,4.34,32.23,1.02,27.89,0.0
+cbd_lunch_rush,CBD Lunch-Rush Stall (Amoy / Maxwell),10.0,1041,171.0,0.6,75.74,30.37,1.01,-45.37,0.0
+evening_supper,Evening / Supper Stall (Newton / Chomp Chomp),5.0,525,80.8,1.4,69.27,37.06,1.21,-32.21,0.0

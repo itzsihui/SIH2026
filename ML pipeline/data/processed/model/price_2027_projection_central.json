@@ -1,0 +1,252 @@
+{
+ "premium_2027": {
+  "total": 1067051,
+  "rain_share": 0.516,
+  "weekly_p10_median_p90_max": [
+   0.93,
+   2.98,
+   5.91,
+   7.88
+  ],
+  "stalls_rain_only_or_haze_only": [
+   126,
+   869
+  ],
+  "expected_days_rain_haze": [
+   1.56,
+   0.8
+  ],
+  "pure_rain_haze": [
+   292364,
+   274653
+  ],
+  "load_gross_multiplier": 1.882
+ },
+ "claims_distribution_2027": {
+  "expected": 567017,
+  "p50": 342948,
+  "p90": 1843242,
+  "p95": 1881260,
+  "p99": 1893410
+ },
+ "reinsurance_2027": {
+  "attach": 850526,
+  "limit": 1701052,
+  "premium": 250205,
+  "prob_triggered": 0.156,
+  "expected_recovery": 156378,
+  "recovery_when_triggered": 1004356,
+  "prob_layer_exhausted": 0.0
+ },
+ "income_2027": {
+  "expected_profit": 192796,
+  "prob_loss_year": 0.156,
+  "worst_5pct_result": -247091,
+  "without_reins_worst_5pct": -1027620,
+  "without_reins_expected": 286623
+ },
+ "example_stalls": [
+  {
+   "stall": "HC062-028",
+   "qr_sales_per_day": 35.5,
+   "est_daily_profit": 253.8,
+   "k_rain": 0.613,
+   "cover_rain": 0,
+   "cover_haze": 30,
+   "rain_prem": 0.0,
+   "haze_prem": 48.2,
+   "weekly": 0.93
+  },
+  {
+   "stall": "HC059-057",
+   "qr_sales_per_day": 30.3,
+   "est_daily_profit": 293.5,
+   "k_rain": 1.003,
+   "cover_rain": 20,
+   "cover_haze": 45,
+   "rain_prem": 58.7,
+   "haze_prem": 65.9,
+   "weekly": 2.4
+  },
+  {
+   "stall": "HC058-096",
+   "qr_sales_per_day": 42.8,
+   "est_daily_profit": 403.8,
+   "k_rain": 0.813,
+   "cover_rain": 30,
+   "cover_haze": 60,
+   "rain_prem": 87.5,
+   "haze_prem": 96.5,
+   "weekly": 3.54
+  },
+  {
+   "stall": "HC049-006",
+   "qr_sales_per_day": 51.5,
+   "est_daily_profit": 701.6,
+   "k_rain": 1.057,
+   "cover_rain": 60,
+   "cover_haze": 90,
+   "rain_prem": 175.4,
+   "haze_prem": 131.9,
+   "weekly": 5.91
+  }
+ ],
+ "projection_2027_2031": {
+  "no_trend": {
+   "years": [
+    {
+     "year": 2027,
+     "premium": 1057130,
+     "expected_claims": 562107,
+     "reins_premium": 246696,
+     "expected_recovery": 154185,
+     "prob_reins_triggered": 0.153,
+     "expected_profit": 191086
+    },
+    {
+     "year": 2028,
+     "premium": 1060537,
+     "expected_claims": 563835,
+     "reins_premium": 247843,
+     "expected_recovery": 154902,
+     "prob_reins_triggered": 0.154,
+     "expected_profit": 191653
+    },
+    {
+     "year": 2029,
+     "premium": 1056287,
+     "expected_claims": 561928,
+     "reins_premium": 246082,
+     "expected_recovery": 153801,
+     "prob_reins_triggered": 0.152,
+     "expected_profit": 190820
+    },
+    {
+     "year": 2030,
+     "premium": 1061649,
+     "expected_claims": 564299,
+     "reins_premium": 248380,
+     "expected_recovery": 155238,
+     "prob_reins_triggered": 0.154,
+     "expected_profit": 191877
+    },
+    {
+     "year": 2031,
+     "premium": 1058612,
+     "expected_claims": 562808,
+     "reins_premium": 247235,
+     "expected_recovery": 154522,
+     "prob_reins_triggered": 0.153,
+     "expected_profit": 191368
+    }
+   ],
+   "cum_expected_profit": 956805,
+   "prob_5yr_loss": 0.029,
+   "cum_p5": 197115
+  },
+  "rain_+1%/yr": {
+   "years": [
+    {
+     "year": 2027,
+     "premium": 1064291,
+     "expected_claims": 566070,
+     "reins_premium": 248597,
+     "expected_recovery": 155373,
+     "prob_reins_triggered": 0.154,
+     "expected_profit": 192139
+    },
+    {
+     "year": 2028,
+     "premium": 1068559,
+     "expected_claims": 568362,
+     "reins_premium": 249846,
+     "expected_recovery": 156154,
+     "prob_reins_triggered": 0.156,
+     "expected_profit": 192793
+    },
+    {
+     "year": 2029,
+     "premium": 1054322,
+     "expected_claims": 562152,
+     "reins_premium": 243619,
+     "expected_recovery": 152262,
+     "prob_reins_triggered": 0.151,
+     "expected_profit": 189948
+    },
+    {
+     "year": 2030,
+     "premium": 1064896,
+     "expected_claims": 567635,
+     "reins_premium": 247028,
+     "expected_recovery": 154393,
+     "prob_reins_triggered": 0.154,
+     "expected_profit": 191646
+    },
+    {
+     "year": 2031,
+     "premium": 1058378,
+     "expected_claims": 564544,
+     "reins_premium": 244480,
+     "expected_recovery": 152800,
+     "prob_reins_triggered": 0.151,
+     "expected_profit": 190478
+    }
+   ],
+   "cum_expected_profit": 957005,
+   "prob_5yr_loss": 0.029,
+   "cum_p5": 188758
+  },
+  "rain_+2%/yr": {
+   "years": [
+    {
+     "year": 2027,
+     "premium": 1058908,
+     "expected_claims": 563901,
+     "reins_premium": 246015,
+     "expected_recovery": 153760,
+     "prob_reins_triggered": 0.152,
+     "expected_profit": 190970
+    },
+    {
+     "year": 2028,
+     "premium": 1067617,
+     "expected_claims": 568918,
+     "reins_premium": 248051,
+     "expected_recovery": 155032,
+     "prob_reins_triggered": 0.155,
+     "expected_profit": 192156
+    },
+    {
+     "year": 2029,
+     "premium": 1068128,
+     "expected_claims": 570241,
+     "reins_premium": 246671,
+     "expected_recovery": 154170,
+     "prob_reins_triggered": 0.154,
+     "expected_profit": 191759
+    },
+    {
+     "year": 2030,
+     "premium": 1079799,
+     "expected_claims": 576643,
+     "reins_premium": 249872,
+     "expected_recovery": 156170,
+     "prob_reins_triggered": 0.157,
+     "expected_profit": 193494
+    },
+    {
+     "year": 2031,
+     "premium": 1074471,
+     "expected_claims": 574833,
+     "reins_premium": 246819,
+     "expected_recovery": 154262,
+     "prob_reins_triggered": 0.155,
+     "expected_profit": 192187
+    }
+   ],
+   "cum_expected_profit": 960566,
+   "prob_5yr_loss": 0.029,
+   "cum_p5": 194629
+  }
+ }
+}

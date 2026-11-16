@@ -1,0 +1,99 @@
+{
+ "model_comparison": [
+  {
+   "model": "Linear (ridge)",
+   "MAE": 0.8716287583154352,
+   "R2": 0.3811257860253767,
+   "Brier_ge33": 0.05626977383814412,
+   "AUC_ge33": 0.724755569400203,
+   "pred_high_days_share": 0.10631072801427807,
+   "actual": 0.052473526157736684
+  },
+  {
+   "model": "Random forest",
+   "MAE": 0.8004086345793461,
+   "R2": 0.476231096384386,
+   "Brier_ge33": 0.04843547003175775,
+   "AUC_ge33": 0.7623883356612439,
+   "pred_high_days_share": 0.03191619802053625,
+   "actual": 0.052473526157736684
+  },
+  {
+   "model": "Gradient boosting",
+   "MAE": 0.8075319274449708,
+   "R2": 0.46639060608770344,
+   "Brier_ge33": 0.047791477417184675,
+   "AUC_ge33": 0.7643746797029652,
+   "pred_high_days_share": 0.0399490919582474,
+   "actual": 0.052473526157736684
+  },
+  {
+   "model": "Logistic (direct >=33)",
+   "MAE": NaN,
+   "R2": NaN,
+   "Brier_ge33": 0.04757353696280493,
+   "AUC_ge33": 0.7782052312670197,
+   "pred_high_days_share": 0.055926261381111744,
+   "actual": 0.052473526157736684
+  },
+  {
+   "model": "Boosted classifier (direct >=33)",
+   "MAE": NaN,
+   "R2": NaN,
+   "Brier_ge33": 0.05153507807454236,
+   "AUC_ge33": 0.7546409156224564,
+   "pred_high_days_share": 0.05206015743874178,
+   "actual": 0.052473526157736684
+  },
+  {
+   "model": "Baseline (2025 base rate)",
+   "MAE": NaN,
+   "R2": NaN,
+   "Brier_ge33": 0.04983474667042572,
+   "AUC_ge33": 0.5,
+   "pred_high_days_share": 0.0417641162712997,
+   "actual": 0.052473526157736684
+  }
+ ],
+ "reconstructed_high_days": {
+  "2010": 9.369656339102722,
+  "2011": 9.588818086740437,
+  "2012": 11.27144879628391,
+  "2013": 12.1827686736887,
+  "2014": 12.955047853044402,
+  "2015": 12.627053892103012,
+  "2016": 13.486347850768716,
+  "2017": 11.944340048293153,
+  "2018": 11.133123804111465,
+  "2019": 11.39694313983426,
+  "2020": 9.458826890817043,
+  "2021": 10.41557058692899,
+  "2022": 9.703676595984973,
+  "2023": 13.263577646791324,
+  "2024": 18.319052147351464,
+  "2025": 14.784254633269999
+ },
+ "result": {
+  "heat_model": "Logistic (direct >=33)",
+  "premium_per_worker_year": 125.72,
+  "weekly": 2.42,
+  "heat_share": 0.9,
+  "expected_heat_days": 6.35,
+  "expected_haze_days": 0.43,
+  "test_2026": {
+   "heat_payout_per_worker": 65.05,
+   "haze_payout_per_worker": 88.0,
+   "premium_per_worker_jan_oct": 104.77,
+   "result_per_worker_after_reins": -27.65,
+   "portfolio_premium": 1602954,
+   "portfolio_claims": 2341705,
+   "reins_recovery": 719585,
+   "portfolio_result": -422982
+  },
+  "sim": {
+   "prob_loss_year": 0.083,
+   "expected_profit_per_worker": 13.31,
+   "expected_profit_portfolio": 203689
+  }
+ }
+}

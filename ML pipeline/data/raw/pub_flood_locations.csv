@@ -1,0 +1,56 @@
+list,sn,location,source_document,as_of,anchor1,anchor2,geocode_note
+hotspot,1,Junction of Ang Mo Kio Avenue 3 and Ang Mo Kio Avenue 8,List of Hotspots in Singapore,2026-02-02,ANG MO KIO MRT STATION,,junction of AMK Ave 3/Ave 8 is at AMK MRT
+hotspot,2,Bukit Timah Road (from Wilby Road to Blackmore Drive),List of Hotspots in Singapore,2026-02-02,WILBY ROAD,BLACKMORE DRIVE,segment ends
+hotspot,3,Junction of Cavenagh Road and Kramat Lane,List of Hotspots in Singapore,2026-02-02,KRAMAT LANE,,short lane at the junction
+hotspot,4,Junction of Craig Road and Tanjong Pagar Road,List of Hotspots in Singapore,2026-02-02,CRAIG ROAD,,short road at the junction
+hotspot,5,Dunearn Road (from Rifle Range to Binjai Park),List of Hotspots in Singapore,2026-02-02,BINJAI PARK,,segment end; Rifle Range end not geocodable as a point
+hotspot,6,Dunearn Road (from Hillcrest Road to Watten Estate Road),List of Hotspots in Singapore,2026-02-02,HILLCREST ROAD,WATTEN ESTATE ROAD,segment ends
+hotspot,7,Eng Neo Avenue (from Vanda Link to Dunearn Road),List of Hotspots in Singapore,2026-02-02,ENG NEO AVENUE,,
+hotspot,8,Enterprise Road (from Wan Lee Road to Jalan Boon Lay),List of Hotspots in Singapore,2026-02-02,WAN LEE ROAD,JALAN BOON LAY,segment ends
+hotspot,9,Jalan Boon Lay (from International Road to Enterprise Road),List of Hotspots in Singapore,2026-02-02,JALAN BOON LAY,,
+hotspot,10,Jalan Nipah,List of Hotspots in Singapore,2026-02-02,JALAN NIPAH,,
+hotspot,11,Junction of Lor 1 and Lor 2 Toa Payoh,List of Hotspots in Singapore,2026-02-02,LORONG 2 TOA PAYOH,LORONG 1 TOA PAYOH,junction
+hotspot,12,Lorong Gambir (from Lorong Penchalak to Gambir Walk),List of Hotspots in Singapore,2026-02-02,LORONG GAMBIR,,
+hotspot,13,Junction of Lorong Kismis and Kismis Place,List of Hotspots in Singapore,2026-02-02,KISMIS PLACE,,
+hotspot,14,Punggol Way (slip road to TPE),List of Hotspots in Singapore,2026-02-02,PUNGGOL WAY,,road centroid; low precision
+hotspot,15,Seletar North Link (Punggol Barat Island),List of Hotspots in Singapore,2026-02-02,SELETAR NORTH LINK,,
+hotspot,16,Service Rd off Upper Paya Lebar Road (near Lim Teck Boo Road),List of Hotspots in Singapore,2026-02-02,LIM TECK BOO ROAD,,
+hotspot,17,Yishun Ave 5 (slip road to Yishun Ave 2),List of Hotspots in Singapore,2026-02-02,YISHUN AVENUE 5,,
+hotspot,18,Junction of Yishun Ave 7 and Yishun St 22,List of Hotspots in Singapore,2026-02-02,YISHUN STREET 22,,
+hotspot,19,King's Road (from Prince Road to Lutheran Road),List of Hotspots in Singapore,2026-02-02,PRINCE ROAD,KING'S ROAD,
+flood_prone,1,Prince Philip Avenue / Jervois Road,List of Flood Prone Areas in Singapore,2025-11,PRINCE PHILIP AVENUE,,
+flood_prone,2,Admiralty Road West (from Sembawang Drive to Dock Road West),List of Flood Prone Areas in Singapore,2025-11,ADMIRALTY ROAD WEST,,road centroid; low precision
+flood_prone,3,St John's Headquarters at junction of Beach Road and Java Road,List of Flood Prone Areas in Singapore,2025-11,JAVA ROAD,,
+flood_prone,4,Bedok South Rd (slip road to Bedok South Ave 1),List of Flood Prone Areas in Singapore,2025-11,BEDOK SOUTH AVENUE 1,BEDOK SOUTH ROAD,slip road between the two
+flood_prone,5,Service road off Changi Road (near Chin Cheng Ave),List of Flood Prone Areas in Singapore,2025-11,CHIN CHENG AVENUE,,
+flood_prone,6,Junction of Commonwealth Drive and Commonwealth Ave,List of Flood Prone Areas in Singapore,2025-11,COMMONWEALTH DRIVE,,
+flood_prone,7,CTE (slip road to Moulmein Road),List of Flood Prone Areas in Singapore,2025-11,MOULMEIN ROAD,,road centroid; low precision
+flood_prone,8,Derbyshire Road / Cambridge Road / Farrer Park Field,List of Flood Prone Areas in Singapore,2025-11,FARRER PARK FIELD,,
+flood_prone,9,Hong Kah Area,List of Flood Prone Areas in Singapore,2025-11,,,ambiguous ('Hong Kah Area'): excluded
+flood_prone,10,Indus Road (from Havelock Road to Ganges Avenue),List of Flood Prone Areas in Singapore,2025-11,INDUS ROAD,,
+flood_prone,11,Jalan Benaan Kapal,List of Flood Prone Areas in Singapore,2025-11,JALAN BENAAN KAPAL,,
+flood_prone,12,Jalan Besar Area,List of Flood Prone Areas in Singapore,2025-11,JALAN BESAR COMMUNITY CLUB,,area; centre point of the Jalan Besar area
+flood_prone,13,Jalan Mashor,List of Flood Prone Areas in Singapore,2025-11,JALAN MASHHOR,,OneMap spelling
+flood_prone,14,Jalan Mat Jambol,List of Flood Prone Areas in Singapore,2025-11,JALAN MAT JAMBOL,,
+flood_prone,15,Jalan Taman,List of Flood Prone Areas in Singapore,2025-11,JALAN TAMAN,,
+flood_prone,16,People's Association HQ at King George's Avenue,List of Flood Prone Areas in Singapore,2025-11,KING GEORGE'S AVENUE,,
+flood_prone,17,Langsat Road Area (from Lor 102 Changi to Lor 106 Changi),List of Flood Prone Areas in Singapore,2025-11,LANGSAT ROAD,,
+flood_prone,18,Lorong Buangkok Area,List of Flood Prone Areas in Singapore,2025-11,LORONG BUANGKOK,,
+flood_prone,19,Lorong H Telok Kurau (near canal),List of Flood Prone Areas in Singapore,2025-11,LORONG H TELOK KURAU,,
+flood_prone,20,State Land at junction of Alexandra Road and Lower Delta Road,List of Flood Prone Areas in Singapore,2025-11,LOWER DELTA ROAD,,road centroid; low precision
+flood_prone,21,Margaret Drive / Tanglin Road,List of Flood Prone Areas in Singapore,2025-11,MARGARET DRIVE,,
+flood_prone,22,Meyer Road Area (from Fort Road to Broadrick Road),List of Flood Prone Areas in Singapore,2025-11,MEYER ROAD,,
+flood_prone,23,Mimosa Walk (near canal),List of Flood Prone Areas in Singapore,2025-11,MIMOSA WALK,,
+flood_prone,24,Mindef's Changi Camp at junction of Changi Village Road and Farnborough Road,List of Flood Prone Areas in Singapore,2025-11,FARNBOROUGH ROAD,,
+flood_prone,25,Service Road off Mountbatten Rd (near Jalan Seaview),List of Flood Prone Areas in Singapore,2025-11,JALAN SEAVIEW,,
+flood_prone,26,Junction of Neo Pee Teck Lane and Pasir Panjang Road,List of Flood Prone Areas in Singapore,2025-11,NEO PEE TECK LANE,,
+flood_prone,27,State Land at junction of New Upper Changi Road and Tanah Merah Kechil Avenue,List of Flood Prone Areas in Singapore,2025-11,TANAH MERAH KECHIL AVENUE,,
+flood_prone,28,Rose Lane,List of Flood Prone Areas in Singapore,2025-11,ROSE LANE,,
+flood_prone,29,Second Chin Bee Road,List of Flood Prone Areas in Singapore,2025-11,SECOND CHIN BEE ROAD,,
+flood_prone,30,Sennett Estate (Siang Kuang Avenue / Puay Hee Avenue / Wan Tho Avenue / Jalan Kemboja / Mulberry Avenue),List of Flood Prone Areas in Singapore,2025-11,SENNETT ESTATE,,
+flood_prone,31,Service road off Tampines Road (near Jalan Teliti),List of Flood Prone Areas in Singapore,2025-11,JALAN TELITI,,
+flood_prone,32,Junction of Stevens Road and Balmoral Road,List of Flood Prone Areas in Singapore,2025-11,BALMORAL ROAD,STEVENS ROAD,junction
+flood_prone,33,South Bridge Road / Upper Hokien Street / Upper Pickering Street,List of Flood Prone Areas in Singapore,2025-11,UPPER HOKIEN STREET,,
+flood_prone,34,Upper East Coast Road (near Parbury Avenue),List of Flood Prone Areas in Singapore,2025-11,PARBURY AVENUE,,
+flood_prone,35,Waterloo Street / Bencoolen Street / Prinsep Street,List of Flood Prone Areas in Singapore,2025-11,WATERLOO STREET,,
+flood_prone,36,Former Boys' Brigade HQ at Zion Road,List of Flood Prone Areas in Singapore,2025-11,ZION ROAD,,

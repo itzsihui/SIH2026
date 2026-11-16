@@ -1,0 +1,5 @@
+# Optional research/training dependencies. Core API uses requirements-daycover.txt.
+-r requirements.txt
+scikit-learn>=1.4
+scipy>=1.11
+requests>=2.31

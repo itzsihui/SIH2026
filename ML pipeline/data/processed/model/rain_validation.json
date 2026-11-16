@@ -1,0 +1,41 @@
+{
+ "alpha": 0.001,
+ "tuning": {
+  "0.0001": 0.8727647428526353,
+  "0.001": 0.8623000206458318,
+  "0.01": 0.8683236089013285,
+  "0.03": 0.869974534280971
+ },
+ "summary": [
+  {
+   "model": "island",
+   "mean_deviance": 0.8709541576420108,
+   "beats_season_in_years": 9.0
+  },
+  {
+   "model": "season",
+   "mean_deviance": 0.8900775020676559,
+   "beats_season_in_years": 0.0
+  },
+  {
+   "model": "centre",
+   "mean_deviance": 0.8692187931599847,
+   "beats_season_in_years": 9.0
+  },
+  {
+   "model": "glm",
+   "mean_deviance": 0.8623000206458317,
+   "beats_season_in_years": 12.0
+  },
+  {
+   "model": "glm+enso",
+   "mean_deviance": 0.8610037391392072,
+   "beats_season_in_years": 10.0
+  },
+  {
+   "model": "gbm",
+   "mean_deviance": 1.2090858099977753,
+   "beats_season_in_years": 1.0
+  }
+ ]
+}

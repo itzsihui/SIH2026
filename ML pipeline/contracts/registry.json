@@ -1,0 +1,166 @@
+{
+  "schema_version": 1,
+  "contracts": [
+    {
+      "version": "daycover-pilot-m1-2026.11-v1",
+      "lifecycle": "simulation",
+      "simulation_enrolment_allowed": true,
+      "title": "M1 fixed Haze + Rain pilot",
+      "source": [
+        "contracts/daycover-pilot-m1-2026.11-v1.json",
+        "docs/41_pilot_pricing_and_billing.md"
+      ],
+      "decision_authority": "daycover.pilot",
+      "settlement_authority": "pilot_simulation_ledger",
+      "identity_namespace": "pilot",
+      "summary": {
+        "rain": "70 mm daily assigned gauge; S$30 once/term",
+        "haze": "PSI 101 two days / 151; S$30/60; five days and S$150",
+        "combined_cap_sgd": 180,
+        "premium_sgd": 104,
+        "collection": "monthly GIRO proposed; 8 x 867 + 4 x 866 cents",
+        "waiting_period": "no additional waiting period in M1 simulation; not a commercial decision",
+        "overlap": "separate rain and haze payments within subcaps",
+        "approval": "not insurer approved"
+      }
+    },
+    {
+      "version": "wallet-sandbox-08fc23f",
+      "lifecycle": "research",
+      "simulation_enrolment_allowed": false,
+      "title": "Wallet/QR sandbox source snapshot",
+      "source": [
+        "daycover-pay-system/system/src/Gateway.cs:Cfg",
+        "daycover-pay-system/system/src/Engine.cs",
+        "daycover-pay-system/docs/BUSINESS_MODEL.md"
+      ],
+      "decision_authority": "dotnet_sandbox_engine",
+      "settlement_authority": "dotnet_sandbox_wallet",
+      "identity_namespace": "wallet_sandbox",
+      "summary": {
+        "rain": "100 mm; round(30 x premium/115) once per sandbox policy period",
+        "haze": "101 two days / 151; amounts and S$150 cap scaled by premium/115; five days",
+        "premium": "clamp(0.00066 x annual QR sales, S$40, S$172); S$115 reference price",
+        "collection": "13 four-week cycles; levy or GIRO simulation; arrears/true-up; mutable runtime config",
+        "waiting_period": "7 days code default; 28-day research proposal is distinct",
+        "overlap": "per-peril instructions; optional portfolio pro-rata scaling is separate from M1",
+        "runtime_config_mutable": true,
+        "approval": "unapproved sandbox; source inventory, not frozen issued terms"
+      }
+    },
+    {
+      "version": "2026.11-draft2",
+      "lifecycle": "research",
+      "simulation_enrolment_allowed": false,
+      "title": "Historical Python calendar-year replay",
+      "source": [
+        "src/daycover/rules.py",
+        "src/daycover/engine.py"
+      ],
+      "decision_authority": "historical_replay",
+      "settlement_authority": null,
+      "identity_namespace": "pilot_research_centres",
+      "summary": {
+        "rain": "70 mm assigned/fallback gauge; S$30 once/calendar year",
+        "haze": "101 two days / 151; S$30/60; five days and S$150",
+        "combined_cap_sgd": 180,
+        "premium": "outside pure replay rules; not an issued premium",
+        "collection": "none",
+        "waiting_period": "none modelled",
+        "overlap": "separate perils",
+        "approval": "research only; API threshold overrides do not select a pilot contract"
+      }
+    },
+    {
+      "version": "train-2026.11-v1",
+      "lifecycle": "research",
+      "simulation_enrolment_allowed": false,
+      "title": "ML training/pricing configuration",
+      "source": [
+        "src/pricing/config.py"
+      ],
+      "decision_authority": "offline_pricing_research",
+      "settlement_authority": null,
+      "identity_namespace": "synthetic_research_stalls",
+      "summary": {
+        "rain": "70 mm; one benefit unit; two rain days",
+        "haze": "101 two days / 151; one/two benefit units; five haze days",
+        "caps": "six total claim-day units; benefits depend on candidate band",
+        "premium": "model output with expenses/margin assumptions, not fixed M1 price",
+        "collection": "research inputs only",
+        "waiting_period": "seven days prior QR activity in COVER; not pilot eligibility",
+        "overlap": "must be audited per research script; not imported into M1",
+        "approval": "model outputs advisory; cannot enrol or settle a policy"
+      }
+    },
+    {
+      "version": "legacy-engine-50mm-v1",
+      "lifecycle": "research",
+      "simulation_enrolment_allowed": false,
+      "title": "Legacy two-gauge trading-window prototype",
+      "source": [
+        "src/engine/config.py",
+        "src/engine/triggers.py"
+      ],
+      "decision_authority": "legacy_research_engine",
+      "settlement_authority": null,
+      "identity_namespace": "legacy_demo",
+      "summary": {
+        "rain": "50 mm mean of two nearest gauges, 08:00-20:00; S$30, two days",
+        "haze": "101 two days / 151; S$30/60; five days",
+        "combined_cap_sgd": 150,
+        "premium": "S$115 in config; S$2.21/week rounded representation",
+        "collection": "S$0.02/transaction with S$2.21 weekly cap; historical proposal",
+        "waiting_period": "not specified in legacy trigger config",
+        "overlap": "higher single daily benefit",
+        "approval": "historical prototype; partner/treaty claims are not evidence of approval"
+      }
+    },
+    {
+      "version": "candidate-plan4-150-proposal-v1",
+      "lifecycle": "candidate_proposal",
+      "simulation_enrolment_allowed": false,
+      "title": "Research Plan 4 alternative (not executable)",
+      "source": [
+        "fix/policy-anniversary-cap-replay@356312b:docs/INCOME_AWARE_ENGINE_AND_POLICY_AUTHORITY.md",
+        "uploaded pipeline.pdf"
+      ],
+      "decision_authority": null,
+      "settlement_authority": null,
+      "identity_namespace": null,
+      "summary": {
+        "rain": "70 mm; S$30 once/policy year",
+        "haze": "101 two days / 201 severe; S$30/60; proposed 3/2 tier-day sublimits",
+        "caps": "S$150 combined: S$30 reserved rain, S$120 haze",
+        "premium": "S$87 model estimate; requires repricing and review",
+        "collection": "transaction-linked/four-week architecture is a proposal, not M1 billing",
+        "waiting_period": "unresolved proposal",
+        "overlap": "S$60 daily ceiling; rain priority then haze",
+        "approval": "proposal only; no approval or issuance route"
+      }
+    },
+    {
+      "version": "candidate-checkout-104-monthly-v1",
+      "lifecycle": "candidate_proposal",
+      "simulation_enrolment_allowed": false,
+      "title": "Fixed S$104 monthly premium-at-checkout proposal",
+      "source": [
+        "docs/PHASE2_CHECKOUT_PREMIUM_DESIGN.md",
+        "scripts/premium_accrual_sim.py"
+      ],
+      "decision_authority": null,
+      "settlement_authority": null,
+      "identity_namespace": null,
+      "summary": {
+        "rain": "70 mm baseline retained; no new trigger approved",
+        "haze": "101 two days / 151 baseline retained",
+        "combined_cap_sgd": 180,
+        "premium_sgd": 104,
+        "collection": "12 monthly targets; calibrated levy, one-instalment carry, year-end bank true-up; not 13 four-week bills",
+        "waiting_period": "cooling-off and eligibility require product confirmation",
+        "overlap": "baseline separate perils",
+        "approval": "collection proposal only; cannot override frozen GIRO simulation contract"
+      }
+    }
+  ]
+}

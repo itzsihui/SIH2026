@@ -1,0 +1,5 @@
+fastapi
+uvicorn
+httpx
+pytest
+psycopg[binary]>=3.2.0

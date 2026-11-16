@@ -1,0 +1,206 @@
+{
+ "segments": [
+  {
+   "segment": "Market (produce) stalls",
+   "people": 8300,
+   "count_basis": "reported: 2026 rental-support announcement",
+   "payer": "stallholder, at Stallholder renewal",
+   "cover": "rain70 S$20/day max 2, haze151 S$30/day max 5",
+   "loss_basis": "synthetic: gross profit S$200/day (vs S$359 cooked food); drop 15% rain, 25% severe haze; payout = 60% of loss",
+   "weekly_premium_2027": 1.98,
+   "annual_premium_2027": 102.71,
+   "premium_split_2027": {
+    "rain70": 0.6,
+    "haze151": 0.4
+   },
+   "payout_per_person_2026": 158.0,
+   "premium_per_person_2026_jan_oct": 70.32,
+   "portfolio_2026": {
+    "premium": 583627,
+    "paid_out": 1311400,
+    "reins_recovery": 821517,
+    "income_result": -126996
+   },
+   "portfolio_2027": {
+    "premium": 852520,
+    "expected_claims": 463603,
+    "expected_profit": 148879,
+    "prob_loss_year": 0.153
+   }
+  },
+  {
+   "segment": "Neighbourhood shops and home-based food businesses",
+   "people": 5000,
+   "count_basis": "SCENARIO: no public count; pilot-sized book",
+   "payer": "business owner, SmartBiz360 rider",
+   "cover": "rain70 S$20/day max 2, haze151 S$30/day max 5",
+   "loss_basis": "synthetic: same loss profile as market stalls",
+   "weekly_premium_2027": 1.98,
+   "annual_premium_2027": 102.85,
+   "premium_split_2027": {
+    "rain70": 0.6,
+    "haze151": 0.4
+   },
+   "payout_per_person_2026": 158.0,
+   "premium_per_person_2026_jan_oct": 70.26,
+   "portfolio_2026": {
+    "premium": 351289,
+    "paid_out": 790000,
+    "reins_recovery": 495326,
+    "income_result": -76390
+   },
+   "portfolio_2027": {
+    "premium": 514242,
+    "expected_claims": 279787,
+    "expected_profit": 89715,
+    "prob_loss_year": 0.154
+   }
+  },
+  {
+   "segment": "Delivery riders",
+   "people": 15300,
+   "count_basis": "MOM 2024 via NTUC (verified)",
+   "payer": "platform or NDCA group policy",
+   "cover": "heat33 S$12/day max 10, haze151 S$20/day max 5",
+   "loss_basis": "heat: 60% of S$21 median daily loss (NUS HeatSafe); haze S$20: assumption",
+   "weekly_premium_2027": 2.63,
+   "annual_premium_2027": 136.78,
+   "premium_split_2027": {
+    "heat33": 0.84,
+    "haze151": 0.16
+   },
+   "payout_per_person_2026": 153.05,
+   "premium_per_person_2026_jan_oct": 104.68,
+   "portfolio_2026": {
+    "premium": 1601629,
+    "paid_out": 2341705,
+    "reins_recovery": 720530,
+    "income_result": -422751
+   },
+   "portfolio_2027": {
+    "premium": 2092720,
+    "expected_claims": 1390740,
+    "expected_profit": 235808,
+    "prob_loss_year": 0.154
+   }
+  },
+  {
+   "segment": "Taxi and private-hire drivers",
+   "people": 52600,
+   "count_basis": "MOM 2024 via NTUC (verified): 20,800 + 31,800",
+   "payer": "platform or NTA / NPHVA group policy",
+   "cover": "haze151 S$15/day max 5",
+   "loss_basis": "synthetic: haze cuts trips ~15% of ~S$150/day net; no rain cover (rain raises fares); no heat cover (air-conditioned)",
+   "weekly_premium_2027": 0.53,
+   "annual_premium_2027": 27.67,
+   "premium_split_2027": {
+    "haze151": 1.0
+   },
+   "payout_per_person_2026": 66.0,
+   "premium_per_person_2026_jan_oct": 14.0,
+   "portfolio_2026": {
+    "premium": 736645,
+    "paid_out": 3471600,
+    "reins_recovery": 851509,
+    "income_result": -2143958
+   },
+   "portfolio_2027": {
+    "premium": 1455532,
+    "expected_claims": 590081,
+    "expected_profit": 408835,
+    "prob_loss_year": 0.156
+   }
+  },
+  {
+   "segment": "Construction workers (employer-paid heat-rest cover)",
+   "people": 300000,
+   "count_basis": "SCENARIO: order of magnitude of the construction workforce; verify with MOM",
+   "payer": "employer",
+   "cover": "heat33 S$6/day max 10, haze151 S$20/day max 5",
+   "loss_basis": "synthetic: MOM rest breaks cost the employer ~45 min of pay (~S$6) per High-heat day; haze stop-work S$20",
+   "weekly_premium_2027": 1.7,
+   "annual_premium_2027": 88.59,
+   "premium_split_2027": {
+    "heat33": 0.72,
+    "haze151": 0.28
+   },
+   "payout_per_person_2026": 120.53,
+   "premium_per_person_2026_jan_oct": 63.45,
+   "portfolio_2026": {
+    "premium": 19033608,
+    "paid_out": 36157895,
+    "reins_recovery": 18620938,
+    "income_result": -4579696
+   },
+   "portfolio_2027": {
+    "premium": 26575826,
+    "expected_claims": 15898461,
+    "expected_profit": 3890019,
+    "prob_loss_year": 0.155
+   }
+  },
+  {
+   "segment": "Outdoor cleaners (employer-paid)",
+   "people": 20000,
+   "count_basis": "SCENARIO: no public count of outdoor cleaners",
+   "payer": "employer or town council contract",
+   "cover": "heat33 S$6/day max 10, haze151 S$20/day max 5",
+   "loss_basis": "synthetic: same as construction",
+   "weekly_premium_2027": 1.7,
+   "annual_premium_2027": 88.35,
+   "premium_split_2027": {
+    "heat33": 0.72,
+    "haze151": 0.28
+   },
+   "payout_per_person_2026": 120.53,
+   "premium_per_person_2026_jan_oct": 63.38,
+   "portfolio_2026": {
+    "premium": 1267583,
+    "paid_out": 2410526,
+    "reins_recovery": 1242566,
+    "income_result": -305008
+   },
+   "portfolio_2027": {
+    "premium": 1767053,
+    "expected_claims": 1057659,
+    "expected_profit": 258409,
+    "prob_loss_year": 0.155
+   }
+  },
+  {
+   "segment": "Lower-income households in flood-prone or hotspot areas",
+   "people": 10000,
+   "count_basis": "SCENARIO: no public count; PUB lists 55 locations",
+   "payer": "household, with Enhanced Home Insurance, or a town-council scheme",
+   "cover": "rain100 S$100/day max 1",
+   "loss_basis": "synthetic: S$100 emergency cash on a 100 mm day; Income's home policy already pays fixed S$300-500 stress and emergency benefits",
+   "weekly_premium_2027": 1.56,
+   "annual_premium_2027": 81.34,
+   "premium_split_2027": {
+    "rain100": 1.0
+   },
+   "payout_per_person_2026": 37.5,
+   "premium_per_person_2026_jan_oct": 68.49,
+   "portfolio_2026": {
+    "premium": 684922,
+    "paid_out": 375000,
+    "reins_recovery": 0,
+    "income_result": 82693
+   },
+   "portfolio_2027": {
+    "premium": 813431,
+    "expected_claims": 487754,
+    "expected_profit": 123261,
+    "prob_loss_year": 0.356
+   }
+  }
+ ],
+ "total_new_segments": {
+  "prem26": 24259302,
+  "cl26": 46858126,
+  "res26": -7572106,
+  "prem27": 34071324,
+  "prof27": 5154927,
+  "people": 411200
+ }
+}

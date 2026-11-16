@@ -1,0 +1,125 @@
+{
+ "haze_model": {
+  "threshold": 0.5,
+  "p_high_enso": 0.6666666666666666,
+  "p_low_enso": 0.09090909090909091,
+  "n_high": 4,
+  "n_low": 9,
+  "severe_high": 3,
+  "severe_low": 0
+ },
+ "expected_claims": 613072.2804972804,
+ "premium": 1067051,
+ "results": {
+  "no reinsurance": {
+   "mean_10yr": 2810189.427319131,
+   "p5_10yr": -1126027.3427273848,
+   "prob_10yr_loss": 0.0936,
+   "prob_solvency_breach": 0.2828,
+   "mean_year": 281018.94273191306,
+   "cvar5_year": -1216151.8036727514
+  },
+  "static 1.5x / 3x (current design)": {
+   "mean_10yr": 2328008.03692919,
+   "p5_10yr": -675249.3552354821,
+   "prob_10yr_loss": 0.0924,
+   "prob_solvency_breach": 0.1842,
+   "mean_year": 232800.803692919,
+   "cvar5_year": -844918.1153796593
+  },
+  "maximum cover every year": {
+   "mean_10yr": 1955678.6197456154,
+   "p5_10yr": -1163411.5805979243,
+   "prob_10yr_loss": 0.134,
+   "prob_solvency_breach": 0.2326,
+   "mean_year": 195567.8619745616,
+   "cvar5_year": -866454.0590815663
+  },
+  "ENSO rule: heavy cover when ONI > 0.5": {
+   "mean_10yr": 2166974.6318639168,
+   "p5_10yr": -1195571.511519985,
+   "prob_10yr_loss": 0.1216,
+   "prob_solvency_breach": 0.2412,
+   "mean_year": 216697.4631863917,
+   "cvar5_year": -866454.0590815663
+  },
+  "ENSO rule + no cover in La Nina": {
+   "mean_10yr": 2183081.024462718,
+   "p5_10yr": -1211787.3526061957,
+   "prob_10yr_loss": 0.1234,
+   "prob_solvency_breach": 0.2502,
+   "mean_year": 218308.10244627178,
+   "cvar5_year": -890067.3955099911
+  },
+  "CAPITAL rule: heavy cover below 1x premium": {
+   "mean_10yr": 2267466.113592312,
+   "p5_10yr": -879109.4537948212,
+   "prob_10yr_loss": 0.105,
+   "prob_solvency_breach": 0.2006,
+   "mean_year": 226746.61135923123,
+   "cvar5_year": -844453.866261474
+  },
+  "CAPITAL + ENSO rule": {
+   "mean_10yr": 2104609.641446567,
+   "p5_10yr": -1100509.617716665,
+   "prob_10yr_loss": 0.1284,
+   "prob_solvency_breach": 0.2308,
+   "mean_year": 210460.96414465673,
+   "cvar5_year": -866454.0590815663
+  },
+  "RL agent": {
+   "mean_10yr": 2307179.448494303,
+   "p5_10yr": -645201.1475302081,
+   "prob_10yr_loss": 0.0912,
+   "prob_solvency_breach": 0.1606,
+   "mean_year": 230717.94484943032,
+   "cvar5_year": -1001212.352001696
+  },
+  "oracle (knows the season in advance)": {
+   "mean_10yr": 2461110.8956027715,
+   "p5_10yr": -1228522.3767732193,
+   "prob_10yr_loss": 0.1238,
+   "prob_solvency_breach": 0.27,
+   "mean_year": 246111.08956027718,
+   "cvar5_year": -1184015.574606636
+  }
+ },
+ "policy": {
+  "0": "1.0x att / 2x lim",
+  "1": "none",
+  "2": "1.5x / 3x (static rule)",
+  "3": "1.0x / 3x",
+  "4": "1.0x / 3x",
+  "5": "1.25x / 3x",
+  "6": "none",
+  "7": "2.0x / 3x",
+  "8": "none",
+  "9": "2.0x / 3x",
+  "10": "1.0x att / 2x lim",
+  "11": "1.5x / 4x",
+  "12": "1.25x / 2x",
+  "13": "1.5x / 3x (static rule)",
+  "14": "1.0x / 3x",
+  "15": "none",
+  "16": "1.25x / 3x",
+  "17": "2.0x / 3x",
+  "18": "1.5x / 2x",
+  "19": "1.0x att / 2x lim",
+  "20": "2.0x / 3x",
+  "21": "1.0x att / 2x lim",
+  "22": "none",
+  "23": "1.5x / 4x",
+  "24": "1.0x / 3x",
+  "25": "1.5x / 3x (static rule)",
+  "26": "2.0x / 3x",
+  "27": "none",
+  "28": "1.25x / 2x",
+  "29": "2.0x / 3x",
+  "30": "1.5x / 2x",
+  "31": "1.0x / 3x",
+  "32": "1.25x / 3x",
+  "33": "1.25x / 2x",
+  "34": "1.5x / 4x",
+  "35": "1.0x att / 2x lim"
+ }
+}

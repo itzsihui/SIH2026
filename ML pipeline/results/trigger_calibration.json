@@ -1,0 +1,292 @@
+{
+  "stalls": 123,
+  "rule_version": "2026.11-draft2",
+  "rain": {
+    "dates": 701,
+    "first_date": "2017-01-01",
+    "last_date": "2026-11-06",
+    "dates_by_month": {
+      "1": 59,
+      "2": 57,
+      "3": 60,
+      "4": 58,
+      "5": 60,
+      "6": 59,
+      "7": 59,
+      "8": 60,
+      "9": 60,
+      "10": 60,
+      "11": 55,
+      "12": 54
+    },
+    "proxy": "Median of at least two other valid gauges within 5 km of the stall",
+    "bootstrap": {
+      "draws": 2000,
+      "seed": 42,
+      "block": "date, within calendar month"
+    },
+    "comparison": [
+      {
+        "threshold_mm": 70.0,
+        "open_stall_days_with_reading": 81510,
+        "open_stall_days_qualifying": 883,
+        "annualised_trigger_days_per_stall": 3.96,
+        "open_stall_days_using_fallback": 17245,
+        "observed_stall_years": 1228,
+        "observed_stall_years_with_payout": 625,
+        "observed_payout_sgd": 18750.0,
+        "paired_stall_days": 78421,
+        "paired_stall_days_using_fallback": 15500,
+        "paired_counts": {
+          "both": 381,
+          "policy_only": 484,
+          "proxy_only": 104,
+          "neither": 77452
+        },
+        "false_trigger_pct": 55.95,
+        "false_trigger_ci95_pct": [
+          40.29,
+          75.59
+        ],
+        "missed_trigger_pct": 21.44,
+        "missed_trigger_ci95_pct": [
+          11.28,
+          39.64
+        ]
+      },
+      {
+        "threshold_mm": 80.0,
+        "open_stall_days_with_reading": 81510,
+        "open_stall_days_qualifying": 537,
+        "annualised_trigger_days_per_stall": 2.41,
+        "open_stall_days_using_fallback": 17245,
+        "observed_stall_years": 1228,
+        "observed_stall_years_with_payout": 453,
+        "observed_payout_sgd": 13590.0,
+        "paired_stall_days": 78421,
+        "paired_stall_days_using_fallback": 15500,
+        "paired_counts": {
+          "both": 236,
+          "policy_only": 289,
+          "proxy_only": 41,
+          "neither": 77855
+        },
+        "false_trigger_pct": 55.05,
+        "false_trigger_ci95_pct": [
+          33.81,
+          85.08
+        ],
+        "missed_trigger_pct": 14.8,
+        "missed_trigger_ci95_pct": [
+          4.12,
+          40.23
+        ]
+      }
+    ]
+  },
+  "haze": {
+    "first_date": "2015-01-01",
+    "last_date": "2025-12-31",
+    "region_day_coverage_with_prior_day": {
+      "highest_hourly_24hr_psi": 20095,
+      "noon_24hr_psi": 20090,
+      "committed_daily_max_24hr_psi": 20095
+    },
+    "matched_region_days_with_prior_day": 20090,
+    "matched_region_days_where_maxima_differ": 0,
+    "matched_definition_comparison": {
+      "highest_hourly_24hr_psi": [
+        {
+          "cap_sgd": 150.0,
+          "total_payout_sgd": 37530.0,
+          "annual_payout_sgd": {
+            "2015": 18450.0,
+            "2016": 3360.0,
+            "2017": 0.0,
+            "2018": 0.0,
+            "2019": 13890.0,
+            "2020": 0.0,
+            "2021": 0.0,
+            "2022": 0.0,
+            "2023": 1830.0,
+            "2024": 0.0,
+            "2025": 0.0
+          },
+          "paid_stall_days": 1042,
+          "days_with_payout": 17,
+          "stall_years_reaching_money_cap": 176,
+          "largest_payout_day": {
+            "2015-09-11": 7380.0
+          }
+        },
+        {
+          "cap_sgd": 300.0,
+          "total_payout_sgd": 47550.0,
+          "annual_payout_sgd": {
+            "2015": 27180.0,
+            "2016": 3360.0,
+            "2017": 0.0,
+            "2018": 0.0,
+            "2019": 15180.0,
+            "2020": 0.0,
+            "2021": 0.0,
+            "2022": 0.0,
+            "2023": 1830.0,
+            "2024": 0.0,
+            "2025": 0.0
+          },
+          "paid_stall_days": 1251,
+          "days_with_payout": 18,
+          "stall_years_reaching_money_cap": 0,
+          "largest_payout_day": {
+            "2015-09-11": 7380.0
+          }
+        }
+      ],
+      "noon_24hr_psi": [
+        {
+          "cap_sgd": 150.0,
+          "total_payout_sgd": 26130.0,
+          "annual_payout_sgd": {
+            "2015": 18450.0,
+            "2016": 0.0,
+            "2017": 0.0,
+            "2018": 0.0,
+            "2019": 5850.0,
+            "2020": 0.0,
+            "2021": 0.0,
+            "2022": 0.0,
+            "2023": 1830.0,
+            "2024": 0.0,
+            "2025": 0.0
+          },
+          "paid_stall_days": 748,
+          "days_with_payout": 9,
+          "stall_years_reaching_money_cap": 123,
+          "largest_payout_day": {
+            "2015-09-11": 5460.0
+          }
+        },
+        {
+          "cap_sgd": 300.0,
+          "total_payout_sgd": 35610.0,
+          "annual_payout_sgd": {
+            "2015": 27930.0,
+            "2016": 0.0,
+            "2017": 0.0,
+            "2018": 0.0,
+            "2019": 5850.0,
+            "2020": 0.0,
+            "2021": 0.0,
+            "2022": 0.0,
+            "2023": 1830.0,
+            "2024": 0.0,
+            "2025": 0.0
+          },
+          "paid_stall_days": 871,
+          "days_with_payout": 10,
+          "stall_years_reaching_money_cap": 0,
+          "largest_payout_day": {
+            "2015-09-24": 7380.0
+          }
+        }
+      ],
+      "committed_daily_max_24hr_psi": [
+        {
+          "cap_sgd": 150.0,
+          "total_payout_sgd": 37530.0,
+          "annual_payout_sgd": {
+            "2015": 18450.0,
+            "2016": 3360.0,
+            "2017": 0.0,
+            "2018": 0.0,
+            "2019": 13890.0,
+            "2020": 0.0,
+            "2021": 0.0,
+            "2022": 0.0,
+            "2023": 1830.0,
+            "2024": 0.0,
+            "2025": 0.0
+          },
+          "paid_stall_days": 1042,
+          "days_with_payout": 17,
+          "stall_years_reaching_money_cap": 176,
+          "largest_payout_day": {
+            "2015-09-11": 7380.0
+          }
+        },
+        {
+          "cap_sgd": 300.0,
+          "total_payout_sgd": 47550.0,
+          "annual_payout_sgd": {
+            "2015": 27180.0,
+            "2016": 3360.0,
+            "2017": 0.0,
+            "2018": 0.0,
+            "2019": 15180.0,
+            "2020": 0.0,
+            "2021": 0.0,
+            "2022": 0.0,
+            "2023": 1830.0,
+            "2024": 0.0,
+            "2025": 0.0
+          },
+          "paid_stall_days": 1251,
+          "days_with_payout": 18,
+          "stall_years_reaching_money_cap": 0,
+          "largest_payout_day": {
+            "2015-09-11": 7380.0
+          }
+        }
+      ]
+    },
+    "cap_comparison_on_full_committed_series": [
+      {
+        "cap_sgd": 150.0,
+        "total_payout_sgd": 37530.0,
+        "annual_payout_sgd": {
+          "2015": 18450.0,
+          "2016": 3360.0,
+          "2017": 0.0,
+          "2018": 0.0,
+          "2019": 13890.0,
+          "2020": 0.0,
+          "2021": 0.0,
+          "2022": 0.0,
+          "2023": 1830.0,
+          "2024": 0.0,
+          "2025": 0.0
+        },
+        "paid_stall_days": 1042,
+        "days_with_payout": 17,
+        "stall_years_reaching_money_cap": 176,
+        "largest_payout_day": {
+          "2015-09-11": 7380.0
+        }
+      },
+      {
+        "cap_sgd": 300.0,
+        "total_payout_sgd": 47550.0,
+        "annual_payout_sgd": {
+          "2015": 27180.0,
+          "2016": 3360.0,
+          "2017": 0.0,
+          "2018": 0.0,
+          "2019": 15180.0,
+          "2020": 0.0,
+          "2021": 0.0,
+          "2022": 0.0,
+          "2023": 1830.0,
+          "2024": 0.0,
+          "2025": 0.0
+        },
+        "paid_stall_days": 1251,
+        "days_with_payout": 18,
+        "stall_years_reaching_money_cap": 0,
+        "largest_payout_day": {
+          "2015-09-11": 7380.0
+        }
+      }
+    ]
+  }
+}

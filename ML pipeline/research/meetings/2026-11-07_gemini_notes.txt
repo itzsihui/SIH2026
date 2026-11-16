@@ -1,0 +1,1503 @@
+Please rate the new Quick notes tab by taking a short survey.
+
+
+
+
+Meeting Nov 7, 2026 at 20:11 IST
+Nov 7, 2026
+
+Fintech hackathon brainstorming and targeting hawkers for automated insurance via weather
+metrics.
+
+Target Audience Selection for Fintech Solution
+   ●​ Evaluated 3 potential target groups specified in the problem statement for the
+      Singapore market.
+   ●​ Excluded vulnerable households because government insurance already covers
+      residential property risks.
+   ●​ Excluded outdoor platform workers because delivery drivers are adequately protected
+      by major platforms.
+   ●​ Selected micro-enterprises, specifically hawkers, as the primary underserved
+      demographic for insurance coverage.
+
+Insurance Product Concept and Weather-Based Triggers
+   ●​ Designed an insurance model covering business income loss from haze, extreme
+      temperatures, and rainfall.
+   ●​ Utilized simulated instant payment integrations mirroring PayNow functionality to
+      process policy payouts.
+   ●​ Prioritized explainable AI models and simplified user interfaces to accommodate older
+      hawkers.
+
+Project Execution and Development Strategy
+   ●​ Adopted a pre-development strategy to construct core project components before the
+      official hackathon window.
+
+Target demographic selection and scope
+   ●​ Over 6,000 active hawker stalls currently operate across Singapore as of 2024.
+   ●​ Hawkers incur severe financial losses during extreme weather conditions like haze.
+   ●​ Hawkers hold UNESCO heritage status, representing a culturally unique demographic in
+      Singapore.
+   ●​ The project scope targets vulnerable households and SMEs in Singapore as specified.
+Data availability and ML strategy
+   ●​ Climate and weather data are accessible through data.gov and other public platforms.
+   ●​ Smaller ML models will be evaluated and compared against heavier ensemble
+      alternatives.
+   ●​ Weather and haze datasets are accessible via the shared GitHub repository.
+
+Team background and event logistics
+   ●​ Team members advanced through a competitive selection process involving 159
+      student interviews.
+   ●​ Accommodation is arranged at Hotel Waterloo for the team during the event duration.
+
+Next steps
+      ​ [The group] Review Security Ideas: Analyze the cybersecurity and technical document
+        provided by Ankita for inclusion in the project.
+      ​ [The group] Research Target Demographic: Gather secondary data on hawkers to
+        refine the insurance product scope and identify specific insurance gaps.
+      ​ [Pyae Sone, Ankita Sagar] Build Predictive Models: Create AI and machine learning
+        models for weather data analysis and implement hybrid solvers for insurance policy
+        optimization.
+      ​ [ARIEL ONG, Sumit Sanjay Shinde] Implement Payments: Design and simulate the
+        payment integration logic for the proposed insurance product.
+      ​ [Harsh Pandhe] Create Mobile App: Develop the mobile application user interface for
+        product testing and demonstration.
+      ​ [Nancy Srivastava] Prepare Pitch: Draft and refine the project presentation for the
+        judges.
+      ​ [Harsh Pandhe] Create Repository: Establish a GitHub repository for the project.
+        Upload the gathered weather and haze data to facilitate team access.
+      ​ [The group] Prepare Solutions: Draft individual solution proposals for the identified
+        problems. Present these findings during the next meeting to align on the project
+        strategy.
+      ​ [The group] Review Problem Statement: Re-examine the provided problem statement
+        to ensure an in-depth understanding of requirements. Clarify the specific scope and
+        objectives before finalizing the project approach.
+
+
+
+
+Want to see more? View the full notes​
+Tip: You can always access your full notes from the left sidebar.
+You should review Gemini's notes to make sure they're accurate. Get tips and learn how Gemini
+takes notes
+Nov 7, 2026
+
+
+
+Meeting Nov 7, 2026 at 20:11
+IST
+Meeting records    Transcript
+
+
+
+
+Summary
+Fintech hackathon brainstorming and targeting hawkers for automated insurance via
+weather metrics.​
+​
+Initial Insurtech Brainstorming​
+Discussion on automated payouts triggered by environmental thresholds.​
+​
+Target Audience Selection​
+Targeting micro, small, and medium enterprises like hawkers in Singapore.​
+​
+Technical Collaboration Setup​
+Harsh will set up the GitHub repository and upload data.
+
+
+
+
+Decisions
+Needs Further Discussion
+   ●​ Target user category selection strategy The team debated whether to focus
+      specifically on hawkers or address all three provided user categories first,
+      deferring final alignment to the next meeting.
+Aligned
+  ●​ Target audience selection of microenterprises The team aligned to focus
+     their solution on microenterprises and hawkers instead of outdoor platform
+     workers.
+
+  ●​ Development of a mobile application The team agreed to build and deploy a
+     mobile application on the Play Store for the project.
+
+
+
+
+Next steps
+    ​ [The group] Review Security Ideas: Analyze the cybersecurity and technical
+     document provided by Ankita for inclusion in the project.
+    ​ [The group] Research Target Demographic: Gather secondary data on hawkers
+     to refine the insurance product scope and identify specific insurance gaps.
+    ​ [Pyae Sone, Ankita Sagar] Build Predictive Models: Create AI and machine
+     learning models for weather data analysis and implement hybrid solvers for
+     insurance policy optimization.
+    ​ [ARIEL ONG, Sumit Sanjay Shinde] Implement Payments: Design and simulate
+     the payment integration logic for the proposed insurance product.
+    ​ [Harsh Pandhe] Create Mobile App: Develop the mobile application user
+     interface for product testing and demonstration.
+    ​ [Nancy Srivastava] Prepare Pitch: Draft and refine the project presentation for
+     the judges.
+    ​ [Harsh Pandhe] Create Repository: Establish a GitHub repository for the project.
+     Upload the gathered weather and haze data to facilitate team access.
+    ​ [The group] Prepare Solutions: Draft individual solution proposals for the
+     identified problems. Present these findings during the next meeting to align on
+     the project strategy.
+    ​ [The group] Review Problem Statement: Re-examine the provided problem
+     statement to ensure an in-depth understanding of requirements. Clarify the
+     specific scope and objectives before finalizing the project approach.
+Details
+Team Introductions and Educational Backgrounds: Participants introduced their
+academic backgrounds and professional experiences (00:01:52). Sumit Sanjay Shinde
+and ARIEL ONG are final-year computer science and computing students at the
+National University of Singapore, with Sumit co-founding Asian Payment and ARIEL
+bringing blockchain experience and past internships at Streets X, JP Morgan, and
+Shopee (00:19:05). Pyae Sone is a computer science student at the Singapore
+University of Technology and Design with a computer engineering diploma from
+Singapore Polytechnic, a cybersecurity internship at the Land Transport Authority, an
+AI internship at an education startup, and undergraduate research in vision-language
+models (00:21:37). Ankita Sagar is a third-year BTech computer engineering student at
+VJTI Mumbai with experience in machine learning, full-stack development,
+cybersecurity, and blockchain (00:22:47). Nancy Srivastava is a final-year BTech
+Electronics and Communication Engineering student at IDS Dunbar specializing in
+machine learning, artificial intelligence, and website presentation. Harsh Pandhe is a
+robotics and autonomous systems engineer with a background in web and mobile
+development, custom blockchains, algorithmic trading achieving 35 to 40 percent
+returns in Nifty 500, autonomous drones, and an Indian-made drone show startup
+(00:24:42).
+
+
+
+Initial Insurtech and Payment Brainstorming: Harsh Pandhe opened the discussion
+on the fintech hackathon problem statement (00:27:02). Sumit Sanjay Shinde
+proposed monitoring country-level data to automatically trigger instant PayNow
+payouts—Singapore's equivalent to India's UPI—when specific thresholds are breached
+(00:28:11). Pyae Sone suggested an insurance model for delivery riders bundled into
+orders for 8 to 10 cents, triggering daily automated payouts when financial thresholds
+are met (00:30:19). Ankita Sagar recommended using digital twins to test these
+payment systems. Sumit noted that PayNow is not directly accessible on day one,
+requiring simulation during the pitch (00:29:08) (00:31:27).
+
+
+
+Target Audience Selection Strategy: Ankita Sagar questioned whether to target all
+three audience groups or focus on a single one. Pyae Sone and Sumit Sanjay Shinde
+agreed that narrowing the focus ensures a better quality product (00:31:27). Sumit
+explained that outdoor platform workers in Singapore are already largely protected by
+platform companies like Grab, whereas micro, small, and medium enterprises,
+specifically hawkers, neighborhood shops, and home-based businesses, remain the
+most underserved segment (00:35:36).
+
+
+
+
+Environmental Impact and Insurance Gaps: Pyae Sone identified a gap in existing
+insurance policies, noting that environmental factors like haze reduce customer traffic
+for hawkers without providing loss-of-business compensation (00:39:14). ARIEL ONG
+and Sumit Sanjay Shinde discussed contrasting data on haze, noting that while
+Indonesia saw fewer orders during haze, Singapore actually reported an increase in
+food delivery orders (00:40:31).
+
+
+
+Centralized Data-Driven Insurance Layer: Harsh Pandhe proposed creating a
+centralized, data-driven insurance layer utilizing environmental metrics such as
+Pollutant Standards Index thresholds of 100, 150, and 200, temperatures, and rainfall,
+predicted using historical data and weather forecasts to calculate automated
+insurance triggers and premiums (00:41:46). Ankita Sagar added that the system could
+integrate a multi-objective hybrid solver utilizing adaptive local search, robust
+optimization, and parallel computing to handle large-scale simulations and traffic
+(00:44:20).
+Task Allocation and Pre-Hackathon Development Plan: Harsh Pandhe outlined
+team roles, assigning ARIEL ONG and Sumit Sanjay Shinde to payments, Pyae Sone and
+Ankita Sagar to machine learning, Nancy Srivastava to the pitch, and Harsh to
+supporting tasks (00:46:09). Harsh suggested building a complete mobile app and
+launching it via an existing Play Store console account rather than a website to provide
+judges with a tangible product (00:47:10) (00:49:33). Ankita and Nancy agreed, noting
+they develop solutions prior to hackathons—similar to their approach in the Smart
+India Hackathon—and use the 36-hour hackathon window strictly for judge feedback,
+debugging, and prompt adjustments, with Harsh mentioning Claude could be used to
+alter git push histories if necessary (00:48:21).
+
+
+
+Critical Assessment of Platform Worker Insurance Models: ARIEL ONG raised a
+design challenge regarding platform worker insurance, pointing out that Singapore
+experiences year-round heat and rain, delivery demand surges during rainy days due to
+platform rain surge bonuses, and delivery riders continue working through extreme
+weather because they are paid per delivery without paid leave (00:50:39). Sumit Sanjay
+Shinde concurred that platform workers do not stop working during adverse weather,
+whereas hawkers experience reduced business during extreme events (00:52:58).
+
+
+
+Hawker Demographics and Cybersecurity Integration: Sumit Sanjay Shinde
+clarified that Singapore hawker centers consist of large food courts housing
+independent, family-run micro-shops. ARIEL ONG noted that hawker locations differ,
+with non-air-conditioned hawker centers losing more customers during haze
+compared to air-conditioned ones (00:54:22). Ankita Sagar suggested incorporating
+cybersecurity features such as penetration testing, referencing a shared document
+outlining security ideas, which Pyae Sone confirmed experience with (00:56:25).
+
+
+
+Final Selection of Target User Segment: Sumit Sanjay Shinde highlighted that
+hawker demographics skew older and less tech-savvy, necessitating simple user
+interfaces and explainable machine learning models (00:57:47). ARIEL ONG evaluated
+the three target categories—eliminating households due to existing government
+insurance overlap, raising reservations about platform workers due to their high
+earnings during bad weather, and ultimately selecting micro, small, and medium
+enterprises like hawkers. Pyae Sone and the rest of the team expressed agreement
+with focusing on this third category (00:59:23).
+
+
+
+Target Audience and Selection of Hawkers in Singapore: The team discussed
+identifying vulnerable groups for insurance, noting that while app drivers are covered,
+hawkers lack protection. Sumit Sanjay Shinde suggested that hawkers require
+government mandates or backing to adopt solutions (01:00:31). Harsh Pandhe inquired
+about the number of hawkers, prompting Sumit to state that there are over 6,000
+stalls, contrasted with Harsh's mention of 30,000 drivers. ARIEL ONG argued that
+hawkers need insurance most because extreme weather events like haze severely
+impact dine-in and delivery losses, making impact more important than sheer quantity
+(01:01:40). Harsh subsequently searched Google and referenced a figure of 14,000.
+The team reached a consensus to prioritize an impact-focused approach targeting
+hawkers (01:02:57).
+
+
+
+Problem Statement Scope and Competitor Analysis: The discussion shifted to
+whether the target scope was limited to Singapore or included India, where millions of
+hawkers exist. Harsh Pandhe asked Sumit Sanjay Shinde to verify the problem
+statement parameters, and Ankita Sagar along with ARIEL ONG confirmed that the
+official problem statement explicitly focuses on SMEs and vulnerable households in
+Singapore (01:04:39). Sumit added that hawkers are uniquely protected under
+UNESCO heritage culture in Singapore. Ankita suggested evaluating competitors to
+ensure the team develops a distinct and unique approach. The consensus was to
+confine the project's scope strictly to Singapore while maintaining a competitive
+differentiation (01:06:25).
+
+
+
+
+Data Availability and Phased Category Approach: Harsh Pandhe proposed
+expanding the horizon beyond the three provided user categories, but Nancy
+Srivastava expressed their preference for focusing on the three baseline categories
+first to meet baseline expectations before expanding. Ankita Sagar agreed to focus on
+one category at a time to ensure proper depth. Addressing data availability, Nancy
+inquired about climate data accessibility on GIS or other platforms, and Harsh
+confirmed that decade-old data is easily obtainable. Ankita noted that data is widely
+available from the provided data sets, with Sumit Sanjay Shinde mentioning Singapore's
+government data portal, data.gov. The team agreed to sequentially target the provided
+categories using readily available government climate data (01:07:40).
+
+
+
+Machine Learning Strategy and Model Comparison: Ankita Sagar raised the
+problem that standard weather prediction and forecasting models are common and
+lack uniqueness for the hackathon. Nancy Srivastava proposed testing smaller models
+alongside ensembles and creating a comprehensive model comparison table to clearly
+demonstrate performance differences, advantages, and drawbacks compared to
+other teams (01:09:03). Sumit Sanjay Shinde summarized the technical direction to
+include unique approaches beyond weather forecasting and rigorous model testing.
+ARIEL ONG emphasized diving deep into the core problem to ensure the solution's
+quality (01:10:32). The consensus was to avoid generic weather forecasting by
+implementing diverse model testing and comparative analysis (01:09:03).
+
+
+
+Problem Requirements Compliance and Meeting Logistics: Ankita Sagar stressed
+that addressing every single point explicitly written in the problem statement must be
+the foremost priority for the team. Pyae Sone inquired about the scheduling of the
+next meeting, prompting Ankita to suggest the day after tomorrow due to Diwali, while
+Nancy Srivastava noted an upcoming fintech celebration schedule on the 18th
+(01:11:30). Harsh Pandhe proposed meeting on Monday with solution documents, but
+ARIEL ONG and Pyae Sone noted that Monday is a public holiday in Singapore and
+schedules are packed. The consensus was to coordinate the next meeting time flexibly
+via WhatsApp rather than forcing a Monday session (01:16:20).
+
+
+
+Hackathon Background and Event Logistics: Participants discussed travel
+itineraries and flight tickets to Delhi and Bombay (01:13:09). Sumit Sanjay Shinde
+inquired about the selection process, and Ankita Sagar explained that their team won
+the Smart India Hackathon last year, submitted a pitch deck form, and advanced
+through interviews out of 159 selected students to reach the 60 finalists for the
+Singapore India Hackathon. Harsh Pandhe noted that the journey took two years. Sumit
+highlighted that the trip is fully sponsored, covering flights and accommodations
+(01:14:23). Ankita confirmed the sponsorship details and stated they are staying at
+Hotel Waterloo on Waterloo Street in the Bugis area, which ARIEL ONG noted is a
+four-star hotel. Nancy Srivastava advised rereading the problem statement thoroughly
+before commencing solution development (01:15:19).
+
+
+
+Technical Collaboration and Repository Setup: Harsh Pandhe offered to upload
+weather and haze data to a GitHub repository to facilitate team collaboration. Ankita
+Sagar noted that a GitHub repository is typically used for implementation after the
+solution phase, but agreed that Harsh should create the repository and push the data
+so team members can fetch it. Sumit Sanjay Shinde and ARIEL ONG expressed
+gratitude to Harsh for volunteering. The consensus was that Harsh will set up the
+GitHub repository and upload the relevant data sets for the team (01:17:42).
+
+
+
+
+You should review Gemini's notes to make sure they're accurate. Get tips and learn
+how Gemini takes notes
+How is the quality of these specific notes? Take a short survey to let us know your
+feedback, including how helpful the notes were for your needs.
+Nov 7, 2026
+
+
+
+Meeting Nov 7, 2026 at 20:11
+IST - Transcript
+00:01:52
+
+Harsh Pandhe: Hello. Hello. Can you hear me? Hello. Hello. Can you hear me? Hi.
+Pyae Sone: Hello. Can you hear me?
+Harsh Pandhe: Yeah, I can do that. Mhm. Yeah, I'm just waiting for them.
+Pyae Sone: Yep.
+Sumit Sanjay Shinde: Hi guys.
+Pyae Sone: Hello.
+Sumit Sanjay Shinde: How's it going?
+Pyae Sone: Hey, good. How about you?
+Sumit Sanjay Shinde: Good, good, good, good. It's one of the It's one of the last
+weeks for school now. So,
+Pyae Sone: All right.
+Sumit Sanjay Shinde: yeah. If I'm not wrong, it's your first semester in SUTD, right?
+Pyae Sone: Yeah.
+Sumit Sanjay Shinde: Cool.
+Pyae Sone: I from
+Sumit Sanjay Shinde: So ARIEL and I we are final year at N US. Yeah. How has the first
+semester been?
+Pyae Sone: It's okay.
+Sumit Sanjay Shinde: It's okay.
+Pyae Sone: It's like it's like um it's not really great. It's like past fail.
+Sumit Sanjay Shinde: Okay,
+Pyae Sone: So just kind of chilling for this
+
+
+
+
+00:19:05
+
+Sumit Sanjay Shinde: that's good. That's good. Cool. I guess we just wait for more.
+Pyae Sone: unit.
+Sumit Sanjay Shinde: Sorry. Did you say something?
+Pyae Sone: Are you from computer science or
+Sumit Sanjay Shinde: Oh, yeah. As well. Maybe we can wait for another two minutes
+or something. Yo, he is Nancy going to join us.
+Harsh Pandhe: Yeah, I Nancy is joining right now and Ankita will do it
+Sumit Sanjay Shinde: Okay.
+Harsh Pandhe: shortly.
+Sumit Sanjay Shinde: Sure. Sure. No worries.
+Harsh Pandhe: Yeah.
+Sumit Sanjay Shinde: All right, full team here. there.
+Harsh Pandhe: Yeah. So,
+Pyae Sone: So st introduction
+Sumit Sanjay Shinde: Yep, we should do that. Awesome.
+Harsh Pandhe: okay. So, go first, I guess.
+Sumit Sanjay Shinde: Okay, sure. Then I'm submit. I'm in my final year at National
+University of Singapore studying computer science. Um I guess that's my education on
+on on the side as well.
+
+
+
+
+00:21:37
+
+Sumit Sanjay Shinde: I I'm co-ounding a company. It's called Asian Payment. We can
+definitely talk about it sometime later on as well. Other than that, um I'm just
+participating in this hackathon because I've been doing hackathons for a while and I
+think this is going to be one of my last few ones. So I'm going to be approaching
+retirement soon. Yeah. That's all about me. Maybe I'll pass the ball to B. How do you
+pronounce your name? Bas.
+Pyae Sone: Uh it's diesel
+Sumit Sanjay Shinde: It's gonna take me a while. Okay.
+Pyae Sone: and uh three uh guys I'm diesel
+Sumit Sanjay Shinde: Go ahead.
+Pyae Sone: uh doing computer science at Singapore University of Technology and
+before that I was uh I graduated from Singapore poly is uh computer computer
+engineering And uh yeah, professionally I had a cyber security internship at the land
+transport authority LT Singapore and before SCDD started I work uh I intern as an AI
+engineer as at an education startup and currently I'm doing undergraduate research or
+like vision language models.
+
+
+
+
+00:22:47
+
+Pyae Sone: So yeah, I mostly work with uh computer vision vision language models I
+say
+ARIEL ONG: That's quite interesting.
+Sumit Sanjay Shinde: We're going to ask you about your research for sure.
+Pyae Sone: there it's early stage so you know
+Sumit Sanjay Shinde: That's very That's cool. That's cool.
+ARIEL ONG: Okay, I can go next. So, I'm a I'm a final year computing student at N US.
+Um I been in the blockchain industry for quite a while already. So currently I'm interning
+for streets X which is responsible for the XS SGD coin. Um yeah previously I was at JP
+Morgan um Essententral Shopee. So I have a computing internship. I also have business
+internships before. So yeah I would say more allrounded. Yeah,
+Harsh Pandhe: All right.
+ARIEL ONG: that's all. I'll pass the time to Ankita.
+Harsh Pandhe: Excellent.
+Ankita Sagar: Hello, myself Ankita. I'm currently in my third year doing BTE in
+computer engineering at VJTI Mumbai. So uh yeah that's about the education and uh
+talking about um I love doing a IML full stack and uh like I've tried a lot of different
+things also in software engineering like let's say little bit of cyber security little bit of
+blockchain trying a lot of new technologies learning of
+
+
+
+
+00:24:42
+
+Nancy Srivastava: Uh I'll go next. Uh hi everyone. I'm Nasta. I'm pursuing Bachelor of
+Technology Electronics and Communication Engineering at IDS in Dunbar. I'm a final
+year here and before this had participated in several of the hackathons and uh my uh
+expertise lies in machine learning and artificial intelligence. I do love making uh
+websites hosted uh hosting them and uh I also love presenting the ideas. So I mostly go
+on the part of presenting things.
+Harsh Pandhe: Cool.
+Nancy Srivastava: Yeah, that's it.
+Harsh Pandhe: I guess I'm the last one now.
+Sumit Sanjay Shinde: the man himself.
+Harsh Pandhe: Should I give my intro or have I not? Yeah. So, my myself Harsh and I'm
+actually from more into hardware side. I'm an robotics and autonomous uh systems uh
+engineer and um throughout my journey I have uh transitioned from web development
+to mobile development mobile app then I switched to blockchain and I made my own
+custom blockchains then I got shifted to uh you can say algo trading and stuff where I
+used to find momentums in markets and uh you can say I got uh in nifty 500 I around
+40 to 35% of returns in a single year fully autonomous.
+
+
+
+
+00:26:13
+Harsh Pandhe: Then I started to shift my career from this software thing to hardware
+parts and I made autonomous drones and currently I'm working on my own startup.
+ARIEL ONG: Amazing.
+Harsh Pandhe: It's like a drone show thing but fully made in India. So guess all about
+me.
+Pyae Sone: Eat And
+Sumit Sanjay Shinde: Sounds awesome.
+Harsh Pandhe: Cool. Yeah
+ARIEL ONG: Yeah.
+Sumit Sanjay Shinde: Just a question to to the because I know that Harsh speaks
+Maratia but the other two. Do you guys speak Marati as well or Okay.
+Ankita Sagar: No, no, I speak Hindi.
+Sumit Sanjay Shinde: Okay.
+Nancy Srivastava: Where are you?
+Sumit Sanjay Shinde: Okay. Okay. Cool. I speak Hindi as well and Marati as well. So we
+have our own secret language going on.
+Ankita Sagar: I can understand variet. So if you speak in vari uh I do I do understand.
+Sumit Sanjay Shinde: Okay.
+Pyae Sone: heat.
+Sumit Sanjay Shinde: So no secret language between us anymore.
+Ankita Sagar: No, no, no.
+Harsh Pandhe: guys.
+Ankita Sagar: You cannot have that.
+
+
+
+
+00:27:02
+
+Sumit Sanjay Shinde: Cool.
+Ankita Sagar: And I can partially speak also like I can try speaking. It's not that
+Sumit Sanjay Shinde: Then yeah, I think it's very similar. So shouldn't be an issue either.
+Very cool. Okay. Nice. Very nice to meet all of you. It's awesome to know about the
+different things that you guys are doing. Yep.
+Harsh Pandhe: So now coming back to the main agenda today the five tech problem
+statement. So uh the main thing which we going to solve is we are going to try to make
+some product out of here and I guess throughout uh all these days you might have
+searched on your own what all things we can do in fintech or in short tech and like you
+all can just start popping some ideas about what all we can do and what all you have
+researched so that's how we can begin to find
+ARIEL ONG: Sure.
+Harsh Pandhe: something. So, who wants to do
+Pyae Sone: I s to share some ideas.
+
+
+
+
+00:28:11
+
+Pyae Sone: Do you want to go over over there?
+Sumit Sanjay Shinde: Yeah, I mean it's just something that I just threw onto the floor.
+It's quite simple because I think Singapore shares a lot of data and it shares data about
+the entire country. So what the idea was is it's basically just monitoring when things go
+beyond a certain point and moment it goes beyond a certain point it's going to trigger
+a pay now payout. So pay now is like the UPI version of what India has in UPI. So
+Singapore has pay now if I'm not wrong the UPI QR codes work on pay now as well. I
+think they connected the reals like two years back. You can you guys can try it when
+you're here. I think that's simply what I said.
+Pyae Sone: I also
+Sumit Sanjay Shinde: Yep.
+Harsh Pandhe: So is the payment instantly then or does it take like several hours to
+actually process the payments?
+Sumit Sanjay Shinde: It's instant.
+Harsh Pandhe: Okay. So,
+Pyae Sone: Oh yeah.
+00:29:08
+
+Harsh Pandhe: do they have an opensource like a developer doc or something for this
+or
+Sumit Sanjay Shinde: I think they do, but um it's you cannot just plug it in directly on
+day one. We probably have to stimulate simulate the payments. You got something to
+say if I pronounce your name.
+Ankita Sagar: that we can do using a like if we have a digital twin kind of a thing then
+of course we can
+ARIEL ONG: Sure.
+Ankita Sagar: do that and test all the Perfect.
+Sumit Sanjay Shinde: Yep. That will probably be the way to go.
+Harsh Pandhe: like when we did the Indian part of this and like digital verification and
+all and adding your own made self you can say payment systems. It took a lot of uh
+help from the government actually that you have to take permissions, you have to
+make a government authorized found. So that all like riddles came in uh between to
+make actually something like that in India. So do we have to go through the same thing
+in Singapore like for this pay now or is it just easy anyone can sign up
+
+
+
+
+00:30:19
+
+Sumit Sanjay Shinde: That's a great question. Let me just search it up really quickly
+and bas you can say what you wanted to say.
+Harsh Pandhe: again.
+Pyae Sone: Uh I was just trying to say I have a similar idea but it's for like delivery riders
+instead of uh hog bus stores. The idea is that uh the riders uh they they they don't have
+to buy anything. they don't have to pay for anything and uh the cover the insurance
+cover will come bundle with the orders. So when they accept an order uh they will
+include the insurance covering they don't have to pay for it but the the platform uh will
+pay for like uh 8 cents or 10 cents or something matter then uh or like your idea when
+when uh
+Harsh Pandhe: Thank you.
+Pyae Sone: like like a FS3 reaches a certain thresh uh threshold it will automatically uh
+pay out to the radio on the same day. That's kind of my idea.
+ARIEL ONG: That's quite intuitive.
+Ankita Sagar: Okay. So,
+ARIEL ONG: Yeah.
+Ankita Sagar: okay. So, one question that I had is like we have three target audience,
+right?
+
+
+
+
+00:31:27
+
+Ankita Sagar: Uh mentioned in the problem statement. So like uh if we are targeting
+all three of or like I think that we should do most of them because we have time in hand
+we can start from today itself let's say and we can target all of them or do you think
+that we should focus upon any one of the target audience?
+Pyae Sone: I think we should narrow down and do it very well instead of targeting
+everybody. That's what I feel like defense team.
+Ankita Sagar: because I think that's the first thing that we should do because then we
+can think uh in what direction we should like go about
+Pyae Sone: Yeah, like initially exploring. You mean
+Sumit Sanjay Shinde: Okay. Um, just hold that thought. So, pay now it's not directly
+accessible to the public, but you can definitely like just simulate say that you're going
+to have pay now payouts during the pitch or whatever and it should be fine. And as for
+the question of who to target, should we just name who our potential target could be?
+
+
+
+
+00:32:44
+Sumit Sanjay Shinde: For instance, one is obviously like hawkers, the others are
+rapiders as well. Who are the other potential audiences that we're looking at?
+ARIEL ONG: households in Scott.
+Ankita Sagar: According to according to the problem statement we have outdoor and
+platform
+ARIEL ONG: Yes, sir.
+Ankita Sagar: workers we havememes and vulnerable households.
+ARIEL ONG: All right.
+Ankita Sagar: So like if we want then we can focus upon outdoor and platform
+workers because that is what delivery riders and everybody come into.
+Sumit Sanjay Shinde: I think that makes sense. Yep. Yeah. I think we should target just
+one of them because if you try and target everyone, we just just end up not catching
+anyone else. So let me just the outdoor platform.
+Pyae Sone: I
+Sumit Sanjay Shinde: Yep. Or basically we just target whoever we can build a full
+product for. You know if you if you can't build if we end up not building anything for
+that target group it's probably not a good target group. So we can probably choose the
+outdoor platform workers for now and then see what we could build for them and then
+if there is something substantial that we can build then we can just proceed with
+building something for them.
+
+
+
+
+00:34:18
+
+Ankita Sagar: We can have a expans like a con concept of expansion for the others
+and mainly built for the uh first one let's say the outdoor workers.
+Sumit Sanjay Shinde: Got it. Yep. So we basically have like this main product which is
+for these people but if you want to extend it to all these other groups we can do it
+easily. Like that's what you are saying right? Yeah. Okay. Makes sense.
+ARIEL ONG: But can we consider estimates also because I think um they have their
+own case study points. Um like for example the smart days 360 that income has it was
+for SMS. Yeah. And I think these three different groups if you want to make solution
+they they will be very different for each group. So if you like create a solution for just
+one group I don't think it's easily extendable to the other two groups.
+Sumit Sanjay Shinde: Okay, let me just give a bit of context for for Singapore, right?
+So for outdoor amplifers, of course in India, you have Blinket, you have Rapido, you
+have all those applications.
+
+
+
+
+00:35:36
+
+Sumit Sanjay Shinde: In Singapore, we also have Grab, which is the version of I forgot
+what it's called. Zumato. Yeah. And then in terms of which group within these three are
+the most underserved, I would say it's probably hawkers inmemes. against. Because I
+have heard of Grab itself. Grabb they're providing like insurance, they're providing help
+for their own platform workers. So people who are driving, people who are delivering
+food, they are being covered under Grab themselves and Singapore has this thing
+going on. But formemes especially hawkers or homebased businesses and
+neighborhood shops I will be honest I haven't really heard too much help given to them
+from the government or from anyone. So I think if we want to look at who's the most
+underserved I would saymemes will be the most underserved because outdoor
+perform workers are protected currently by grabb themselves. Let's just see context
+for Singaporean context. You guys have any questions about like Singapore context?
+Because I think this is very Singapore focused.
+
+
+
+
+00:36:52
+
+Harsh Pandhe: Mhm.
+Sumit Sanjay Shinde: Yeah.
+ARIEL ONG: Yeah.
+Nancy Srivastava: Uh but it's something
+Sumit Sanjay Shinde: Wait. Sorry. Did anyone Yeah.
+Pyae Sone: There's the lighting up there.
+Nancy Srivastava: Let's
+ARIEL ONG: Turn in and see her breaking up.
+Harsh Pandhe: Sorry.
+Nancy Srivastava: see.
+ARIEL ONG: I didn't catch what you say because I think your your voice is breaking up.
+Nancy Srivastava: Okay.
+Ankita Sagar: You can switch off your video and then maybe try to speak.
+Harsh Pandhe: It is.
+Sumit Sanjay Shinde: Okay, she's going to type it up. By the way, have you guys ever
+have you guys came to Singapore before? I think some of you were winners from last
+year.
+Harsh Pandhe: Yeah, all of us are winners from last year.
+Sumit Sanjay Shinde: Winners here.
+Ankita Sagar: Smart India hackathon.
+Sumit Sanjay Shinde: Smart hackathon. So in smart hackathon like is it very in focus
+or how how do they work?
+Ankita Sagar: That's very India that's a ministry focused so every ministry has their
+own problem statement so it's ministry focus and India focus ministry is India focus so
+yeah
+
+
+
+
+00:39:14
+
+Sumit Sanjay Shinde: The revenue model of insurance companies that I think it's
+pretty similar to what there is globally. So you pay like monthly and then when stuff
+happens you get paid. Of course you have to prove that stuff actually happens and like
+all the other insurance companies in the world they are very they suck at giving out
+payouts you know. So it's the same situation everywhere. It's the same revenue model
+as the world.
+Pyae Sone: I think the issue is that uh current insuranceances um they they don't cover
+like for example um ha stores like they do have some kind of insurance that covers like
+damages uh in case of a flood or something like that but uh let's Hey, there's a haze and
+people don't go out and people don't go to eat. They don't have business. There's no
+really uh any insurance that covers something like that. Uh for also for like uh graph
+drivers, right? They do cover like injuries and stuff. But let's say uh the weather is so
+bad, you don't get any orders like you uh for these workers.
+
+
+
+
+00:40:31
+
+Pyae Sone: Uh if they don't get orders, they lose income because they're not being
+paid by uh you know salary monthly. they're being paid by the orders they make. So
+they're kind of losing incomes. So there's no really insurance that cover for uh loss of
+business for like that and stuff. So that's a gap that we can come in to fill a tank.
+ARIEL ONG: I would think it's the opposite like during haste less people would want to
+go out to buy food for themselves. So this is when maybe deliveries would go up but
+it's the driver's health that is as stick. Yeah, that's my
+Pyae Sone: There could be that could be possible. So yeah,
+Sumit Sanjay Shinde: Yeah, that's a very interesting thing because in Indonesia, you
+know, that's because that's where the haze is coming from, right? It's coming from
+Indonesia. So, in Indonesia, Grab reported fewer orders, but in Singapore, it reported
+an increase in orders. So, yeah, that's quite interesting interesting to see.
+Pyae Sone: Thank you.
+
+
+
+
+00:41:46
+
+Sumit Sanjay Shinde: But let's agree on the
+ARIEL ONG: Do you know the reason?
+Harsh Pandhe: Okay. Um I have a different way of thinking like all of this like if I take by
+the numbers. Now let's assume the haze. This is calculated in psi. Okay. And we have
+three numbers 100, 150 and 200. Okay. And for each that number there should be
+some kind of trigger which will say that I will um this number will trigger this this much
+amount of you know um insurance amount or something like for this week or for this
+whole month or something. And the way we can predict it is by taking the data from
+past years and also from the forecast of something of weather. Uh if we take uh two of
+these numbers, we can help this insurance thing to be simplified for the companies
+based on their triggers. They will have to make sure that they have uh uh able to take
+that much premium too. And now this I'm only talking in sense of haze.
+
+
+
+
+00:42:57
+
+Harsh Pandhe: You can also take it for temperatures like 30° 31° 32 33. So based on the
+temperatures the amount of insurance can be also be calculated then this can also be
+covered for rainfalls too. So if you look in this way we can actually help everyone who is
+taking insurance. But based on the data we collect for how many it went bouncer or
+how many it went into direct
+Sumit Sanjay Shinde: Okay, I understand what you're trying to say. So it's basically just
+one big layer and this layer is very datadriven like you have all these different data
+sources and then you sort of calculate the past and the future forecasts and then
+afterwards this model can be applied to grab drivers it can be applied to hawker
+centers it can be applied to any applications out there that's what you're saying
+Harsh Pandhe: Yes,
+Sumit Sanjay Shinde: Yeah.
+Harsh Pandhe: I did this uh same thing for haze and uh I like calculated the haze thing
+and that I send it on the group. I can maybe do again all of this for rainfall and other
+patterns too.
+
+
+
+
+00:44:20
+Pyae Sone: What?
+Harsh Pandhe: So in this way we can make an smart
+Sumit Sanjay Shinde: Heat.
+Harsh Pandhe: layer in middle who can take decisions
+Ankita Sagar: Also besides uh the decision part using a IML we can have a solver
+maybe uh a multiobjective hybrid solver that uses multiple algorithms maybe adaptive
+local search robust optimizations and that could help us in choosing better in insurance
+policies and everything to them and whatever fits well also the parallel computing
+aspect that all these optimizations that I'm talking about they can be uh like assisted by
+parallel computing so large scale simulations and uh the traffic that comes in can be uh
+addressed Better.
+Sumit Sanjay Shinde: Sounds good. Sounds good. Um yeah, I think I think you guys
+are the ML experts. So you guys will probably be focusing on this part. Okay. Building
+the model and building the calculative and predictive models, right? Cool. Cool.
+Harsh Pandhe: The way I look it is like Ariel and Sumit can work on the payment part.
+
+
+
+
+00:46:09
+
+Harsh Pandhe: Uh Pi and Ankita can work on this ML part and I can just hang and
+Nancy can work on the pitch because she's a founder.
+Sumit Sanjay Shinde: Hey,
+Harsh Pandhe: Sure.
+Sumit Sanjay Shinde: I can help you guys bring coffee as well. You know,
+Ankita Sagar: Then I can also do
+Sumit Sanjay Shinde: I'll make it and and you can deliver it.
+Ankita Sagar: I can make tea also. I can make coffee also.
+Sumit Sanjay Shinde: I prefer
+Harsh Pandhe: I can learn how to make Dono coffee for you.
+Ankita Sagar: I've learned already in lockdown.
+Sumit Sanjay Shinde: in co, right? Yes. Crazy times. Yeah. Cool. I think I think I think
+that sounds pretty cool. Ariel or Pon, you sorry. I can I can you teach me how to
+pronounce your name once again?
+Harsh Pandhe: I think
+Sumit Sanjay Shinde: P.
+Pyae Sone: All Uh, it's pink.
+Sumit Sanjay Shinde: P.
+Pyae Sone: Yeah,
+Sumit Sanjay Shinde: Po. Okay, I'm getting there.
+
+
+
+
+00:47:10
+
+Sumit Sanjay Shinde: I'll get there eventually. Okay.
+ARIEL ONG: P on
+Sumit Sanjay Shinde: Paso.
+Ankita Sagar: You don't want to
+Sumit Sanjay Shinde: And which country are you originally from? Or are you born in
+Singapore?
+Pyae Sone: uh, I'm from Yema.
+ARIEL ONG: me.
+Sumit Sanjay Shinde: Cool. Cool. That's awesome.
+Pyae Sone: Yeah.
+Sumit Sanjay Shinde: Okay. I think I think we've got a pretty cool direction that we're
+going into. And is everyone okay with like the breakdown of task or roles that Harsh
+gave us?
+Harsh Pandhe: Okay, I have more suggestions. Actually, I have thought for this the
+whole day. What we can do is we can literally launch a mobile app. And you can not just
+solve ML and just make an website. We can literally launch a mobile app. I have an
+console account. We can launch it to the play store and let them install it and test it on
+their own. And we can make some really good, you know, classy UI or something using
+material UI and all.
+
+
+
+
+00:48:21
+
+Harsh Pandhe: And um we can actually deliver a finished product if we start working
+early rather than that end 36 hours. And uh yeah.
+Sumit Sanjay Shinde: I I think that I'm
+Ankita Sagar: According to according to me the 36 hours is just for just for us to listen
+to the judges and implement all the changes that they suggest us. Um like before the
+hackathon only we should be developing most of our uh
+Nancy Srivastava: Agreed.
+Sumit Sanjay Shinde: Sure. But if if this is like any other hackathon that I went to,
+usually they will check whether or not our pushes are within the 36 hours or not. Like
+Yeah.
+Harsh Pandhe: Um, we can manage We have done it before.
+Sumit Sanjay Shinde: We just push it directly. Yeah.
+Ankita Sagar: That that can be that can easily be altered
+Sumit Sanjay Shinde: Yeah. Yeah. I understand. Yeah.
+Harsh Pandhe: We can literally tell Claude to make it look normal.
+Sumit Sanjay Shinde: Yeah.
+Ankita Sagar: because that is how we work in smart hackathon as well.
+
+
+
+
+00:49:33
+
+Ankita Sagar: We actually built our whole solution beforehand. Only the AI AI models
+were also built on our collab notebooks. We just had to pick it up, put it there and we
+were all ready. Uh only when the judges came, they were like all the changes that they
+suggested and we just added that. That's it.
+Sumit Sanjay Shinde: Yeah,
+Ankita Sagar: We worked one week before the hackathon
+Sumit Sanjay Shinde: the 36 hours are just for networking and coffee
+Ankita Sagar: and debugging because the bugs are present everywhere.
+Pyae Sone: This is
+Sumit Sanjay Shinde: debugging.
+ARIEL ONG: Hey,
+Sumit Sanjay Shinde: Yep.
+Harsh Pandhe: Uh, you mean prompting? thing.
+Ankita Sagar: Yes.
+Harsh Pandhe: Okay. Yeah.
+ARIEL ONG: you should Yeah.
+Harsh Pandhe: So, what we thought is this website thing is not that good to represent
+something and if we take this Android approach or like a mobile approach, it can
+literally be given into their hands to test or feel it on their own. So
+Nancy Srivastava: Will we be allowed to host it on Play Store?
+
+
+
+
+00:50:39
+
+Nancy Srivastava: I think that cost something.
+Harsh Pandhe: no, I have my own account.
+Nancy Srivastava: Okay.
+Harsh Pandhe: It's not a big deal.
+Nancy Srivastava: Okay then.
+Sumit Sanjay Shinde: You have something to say.
+ARIEL ONG: Yeah, actually I have questions about the problem statement because in
+Singapore we
+Harsh Pandhe: Okay.
+ARIEL ONG: we are hot throughout the year and we also have rain throughout the
+year. So actually during rain the demand for food delivery goes up and actually there's
+like big jump during um rainy days because like pro um delivery services like food
+panda they have rain such bonuses to keep riders on the road. Then even during very
+sunny days where the heat is maybe higher than usual, riders still push through. So like
+um the drivers do not stop because they are paid per delivery. Um they don't have paid
+rest or they don't have sick leave. So stopping means they lose income. Then this
+creates a design problem for us because as insurance company we we want them to
+stop working when when the weather gets too extreme, right?
+
+
+
+
+00:51:50
+
+ARIEL ONG: But in Singapore, they don't seem to stop working even when it's raining,
+even when it's too hot. So, what can we do in that aspect? Do you see where where I'm
+coming from? Yeah.
+Harsh Pandhe: This happens in India too. Like when we order something and it's
+raining,
+ARIEL ONG: Yeah.
+Harsh Pandhe: the app just says the driver is coming in rain. You have to pay extra or
+like you have to wait for them. So I don't know how that they don't stop taking orders.
+It's like a common thing. But I don't know what happens in the insurance part of that.
+ARIEL ONG: Yeah, it's a problem.
+Sumit Sanjay Shinde: Correct. Cuz from the insurance side, we are saving that when
+when things happen, they they just they they work less. But it's the opposite. But the
+people if if okay, that's for platform workers, right? But for hawkers, if I'm not wrong,
+they tend to work lesser because they tend to get lesser orders.
+
+
+
+
+00:52:58
+Sumit Sanjay Shinde: So in order to solve that issue, we might just zoom in a bit more.
+Like if we if we had to I might have to back my hawker data.
+Pyae Sone: Are we planning to do some kind of research? Oh, that's okay. So,
+interviews also.
+Sumit Sanjay Shinde: probably secondary research. Not really primary research.
+ARIEL ONG: Yeah. From articles, news first. Then if we don't have the data we need,
+then we can go for primary research.
+Sumit Sanjay Shinde: Yeah, we just go downstairs and ask them.
+ARIEL ONG: Yeah.
+Sumit Sanjay Shinde: Yeah.
+Pyae Sone: You know is are there hawkers like the the fall like varies quite a lot
+depending on the hog ground.
+Sumit Sanjay Shinde: That's true as well. Yeah. Because I think from from past
+experiences, every time there's any event happening, for instance, if there's haze or if
+there is COVID or whatever, the hawkers are always the ones who are or or the
+neighborhood shops and hawkers. They're always the ones who are the most affected.
+
+
+
+
+00:54:22
+
+Pyae Sone: That's true.
+Sumit Sanjay Shinde: Yeah.
+ARIEL ONG: I think hawkers also there's different types. There's hawkers in air
+conditioned place versus hawkers in non air conditioned place. So if there's haze,
+people would choose to go to air conditioned place to eat, which means that you know
+those hawkers that just have fans, they will lose customers. Just my research, right?
+Sumit Sanjay Shinde: Wait, by the way, do you guys know what hawkers are?
+Pyae Sone: King.
+Sumit Sanjay Shinde: Like we're throwing these words around.
+ARIEL ONG: Oh yeah, sorry.
+Sumit Sanjay Shinde: So in in Singapore, we have this things called hawker centers.
+They're basically like giant food courts and Yeah.
+Pyae Sone: Yeah.
+Harsh Pandhe: Mhm.
+ARIEL ONG: Yeah.
+Sumit Sanjay Shinde: of individual shops. And then basically each shop, we call them
+one hawker. Yeah.
+Pyae Sone: Thank you.
+Harsh Pandhe: So the delivery uh people of these hawker centers are called like
+hawkers.
+Sumit Sanjay Shinde: Uh no no. So the chefs themselves, the owners of this, so on
+one end you have restaurants.
+
+
+
+
+00:55:23
+
+Sumit Sanjay Shinde: The restaurants are like owned by are more richer. They have
+more money and maybe they have more employees.
+Harsh Pandhe: Okay. So this is like dhavas in India we say da.
+Sumit Sanjay Shinde: Something like kavas. Davas. Yeah.
+Harsh Pandhe: Yeah.
+Sumit Sanjay Shinde: Something like tabas.
+Harsh Pandhe: But a collection of them are in a single place.
+Sumit Sanjay Shinde: Correct.
+Harsh Pandhe: Right.
+Sumit Sanjay Shinde: Yes. Yeah. So,
+Harsh Pandhe: Mhm.
+Sumit Sanjay Shinde: it's like family to family or there's like one or two people running
+the thing. They're very small and I think most of them are not on they're not on Grab or
+whatever. Back check that again. But I think that's what's the case cuz I think only
+restaurants mostly restaurants are on Grab buters are not only some are not everyone.
+Yeah.
+Ankita Sagar: also that I was thinking that in whatever solution that we build we should
+especially add some cyber security features because security is foremost thing like I
+have
+
+
+
+
+00:56:25
+
+Harsh Pandhe: I have something.
+Ankita Sagar: sent you a doc on the group. It contains a lot of my ideas that I think
+that we should do. So you can just go through it. There are four five things that we can
+do in cyber security about u the solver thing also uh parallel computing also like AI uh
+AI agents and also the a IML models that I think that might work for the solution. Okay.
+ARIEL ONG: It's good to have a cyber security person on board.
+Pyae Sone: Just rip.
+ARIEL ONG: That's good. That's good. Yeah.
+Sumit Sanjay Shinde: Okay. So you see your cyber security.
+Pyae Sone: Yes. Uh I did uh penetration testing.
+Sumit Sanjay Shinde: Oh, Pentest. Nice. Okay.
+ARIEL ONG: That's important.
+Sumit Sanjay Shinde: Yeah. Superb. Oh, and another thing to note about the
+demographics in Singapore. So, most of the hawkers are slightly older and older
+people in Singapore, they're more scared about technology. Yeah,
+
+
+
+
+00:57:47
+
+Pyae Sone: Yeah,
+Sumit Sanjay Shinde: just keep that in mind.
+Pyae Sone: that's true. Not very texting.
+Sumit Sanjay Shinde: Yes, not everyone actually most of them are not tax savvy. So he
+has to he has to look very simple very simple to understand whatever
+Pyae Sone: So in in the woods I think I saw some explainability thing. Um like in your
+model has to be explainable that they you know deep you cannot do it like Fox.
+ARIEL ONG: And yeah, we'll try to try our best to explain all the models we have.
+Sumit Sanjay Shinde: to the judges, not not to the hawkers. It will collapse. Okay, cool.
+So I think I think our next course of action could be just to do more research and look
+through what has been sent.
+Pyae Sone: Yeah.
+ARIEL ONG: We also have to choose one user first. If not, it's very broad, right? It's best
+if we can narrow down first. There's three types of users there. I think first one can
+eliminate already.
+
+
+
+
+00:59:23
+
+Harsh Pandhe: Thank you.
+Sumit Sanjay Shinde: Yeah. Okay. I made the first one.
+ARIEL ONG: Yeah. The reason because um in Singapore we all the households or all the
+houses have insurance. If like it gets flooded or like um it got burned down because
+while you're cooking the fire just um did something then we we already have insurance
+provided by government. So I don't think it makes sense for us to overlap with
+government insurance. Then um we can consider second and third. But then second
+one like I mentioned earlier I do have my reservations on it because during extreme
+weathers maybe they are earning more incomes already. So if we want to provide
+insurance, our insurance um the amount of insurance we have to give them has to
+exceed the income that they are earning from actu which I don't think it's it's very
+probable. Yeah. So I'm leaning towards the third one personal opinion.
+Pyae Sone: Yeah, I'll be happy to go with CN. So,
+Sumit Sanjay Shinde: Yeah, I think I think the Singapore team is leading towards a
+third one.
+01:00:31
+
+Sumit Sanjay Shinde: What about the Indian team? Nice pet. What's his name?
+ARIEL ONG: I said the question.
+Harsh Pandhe: I just found it. I have not named it it. I don't know. This is it's like uh
+households they have this insurance then drivers the app are providing them. So the
+only one is left is hawkers but hawkers are old people so they won't take it. It's like
+whoever we are trying to target is already having their own opinion.
+Sumit Sanjay Shinde: Okay, wait for for the old people. Okay, those are hawkers and
+neighborhoods also homebased businesses. But it's not the fact that they won't take it
+is it's just we have to make it easy for them to understand. And I think for many
+solutions in Singapore, the moment the government mandates it, everyone listens. Like
+if we are the ones who are talking, they won't listen. But if the government mandates it
+or the government talks then the OP like okay sure let's do it you know.
+
+
+
+
+01:01:40
+
+Sumit Sanjay Shinde: So as long as we have government support or like backing from
+someone big it's viable. Yeah.
+ARIEL ONG: And I
+Harsh Pandhe: But uh can you give me a number how many hawkers there might be in
+Singapore?
+Pyae Sone: Actually
+Harsh Pandhe: because Singapore is not a big country. So I don't think there will be
+that much amount like number of hawkers.
+Sumit Sanjay Shinde: How how many
+Pyae Sone: a lot of lot of hawkers. We have neighborhood hawkers, big hawkers, small
+hawkers. Should be quite a lot. It's like one hawker like quite a street blocks away
+something. I don't know.
+ARIEL ONG: Yeah.
+Sumit Sanjay Shinde: there are over 6,000 stalls currently.
+Harsh Pandhe: Oh, there are 30,000 drivers in Singapore. 6,000 hawkers.
+Sumit Sanjay Shinde: No.
+ARIEL ONG: I think the hawkers will need the insurance more than anyone because
+hawkers like we mentioned earlier they are not on delivery services. So during haze
+where people like to dine in in air conditioned places or they like to order through
+delivery services, hawkers will be the first to lose out during haste.
+
+
+
+
+01:02:57
+
+ARIEL ONG: they will get hit the most. And that's when they need the insurance more
+than ever because that means that the insurance can cover the losses that they have
+incurred during extreme weathers. Yeah. And I don't think the number matters as much
+as um how much they need it because if like the other two um the other two users
+don't need our insurance then I think even though they are large in quantity targeting
+them still doesn't make sense.
+Sumit Sanjay Shinde: Yeah, I think aerial reasoning is more impact focused. Who do
+we have more of an impact on like individually individualist individualistic viewpoint
+thoughts
+Harsh Pandhe: Okay. What do others in this group think?
+Sumit Sanjay Shinde: looking at you and then see
+Harsh Pandhe: Oh, 14,000.
+ARIEL ONG: Yeah. Where do you get that 6,000 from
+Sumit Sanjay Shinde: Oh, really?
+Harsh Pandhe: Cool. That's also of 2024. There might be more, I guess.
+ARIEL ONG: Yeah.
+Sumit Sanjay Shinde: I just typed it in Google. I didn't ask AI.
+Ankita Sagar: Good. Google also has AI.
+01:04:39
+
+Sumit Sanjay Shinde: Yeah, I know the AI mode. I skip I go past that. Okay.
+Ankita Sagar: Change up.
+Harsh Pandhe: Let's
+Nancy Srivastava: I guess there must be some million hawkers in India if I because I
+find a lot of them in a single area. So like if we combine everything
+Sumit Sanjay Shinde: In India's definitely more than one million like India will have like
+a lot of millions like a lot of
+Ankita Sagar: It's millions. It's millions.
+Sumit Sanjay Shinde: millions you know every time I go is there This Always some guy
+Ankita Sagar: Millions.
+Harsh Pandhe: Sumit.
+Sumit Sanjay Shinde: running.
+Harsh Pandhe: Can you do one thing like can you check if the problem statement is
+just about Singapore or
+Sumit Sanjay Shinde: Yep.
+Harsh Pandhe: it's like can you
+Nancy Srivastava: I guess it has something more than the very first line in Singapore
+on the very first page.
+Sumit Sanjay Shinde: Sure.
+ARIEL ONG: Yeah. The problem statement
+Ankita Sagar: in Singapore. In Singapore, it's written in the problem statement itself
+and SME in Singapore.
+
+
+
+
+01:06:25
+Ankita Sagar: The first page, the first page,
+ARIEL ONG: the very first paragraph.
+Ankita Sagar: first page.
+ARIEL ONG: No, like there there that is golded.
+Ankita Sagar: Stop.
+Pyae Sone: You don't have.
+Ankita Sagar: stuff in in
+ARIEL ONG: Look at Yeah.
+Sumit Sanjay Shinde: This one. This one. Yeah.
+Nancy Srivastava: Yeah.
+Ankita Sagar: Singapore.
+Sumit Sanjay Shinde: Yeah.
+Pyae Sone: Yeah.
+Nancy Srivastava: every vulnerable household and theme in Singapore.
+Sumit Sanjay Shinde: Yep. So, we'll be targeting this one. But then we zoom in more
+into pockers.
+Pyae Sone: Yeah, you can.
+Sumit Sanjay Shinde: And also hawker is sorry hawker is also protected under
+UNESCO heritage for culture. So it's something which is very unique to Singapore as
+well.
+Pyae Sone: Yeah.
+Ankita Sagar: We should also think in a manner that uh that like the competitors which
+we have what would they choose like we won't be choosing that we want to do
+something different from that.
+Harsh Pandhe: How about we take some time and think like in a broader sense? Now
+they have only given us this three you know like this three uh users categories.
+
+
+
+
+01:07:40
+Ankita Sagar: categories.
+Harsh Pandhe: So how about we just expand our horizon and see who else is also
+affected over here. including days.
+Nancy Srivastava: I prefer we we make a solution for these three first so that we do at
+least a bare minimum what they expect and then if time permits we can like expand
+this Two other categories.
+Ankita Sagar: The thing is that we are thinking to like we discussed we are trying to
+focus upon one at a time one of the categories at a time because as others said that
+we won't be able to focus upon all and do justice to all
+Nancy Srivastava: Yeah, I agree. Uh depends on the data which we get for like each
+category also. So uh do you have climate data available for Singapore on uh GIS or
+some other
+Harsh Pandhe: Yes.
+Nancy Srivastava: platform?
+Harsh Pandhe: Yeah. You can get a decade old data too. It's it's really easy to get.
+Nancy Srivastava: Yeah, that makes it easy.
+Ankita Sagar: I think for a problem statement data is nowhere a problem. It's widely
+available.
+
+
+
+
+01:09:03
+
+Ankita Sagar: They themselves are given so many data sets.
+Sumit Sanjay Shinde: Yeah, data.gov basically is Singapore's own government data
+website. So he has a lot of data inside.
+Ankita Sagar: also upon the a IML part we need to think something different because
+the thing is that this predictive models everybody is going to do so weather prediction
+or all of these everybody is going to do so that's not something unique that would be
+Nancy Srivastava: For the ML part, I've seen like at times we make uh ensembles of
+many models and that makes it heavy. But if we try smaller models which are usually
+not expected to give better results but comparable with the size, they tend to perform
+better. So we can like try different models, various models almost all because we have
+time right now. We can try almost all possible models and see and make a comparison
+table of all models so that if others use one or two,
+ARIEL ONG: Sure.
+Nancy Srivastava: we can show why is better or what drawback that particular model
+had.
+ARIEL ONG: Yeah, makes sense.
+
+
+
+
+01:10:32
+
+Sumit Sanjay Shinde: cool. I think I think we can reaching the end of the call. So what
+we can do next is to figure out what exactly different for instance what Ankita said we
+cannot just predict the weather and do forecasting. So if there's any other thing that
+we could do we should look into that. Second is doing the model testing. Third is to
+figure out who exactly we could target. So we can look beyond the current target
+groups there are. Maybe look at who else is vulnerable in in the society and then
+basically find them and see if there's data about them. And yeah, I think that's what I
+think we could do in the upcoming days. Ankita, anyone else? Just add on.
+Harsh Pandhe: Mhm.
+Ankita Sagar: All good.
+ARIEL ONG: Yeah,
+Harsh Pandhe: All right. Good.
+ARIEL ONG: I think we should focus on the problem as much as we focus on the
+solution. um dive deep into the problem so that the solution will be good.
+
+
+
+
+01:11:30
+
+ARIEL ONG: So
+Ankita Sagar: The most important part is that they have clearly written the points that
+they want to be addressed. So each and every point over there none of them should be
+missed. That's a that should be a foremost priority right now.
+Pyae Sone: All right. Uh, so when would we be meeting at that?
+Sumit Sanjay Shinde: So we come again. I didn't catch that.
+Pyae Sone: Uh uh one next video.
+Harsh Pandhe: When is our next meeting? Please ask.
+Pyae Sone: Hey
+Ankita Sagar: Day after tomorrow maybe because tomorrow is Diwali
+Sumit Sanjay Shinde: Yeah.
+ARIEL ONG: Oh yeah,
+Sumit Sanjay Shinde: Happy guys
+ARIEL ONG: happy diary.
+Ankita Sagar: and Diwali
+Pyae Sone: there.
+Nancy Srivastava: Happy.
+Harsh Pandhe: Hallelujah.
+Sumit Sanjay Shinde: busy right now.
+Ankita Sagar: busy schedules. is
+Sumit Sanjay Shinde: Exactly. Especially the so
+Nancy Srivastava: I actually saw a schedule of uh some fintech celebration on around
+18th. Is it a festival? uh on 18th it was mentioned in one of the schedules we got that
+we'll have some celebration.
+
+
+
+
+01:13:09
+
+Harsh Pandhe: If if we win,
+Nancy Srivastava: Is it a festival in Singapore or anything?
+Harsh Pandhe: we will have a dinner.
+Nancy Srivastava: Yeah.
+Ankita Sagar: Winner's dinner. Winner's lunch.
+Harsh Pandhe: Lunch.
+Ankita Sagar: No dinner.
+Harsh Pandhe: Lunch.
+Ankita Sagar: Lunch.
+Harsh Pandhe: Yeah. Lunch.
+Ankita Sagar: By the by dinner, you will be in flight.
+Harsh Pandhe: By dinner, I'll be at home. 8:30 I'll be reaching here.
+Nancy Srivastava: Oh, I
+Ankita Sagar: 11:30. 11:30. Not 8:30. You're boarding flight at 7:40 in Singapore.
+Harsh Pandhe: A brain not working right now.
+ARIEL ONG: Everyone is taking the same flight.
+Harsh Pandhe: Um, no.
+Nancy Srivastava: guess in my flight ticket I saw nine people were had the same
+ticket from Delhi to uh the Singapore. So maybe all nine had the same flight. We have
+four centers.
+Ankita Sagar: She'll she she's going to Delhi. I'm going to Bombay. Hers is also coming
+to Bombay. So we have different
+ARIEL ONG: Ah, that's a safe thing.
+Pyae Sone: Yeah.
+Sumit Sanjay Shinde: And and you guys had to do an interview to get in this, right?
+
+
+
+
+01:14:23
+
+Sumit Sanjay Shinde: Or something.
+Ankita Sagar: We had a long journey. We won SI last year. Okay.
+Sumit Sanjay Shinde: Uh,
+Ankita Sagar: During this time we won SI last year.
+Sumit Sanjay Shinde: yep.
+Ankita Sagar: So after that we got a form to fill for this Singapore India hackathon.
+Then we filled a form with a pitch deck and after that pitch deck we got 159 students
+got selected for the interview round. Then we interviewed and out of those 159 60 got
+selected for this. So it's a long procedure.
+Harsh Pandhe: It took it took two years for us to just come over here.
+Pyae Sone: It's
+Harsh Pandhe: Oh yeah.
+Ankita Sagar: Yes,
+Sumit Sanjay Shinde: That's crazy.
+Pyae Sone: Yeah.
+Ankita Sagar: we so it's like we competed with uh uh all the engineering college
+students to come over here.
+Sumit Sanjay Shinde: Congrats. Congrats.
+ARIEL ONG: Yeah, congrats for making it so far.
+Sumit Sanjay Shinde: And it's fully sponsored,
+Ankita Sagar: Thank you.
+Sumit Sanjay Shinde: right? Like the planes and the stay as well.
+
+
+
+
+01:15:19
+
+Ankita Sagar: Yeah. Yes. Yes. Everything is false.
+Pyae Sone: Oh,
+Sumit Sanjay Shinde: Where are you guys staying?
+Ankita Sagar: Add Hotel Waterloo. Waterlue. Yeah,
+Sumit Sanjay Shinde: Waterloo.
+Ankita Sagar: if I'm pronouncing it right in Waterloo
+Pyae Sone: what do we
+Sumit Sanjay Shinde: Waterlue.
+ARIEL ONG: Oh,
+Ankita Sagar: Street.
+ARIEL ONG: fourstar hotel. It's a very good hotel.
+Sumit Sanjay Shinde: Oh, it's in it's it's in the boogies area. That's That's nice. It's very
+lively.
+ARIEL ONG: You have a lot to explore.
+Ankita Sagar: Nice.
+Sumit Sanjay Shinde: Yeah.
+Ankita Sagar: Do we have time?
+Sumit Sanjay Shinde: And you guys can like Yeah,
+Ankita Sagar: Do we have time to explore?
+Sumit Sanjay Shinde: of course. Of course.
+Nancy Srivastava: 18th will have fine.
+Sumit Sanjay Shinde: Okay, cool. Is there anything else we want to raise or wants to
+chat about?
+Nancy Srivastava: I feel like we can uh read the problem statement once again like
+understand it in depth and then we can start maybe in the next meet with what
+problem are we actually solving a better clarity on everything regarding problem
+
+
+
+
+01:16:20
+
+Sumit Sanjay Shinde: Sure.
+Nancy Srivastava: statement then we can go on with the solutions.
+ARIEL ONG: agree. Yeah.
+Sumit Sanjay Shinde: Yep.
+Harsh Pandhe: I guess on Monday we can all just come with a solution of our own with
+a dock or something.
+Nancy Srivastava: Yes.
+Ankita Sagar: on Monday. Can we have it in the uh morning hours only if you guys are
+free?
+Sumit Sanjay Shinde: Let me check.
+Pyae Sone: Uh, I might not be free on Monday morning.
+Ankita Sagar: Okay, then we'll have at night only.
+ARIEL ONG: Monday is public public holiday for Singaporeans.
+Pyae Sone: Yeah.
+Harsh Pandhe: Oh.
+ARIEL ONG: Yeah.
+Nancy Srivastava: Do you have holidays?
+Sumit Sanjay Shinde: What do I have?
+ARIEL ONG: pencil.
+Sumit Sanjay Shinde: Yeah,
+Nancy Srivastava: Okay. Okay.
+Sumit Sanjay Shinde: Monday is a holiday. Why do I have three calls scheduled on
+Monday?
+Harsh Pandhe: Oh.
+Ankita Sagar: Okay then let's decide on WhatsApp whenever we are free then we can
+join
+Pyae Sone: Go ahead.
+ARIEL ONG: Tuesday might be better.
+Sumit Sanjay Shinde: Yeah, just this works for me.
+ARIEL ONG: I think everyone is packed on Monday.
+
+
+
+
+01:17:42
+
+Harsh Pandhe: Also, how about a a GitHub repo or something?
+Sumit Sanjay Shinde: That's not the rubber that you're submitting, right? Just a
+hidden
+Ankita Sagar: GitHub repo is once we are done with the Land. to implement.
+Nancy Srivastava: Perfect.
+Harsh Pandhe: No, like I have some weather data.
+Nancy Srivastava: Definitely done.
+Harsh Pandhe: I have some haze data. So, we can actually share it on GitHub and if
+someone wants to do something,
+Sumit Sanjay Shinde: Sure.
+Harsh Pandhe: they can just fetch it.
+Ankita Sagar: Okay. Then make a repo and push it.
+Harsh Pandhe: Sure.
+Sumit Sanjay Shinde: Thanks, Harsh.
+Harsh Pandhe: Sure.
+ARIEL ONG: Thanks for volunte.
+Ankita Sagar: Harsh has many agents. Harsh has many agents. who assist Harsh on
+doing every single thing.
+Sumit Sanjay Shinde: There's one on his head right now.
+ARIEL ONG: That's amazing.
+Harsh Pandhe: Yeah. I I'm not alone.
+Ankita Sagar: I guess we can wind up
+Harsh Pandhe: Okay.
+Sumit Sanjay Shinde: Yep. Yep. So, come with one solution for the next meeting.
+Awesome.
+
+
+
+
+01:19:00
+
+Pyae Sone: Let's
+Sumit Sanjay Shinde: Anything else? Love words.
+Pyae Sone: see you guys.
+Sumit Sanjay Shinde: Sorry, that was not on purpose. I accidentally left. Any last
+words? No.
+Harsh Pandhe: I guess.
+Pyae Sone: Uh this Yeah.
+Harsh Pandhe: Happy Diwali. See you on Monday.
+Ankita Sagar: Yes.
+Pyae Sone: Yeah. I enjoy enjoy all I do.
+ARIEL ONG: What did dying.
+Sumit Sanjay Shinde: Thanks, guys. Thank you.
+Ankita Sagar: Happy Diwali everybody.
+Sumit Sanjay Shinde: Happy Diwali. Woo.
+Ankita Sagar: What are you guys doing in Singapore in Diwali?
+Sumit Sanjay Shinde: I think for Peso and Ariel they it's just a normal holiday for them.
+For me it's it's the usual a lot of decorations like puja and all those but we cannot in
+Ankita Sagar: Nice.
+Sumit Sanjay Shinde: India I've I've seen the celebrations that is done like the
+fireworks and everything. We can't do any of those stuff here.
+Ankita Sagar: I can hear only fireworks over here right now.
+Sumit Sanjay Shinde: Yeah, it's already started, right?
+ARIEL ONG: That's nice. It's like quite festive.
+Sumit Sanjay Shinde: It's very safe. Yeah. Anything else? No. All right, then. Thanks,
+guys.
+Pyae Sone: Um,
+Sumit Sanjay Shinde: So, yeah, go ahead.
+Pyae Sone: now good to see you guys.
+Sumit Sanjay Shinde: Very
+Pyae Sone: Um,
+Ankita Sagar: Little bye.
+Pyae Sone: that's all I guess. Bye-bye. Well,
+Sumit Sanjay Shinde: nice to meet you guys.
+ARIEL ONG: Go ahead.
+Sumit Sanjay Shinde: All right, see you guys in the next one. Ciao.
+ARIEL ONG: Yeah.
+Nancy Srivastava: Yeah,
+Pyae Sone: sir.
+Nancy Srivastava: great connector.
+Harsh Pandhe: Goodbye.
+Sumit Sanjay Shinde: Bye-bye. All right.
+Nancy Srivastava: Bye.
+
+
+
+
+Transcription ended after 01:22:26
+
+This editable transcript was computer generated and might contain errors. People can
+also change the text after it was created.
+

@@ -1,0 +1,51 @@
+{
+  "version": "daycover-pilot-m1-2026.11-v1",
+  "status": "simulation_only_not_insurer_approved",
+  "rules": {
+    "version": "daycover-pilot-m1-2026.11-v1",
+    "haze_tier1_psi": 101,
+    "haze_tier1_consecutive_days": 2,
+    "haze_tier1_payout": 30.0,
+    "haze_tier2_psi": 151,
+    "haze_tier2_payout": 60.0,
+    "haze_cap_days_per_year": 5,
+    "haze_cap_amount_per_year": 150.0,
+    "rain_daily_mm": 70.0,
+    "rain_payout": 30.0,
+    "rain_cap_days_per_year": 1,
+    "rain_comparison_mm": 80.0,
+    "rain_short_storm_mm_per_hour": 20.0,
+    "heat_single_reading_c": 33.0,
+    "heat_rolling_hour_c": [
+      32.0,
+      32.5
+    ],
+    "gauge_fallback_km": 5.0,
+    "haze_day_definition": "daily_max_hourly_24hr_psi_sgt"
+  },
+  "combined_cap_sgd": 180,
+  "daily_overlap": "rain_and_haze_pay_separately_within_subcaps",
+  "annual_premium_sgd": 104,
+  "weekly_equivalent_sgd": 2,
+  "billing_choice": "monthly_giro_proposed_not_connected",
+  "instalments_cents": [
+    867,
+    867,
+    867,
+    867,
+    867,
+    867,
+    867,
+    867,
+    866,
+    866,
+    866,
+    866
+  ],
+  "subsidy_sgd": 0,
+  "renewal": "explicit_new_term_required",
+  "timezone": "Asia/Singapore",
+  "settlement": "simulated_only",
+  "rain_fallback": "nearest_valid_within_5km_otherwise_pending",
+  "leap_day_anniversary": "Feb28_in_non_leap_years"
+}

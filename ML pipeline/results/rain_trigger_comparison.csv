@@ -1,0 +1,6 @@
+trigger_design,threshold_rule,raw_days_per_year,effective_paid_days,payout_per_day_sgd,annual_cap_days,max_possible_payout_sgd,uncapped_annual_loss_sgd,expected_capped_loss_sgd,gross_annual_premium_sgd,weekly_premium_sgd,is_viable
+Option 1: Low Daily (>=20mm),Daily >= 20 mm,34.4,4.99,30,5,150,1008.6,149.8,187.3,3.6,No (Too expensive)
+Option 2: Moderate Daily (>=30mm),Daily >= 30 mm,21.0,4.92,30,5,150,616.2,147.5,184.4,3.55,No (Too expensive)
+Option 3: High Hourly (1h >= 20mm),1-Hour >= 20 mm,20.0,3.97,40,4,160,782.5,158.8,198.5,3.82,No (Too expensive)
+Option 4: Extreme Daily (>=50mm),Daily >= 50 mm,6.0,3.08,40,4,160,234.7,123.1,153.9,2.96,Yes
+Option 5: Calibrated Flash (>=50mm OR 1h>=20mm),>=50mm OR 1h >= 20mm,20.0,3.97,40,4,160,782.5,158.8,198.5,3.82,No (Too expensive)

@@ -1,0 +1,5 @@
+product_layer,trigger_rule,daily_payout_sgd,annual_cap_days,pure_expected_loss_sgd,operating_expense_load_sgd,reinsurance_stop_loss_sgd,gross_annual_premium_sgd,weekly_premium_sgd,target_loss_ratio_pct,bad_year_retention_cap_sgd
+Haze Standard (Design 1),24-hr PSI >= 151,50.0,5,36.92,9.23,16.2,62.35,1.2,59.2,60.0
+Rain Standard (Full Cover),Daily Rain >= 50mm (R50mm),60.0,4,123.0,30.75,22.0,175.75,3.38,70.0,120.0
+Rain Lite (Budget Plan - Docs/16 Fix),Daily Rain >= 50mm (R50mm),30.0,2,41.0,10.25,8.0,59.25,1.14,69.2,40.0
+DayCover+ Combo Lite (Haze + Rain Lite),PSI >= 151 (S$50) OR Rain >= 50mm (S$30),Tiered (30/50),2 Rain + 5 Haze,77.92,19.48,20.0,117.4,2.26,66.4,100.0

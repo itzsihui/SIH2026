@@ -1,0 +1,245 @@
+{
+ "meta": {
+  "basis": "real NEA data through src/daycover engine (read-only); NOT synthetic",
+  "rule_version": "2026.11-draft2",
+  "stalls": 123,
+  "stall_definition": "one representative stall per NEA hawker centre (123)",
+  "premium_assumption_weekly_sgd": 2.0,
+  "premium_note": "assumption, not a priced product",
+  "haze_money_cap_sgd": 150.0,
+  "haze_day_cap": 5,
+  "haze_day_definition": "daily_max_hourly_24hr_psi_sgt",
+  "rain_trigger_mm": 70.0,
+  "rain_sample_dates": 701,
+  "rain_claims_method": "Observed sampled-date payouts and pooled Poisson scenario, not statistical bounds",
+  "haze_years": [
+   2015,
+   2025
+  ],
+  "rain_years": [
+   2017,
+   2025
+  ],
+  "limits": [
+   "Rain uses a calendar-stratified sample: observed payouts and a pooled Poisson scenario",
+   "PSI region = nearest region centre (approximation)",
+   "Caps reset per calendar year; no reinsurance or expenses modelled",
+   "123 stalls is a portfolio proxy, not a book of business"
+  ]
+ },
+ "annual": [
+  {
+   "year": 2015,
+   "gwp": 12792.0,
+   "haze_claims": 18450.0,
+   "haze_loss_ratio": 1.4423
+  },
+  {
+   "year": 2016,
+   "gwp": 12792.0,
+   "haze_claims": 3360.0,
+   "haze_loss_ratio": 0.2627
+  },
+  {
+   "year": 2017,
+   "gwp": 12792.0,
+   "haze_claims": 0.0,
+   "haze_loss_ratio": 0.0,
+   "rain_claims_lower": 1980.0,
+   "rain_claims_upper": 3512.23,
+   "rain_sampled_days": 72,
+   "total_loss_ratio_lower": 0.1548,
+   "total_loss_ratio_upper": 0.2746
+  },
+  {
+   "year": 2018,
+   "gwp": 12792.0,
+   "haze_claims": 0.0,
+   "haze_loss_ratio": 0.0,
+   "rain_claims_lower": 1320.0,
+   "rain_claims_upper": 3342.1,
+   "rain_sampled_days": 68,
+   "total_loss_ratio_lower": 0.1032,
+   "total_loss_ratio_upper": 0.2613
+  },
+  {
+   "year": 2019,
+   "gwp": 12792.0,
+   "haze_claims": 13890.0,
+   "haze_loss_ratio": 1.0858,
+   "rain_claims_lower": 1350.0,
+   "rain_claims_upper": 3217.18,
+   "rain_sampled_days": 70,
+   "total_loss_ratio_lower": 1.1914,
+   "total_loss_ratio_upper": 1.3373
+  },
+  {
+   "year": 2020,
+   "gwp": 12792.0,
+   "haze_claims": 0.0,
+   "haze_loss_ratio": 0.0,
+   "rain_claims_lower": 1710.0,
+   "rain_claims_upper": 3394.64,
+   "rain_sampled_days": 71,
+   "total_loss_ratio_lower": 0.1337,
+   "total_loss_ratio_upper": 0.2654
+  },
+  {
+   "year": 2021,
+   "gwp": 12792.0,
+   "haze_claims": 0.0,
+   "haze_loss_ratio": 0.0,
+   "rain_claims_lower": 1980.0,
+   "rain_claims_upper": 3607.17,
+   "rain_sampled_days": 71,
+   "total_loss_ratio_lower": 0.1548,
+   "total_loss_ratio_upper": 0.282
+  },
+  {
+   "year": 2022,
+   "gwp": 12792.0,
+   "haze_claims": 0.0,
+   "haze_loss_ratio": 0.0,
+   "rain_claims_lower": 1440.0,
+   "rain_claims_upper": 3580.62,
+   "rain_sampled_days": 72,
+   "total_loss_ratio_lower": 0.1126,
+   "total_loss_ratio_upper": 0.2799
+  },
+  {
+   "year": 2023,
+   "gwp": 12792.0,
+   "haze_claims": 1830.0,
+   "haze_loss_ratio": 0.1431,
+   "rain_claims_lower": 1080.0,
+   "rain_claims_upper": 3241.44,
+   "rain_sampled_days": 72,
+   "total_loss_ratio_lower": 0.2275,
+   "total_loss_ratio_upper": 0.3965
+  },
+  {
+   "year": 2024,
+   "gwp": 12792.0,
+   "haze_claims": 0.0,
+   "haze_loss_ratio": 0.0,
+   "rain_claims_lower": 3090.0,
+   "rain_claims_upper": 3689.1,
+   "rain_sampled_days": 72,
+   "total_loss_ratio_lower": 0.2416,
+   "total_loss_ratio_upper": 0.2884
+  },
+  {
+   "year": 2025,
+   "gwp": 12792.0,
+   "haze_claims": 0.0,
+   "haze_loss_ratio": 0.0,
+   "rain_claims_lower": 3660.0,
+   "rain_claims_upper": 3689.68,
+   "rain_sampled_days": 72,
+   "total_loss_ratio_lower": 0.2861,
+   "total_loss_ratio_upper": 0.2884
+  }
+ ],
+ "haze_total": {
+  "claims": 37530.0,
+  "gwp": 140712.0,
+  "loss_ratio": 0.2667
+ },
+ "rain_total": {
+  "loss_ratio_lower": 0.153,
+  "loss_ratio_upper": 0.2716
+ },
+ "accumulation_top_haze_days": [
+  {
+   "date": "2015-09-11",
+   "stalls_paid": 123,
+   "share_of_portfolio": 1.0,
+   "payout_sgd": 7380.0
+  },
+  {
+   "date": "2019-09-19",
+   "stalls_paid": 123,
+   "share_of_portfolio": 1.0,
+   "payout_sgd": 4980.0
+  },
+  {
+   "date": "2015-09-13",
+   "stalls_paid": 104,
+   "share_of_portfolio": 0.846,
+   "payout_sgd": 4410.0
+  },
+  {
+   "date": "2015-09-12",
+   "stalls_paid": 123,
+   "share_of_portfolio": 1.0,
+   "payout_sgd": 3690.0
+  },
+  {
+   "date": "2016-08-27",
+   "stalls_paid": 94,
+   "share_of_portfolio": 0.764,
+   "payout_sgd": 2820.0
+  },
+  {
+   "date": "2019-09-15",
+   "stalls_paid": 82,
+   "share_of_portfolio": 0.667,
+   "payout_sgd": 2460.0
+  },
+  {
+   "date": "2019-09-22",
+   "stalls_paid": 82,
+   "share_of_portfolio": 0.667,
+   "payout_sgd": 2460.0
+  },
+  {
+   "date": "2019-09-23",
+   "stalls_paid": 80,
+   "share_of_portfolio": 0.65,
+   "payout_sgd": 2400.0
+  },
+  {
+   "date": "2015-09-14",
+   "stalls_paid": 61,
+   "share_of_portfolio": 0.496,
+   "payout_sgd": 1830.0
+  },
+  {
+   "date": "2023-10-08",
+   "stalls_paid": 61,
+   "share_of_portfolio": 0.496,
+   "payout_sgd": 1830.0
+  },
+  {
+   "date": "2019-09-18",
+   "stalls_paid": 53,
+   "share_of_portfolio": 0.431,
+   "payout_sgd": 1590.0
+  },
+  {
+   "date": "2015-09-07",
+   "stalls_paid": 10,
+   "share_of_portfolio": 0.081,
+   "payout_sgd": 300.0
+  },
+  {
+   "date": "2015-09-08",
+   "stalls_paid": 10,
+   "share_of_portfolio": 0.081,
+   "payout_sgd": 300.0
+  },
+  {
+   "date": "2015-09-09",
+   "stalls_paid": 9,
+   "share_of_portfolio": 0.073,
+   "payout_sgd": 270.0
+  },
+  {
+   "date": "2015-09-10",
+   "stalls_paid": 9,
+   "share_of_portfolio": 0.073,
+   "payout_sgd": 270.0
+  }
+ ],
+ "worst_haze_year": 2015
+}

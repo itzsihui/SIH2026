@@ -1,0 +1,19 @@
+# Optional Part 2 local database only. No app/frontend/payment sandbox.
+services:
+  db:
+    image: postgres:16
+    environment:
+      POSTGRES_USER: ${POSTGRES_USER:-daycover_local}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:?Set a local database password in your environment}
+      POSTGRES_DB: ${POSTGRES_DB:-daycover_engine}
+    ports:
+      - "127.0.0.1:${POSTGRES_PORT:-5433}:5432"
+    volumes:
+      - daycover_engine_pgdata:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U $${POSTGRES_USER} -d $${POSTGRES_DB}"]
+      interval: 5s
+      timeout: 5s
+      retries: 10
+volumes:
+  daycover_engine_pgdata:

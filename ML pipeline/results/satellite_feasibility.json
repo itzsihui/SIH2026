@@ -1,0 +1,35 @@
+{
+ "product": "ERA5 reanalysis (0.25 degree) via Open-Meteo (not direct satellite)",
+ "pairs": 65048,
+ "distinct_grid_points": 4,
+ "pearson_r_daily_mm": 0.425,
+ "gauge>=70mm": {
+  "days": 753,
+  "grid_also_>=_half_threshold": 0.215,
+  "grid_>=_threshold": 0.147
+ },
+ "grid>=70mm": {
+  "days": 111,
+  "gauge_also_>=_threshold": 1.0
+ },
+ "gauge>=50mm": {
+  "days": 2055,
+  "grid_also_>=_half_threshold": 0.241,
+  "grid_>=_threshold": 0.082
+ },
+ "grid>=50mm": {
+  "days": 229,
+  "gauge_also_>=_threshold": 0.738
+ },
+ "gauge>=30mm": {
+  "days": 5612,
+  "grid_also_>=_half_threshold": 0.384,
+  "grid_>=_threshold": 0.089
+ },
+ "grid>=30mm": {
+  "days": 1676,
+  "gauge_also_>=_threshold": 0.298
+ },
+ "mean_gauge_mm": 8.13,
+ "mean_grid_mm": 8.19
+}

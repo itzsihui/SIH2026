@@ -1,0 +1,57 @@
+{
+  "overall_event_days": {
+    "evaluations": 10047,
+    "bias_mm": -1.61,
+    "mae_mm": 9.25,
+    "rmse_mm": 13.13,
+    "tp_50mm": 494,
+    "fp_50mm": 128,
+    "fn_50mm": 506,
+    "tn_50mm": 8919,
+    "precision_50mm": 0.7942,
+    "recall_50mm": 0.494,
+    "f1_50mm": 0.6091
+  },
+  "distance_binned": {
+    "under_2_5km": {
+      "evaluations": 6465,
+      "bias_mm": -1.79,
+      "mae_mm": 8.08,
+      "rmse_mm": 11.72,
+      "tp_50mm": 384,
+      "fp_50mm": 81,
+      "fn_50mm": 301,
+      "tn_50mm": 5699,
+      "precision_50mm": 0.8258,
+      "recall_50mm": 0.5606,
+      "f1_50mm": 0.6678
+    },
+    "between_2_5_and_3_5km": {
+      "evaluations": 1668,
+      "bias_mm": -1.5,
+      "mae_mm": 9.97,
+      "rmse_mm": 13.71,
+      "tp_50mm": 53,
+      "fp_50mm": 21,
+      "fn_50mm": 86,
+      "tn_50mm": 1508,
+      "precision_50mm": 0.7162,
+      "recall_50mm": 0.3813,
+      "f1_50mm": 0.4977
+    },
+    "over_3_5km": {
+      "evaluations": 1914,
+      "bias_mm": -1.09,
+      "mae_mm": 12.59,
+      "rmse_mm": 16.64,
+      "tp_50mm": 57,
+      "fp_50mm": 26,
+      "fn_50mm": 119,
+      "tn_50mm": 1712,
+      "precision_50mm": 0.6867,
+      "recall_50mm": 0.3239,
+      "f1_50mm": 0.4402
+    }
+  },
+  "meteorological_explanation": "In tropical Singapore, convective thunderstorms form highly localized cells with diameters of 2-3 km. When a storm cell drops >=50mm directly over a gauge, inverse-distance-weighting (IDW) from neighbours 3-5 km away severely underestimates the peak rain, causing low interpolation recall (~59%). When the nearest neighbour is <2.5 km away, recall improves, proving that spatial basis risk is driven by convective cell scale relative to inter-gauge spacing."
+}

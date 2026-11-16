@@ -1,0 +1,4 @@
+design_label,t1_moderate,t2_severe,p1_payout_sgd,p2_payout_sgd,consec_days,cap_days,gross_annual_premium_sgd,weekly_premium_sgd,basis_risk_proxy,complexity_score,pure_annual_cost_sgd,avg_paid_days_per_yr,description
+Design 1: Ultra-Simple Haze (Single Tier),151,151,0,50,1,5,46.15,0.89,65.5,1.5,36.92,0.74,"Single rule: Pay S$50 when 24-hr PSI >= 151, max 5 days/yr. Lowest cognitive load, 1-line SMS. Pure cost S$36.92, Gross S$46.15 (S$0.89/wk)."
+Design 2: Balanced Core Haze (DayCover+ Standard),101,180,30,60,2,5,46.73,0.9,80.0,3.5,37.38,1.23,"Tiered: Pay S$30 at PSI >= 101 (2 consec days) or S$60 at PSI >= 180 (immediate), max 5 days/yr. Pure cost S$39.23, Gross S$49.04 (S$0.94/wk)."
+Design 3: High-Protection Haze (Immediate Cover),101,151,30,60,1,6,79.62,1.53,77.7,3.0,63.69,1.97,"Immediate cover: Pay S$30 at PSI >= 101 or S$60 at PSI >= 151 from day 1, max 6 days/yr. Pure cost S$54.60, Gross S$68.25 (S$1.31/wk)."

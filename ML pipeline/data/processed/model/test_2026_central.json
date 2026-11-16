@@ -1,0 +1,82 @@
+{
+ "world": "central",
+ "impact_typical_drop": {
+  "rain": 0.15934178352531048,
+  "haze_t1": 0.08,
+  "haze_t2": 0.27
+ },
+ "takeup_100": {
+  "insured": 6321,
+  "paid": 5470,
+  "payout_median": 120.0,
+  "payout_p90": 210.0,
+  "premium_jan_oct": 559372,
+  "claims_jan_oct": 666320,
+  "loss_ratio": 1.191,
+  "result_before_reins": -218823,
+  "result_after_reins": -221563
+ },
+ "takeup_30": {
+  "insured": 1896,
+  "paid": 1651,
+  "payout_median": 120.0,
+  "payout_p90": 210.0,
+  "premium_jan_oct": 166589,
+  "claims_jan_oct": 198670,
+  "loss_ratio": 1.193,
+  "result_before_reins": -65399,
+  "result_after_reins": -65881
+ },
+ "takeup_15": {
+  "insured": 948,
+  "paid": 824,
+  "payout_median": 120.0,
+  "payout_p90": 210.0,
+  "premium_jan_oct": 83769,
+  "claims_jan_oct": 99470,
+  "loss_ratio": 1.187,
+  "result_before_reins": -32455,
+  "result_after_reins": -33202
+ },
+ "sim": {
+  "expected_claims_full_book_year": 462533,
+  "p95": 1369811,
+  "share_years_worse_than_2026": 0.109,
+  "reins_load": 1.088
+ },
+ "book": {
+  "stalls": 6665,
+  "eligible": 6321,
+  "not_offered_rain_cover (shop barely affected by rain)": 869,
+  "cover_rain_mix": {
+   "0": 869,
+   "20": 2309,
+   "30": 1436,
+   "45": 810,
+   "60": 618,
+   "90": 279
+  },
+  "cover_haze_t2_mix": {
+   "0": 126,
+   "20": 629,
+   "30": 1172,
+   "45": 1172,
+   "60": 1642,
+   "90": 1580
+  },
+  "weekly_premium_median": 1.9,
+  "weekly_premium_p90": 3.74,
+  "deduction_per_sale_median": 0.01
+ },
+ "moral_hazard_and_basis": {
+  "paid_stall_events": 23560,
+  "payout_exceeds_true_loss_that_day_share": 0.369,
+  "over_true_loss_by_peril": {
+   "haze_t1": 0.444,
+   "haze_t2": 0.249,
+   "rain": 0.139
+  },
+  "events_blocked_by_inactivity_rule": 0,
+  "closing_changes_payout": false
+ }
+}
