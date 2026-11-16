@@ -15,11 +15,17 @@ All three headers contain:
 
 The provided original README declares the data synthetic. Inspection of the first 1,000 rows in each file found `data_origin=synthetic_calibrated_to_imda_aggregate`. This inspection is not a complete quality audit. These are not established observations of real hawkers or verified weather-income losses.
 
+## ML input scope
+
+**Digital-sales-only ML scope:** exclude cash transactions, declared cash shares and inferred cash income from ML features, labels, baselines, recommendations and evaluation. Accept only explicitly mapped digital payment methods; quarantine unknown/missing methods rather than assume digital. Preserve raw source files and report excluded row counts. Digital sales are observed digital revenue, not total revenue or net income. Historical cash-inclusive research is not an approved pipeline input. Settlement ledger terminology is separate from sales inputs.
+
+The validated transaction adapter is still to be implemented. This is the required filtering contract, not a claim that raw CSVs have already been filtered or a model retrained.
+
 ## Useful for
 
 - Building transaction parsing, schema validation and daily/hourly aggregation.
 - Testing income baseline methods with forward-time splits.
-- Testing cash/digital scenarios and collection interfaces in simulation.
+- Testing digital-payment scenarios and collection interfaces in simulation.
 - Exercising model/recommendation interfaces without changing claims rules.
 
 `gross_margin_rate_assumed` is an assumption, not measured profit. Refund semantics, duplicate IDs, timestamp validity, merchant consistency, coverage and split leakage still need a full audit before training. The supplied CSVs are not yet directly connected to the existing `.npz`-based research training scripts; a versioned adapter is needed.
