@@ -16,7 +16,7 @@ def main():
     args=parser.parse_args()
     repo=configured_repository()
     repo.migrate()
-    result=import_sqlite(repo,args.sqlite_source) if args.sqlite_source else {'schema_version':7,'backend':repo.backend}
+    result=import_sqlite(repo,args.sqlite_source) if args.sqlite_source else {'schema_version':8,'backend':repo.backend}
     print(json.dumps(result))
 
 

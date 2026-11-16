@@ -19,6 +19,7 @@ from psycopg import sql
 from .contracts import canonical_json, fingerprint, simulation_contract, validate_snapshot
 
 MIGRATIONS = Path(__file__).resolve().parents[2] / 'migrations' / 'pilot'
+LATEST_VERSION = 8
 
 
 class LedgerUnavailable(RuntimeError):
@@ -204,7 +205,7 @@ class SqlLedgerRepository:
             else:
                 with native.transaction():
                     try:
-                        for version in (1, 2, 3, 4, 5, 6, 7):
+                        for version in range(1, LATEST_VERSION + 1):
                             ready = native.execute('SELECT checksum FROM pilot_schema_migrations WHERE version=%s', (version,)).fetchone()
                             expected = hashlib.sha256((MIGRATIONS / f'{version:03d}_postgres.sql').read_text().encode()).hexdigest()
                             if not ready or ready['checksum'] != expected:

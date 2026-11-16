@@ -10,7 +10,7 @@ from psycopg import sql
 from .contracts import canonical_json, validate_snapshot
 from .pilot import decide
 from .policy_year import policy_year_bounds
-from .ledger_repository import MIGRATIONS, UnitOfWork, cents, period_id
+from .ledger_repository import LATEST_VERSION, MIGRATIONS, UnitOfWork, cents, period_id
 
 
 def _apply(native, backend, script):
@@ -29,7 +29,7 @@ def _apply(native, backend, script):
 
 
 def migrate_native(repo, native):
-    scripts = [(v, (MIGRATIONS / f'{v:03d}_{repo.backend}.sql').read_text()) for v in (1, 2, 3, 4, 5, 6, 7)]
+    scripts = [(v, (MIGRATIONS / f'{v:03d}_{repo.backend}.sql').read_text()) for v in range(1, LATEST_VERSION + 1)]
     if repo.backend == 'postgres':
         with native.transaction():
             native.execute('SELECT pg_advisory_xact_lock(hashtext(%s))', ('daycover-migration:'+repo.schema,))

@@ -53,6 +53,18 @@ Restart the API. Settlement and billing operations are idempotent by key: replay
 - Disable a principal with `auth.disable`; grants change with `auth.set_grant`. Both are audited. Sessions last 15 minutes (8 hours absolute).
 - Defaults: request body ≤ 1 MiB (`DAYCOVER_MAX_BODY_BYTES`), 1200 requests/min per client (`DAYCOVER_RATE_LIMIT_PER_MIN`), login lockout after 5 failures/15 min. Staging-equivalent values are in `configs/environments.json` (names of secret variables only; never commit secrets).
 
+## Quote-only service login for the app backend
+Create this on the target database only (Railway: run with that service's `DAYCOVER_PILOT_BACKEND`, `DAYCOVER_PILOT_DATABASE_URL`, `DAYCOVER_PILOT_PG_SCHEMA` exported; never from a shared laptop shell). Least privilege: `coverage:read` only, one merchant grant per stall the app may quote.
+```sh
+.venv/bin/python -m scripts.manage_local_identity create app_quotes service            # prints the principal id
+.venv/bin/python -m scripts.manage_local_identity grant PRINCIPAL_ID MERCHANT_ID          # repeat per merchant
+.venv/bin/python -m scripts.manage_local_identity service-token PRINCIPAL_ID --scope coverage:read --ttl 86400
+```
+The token is printed once: hand it over privately and never commit it. Rotate with `scripts.rotate_service_credential`; revoke with `manage_local_identity disable`. Do not grant `settlement:*`, `billing:*` or `transactions:*` scopes for quote reads. Collection routes need `transactions:read`/`transactions:retain`/`billing:collect` and the merchant's `transaction_retention` consent.
+
+## App wallet delivery
+Failed/uncertain deliveries: `GET .../instructions/{id}/app-delivery`. `failed` with 401 = wrong/missing `ENGINE_SHARED_SECRET`; 404 = app does not know the stall (check the centre name / `DAYCOVER_APP_STALL_MAP`); `uncertain` = retry the same endpoint (same `instruction_id`, app deduplicates). `response_mismatch` or exhausted attempts need operator review; never create a new instruction to "retry".
+
 ## Retention and deletion
 `recovery.RETENTION` lists the rules. `recovery.purge_expired` removes only stale login-limit rows and long-expired credentials. Audit and financial history are **retained** (a reviewed retention period does not yet exist). Advisory stores (consent, notifications, recommendations) are erased per subject with `recovery.erase_subject`, which keeps a hashed erasure log. Raw digital receipt datasets are deleted by removing the merchant's namespace from `data/processed/digital-v1.*` rebuilds; they hold no cash or identity data.
 

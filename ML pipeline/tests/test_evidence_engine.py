@@ -336,6 +336,7 @@ def test_migration_v5_failure_preserves_v4_policy_receipts_and_caps(ledger_backe
             c.execute('DROP TABLE '+table)
         for table in ('engine_replay_reviews','engine_replay_plans','engine_entitlement_entries','engine_cap_entries','engine_decisions','engine_period_modes','engine_lifecycle_events','engine_terms'):
             c.execute('DROP TABLE '+table)
+        c.execute('DROP TABLE collection_ignored_events');c.execute('DROP TABLE collection_accrual_entries')
         c.execute('DELETE FROM pilot_schema_migrations WHERE version>=5')
     original=ledger_migrations._apply
     def fail(native,backend,script):

@@ -1,0 +1,19 @@
+{
+ "schema_version": "daycover.collection.v1",
+ "method": "transaction_linked_accrual_mock",
+ "note": "A collection METHOD, not an extra premium. Accrual is not collected money; only mock-confirmed receipts count as collected. No NETS/SGQR deduction is integrated.",
+ "contribution_bps": 200,
+ "weeks_per_cycle": 4,
+ "cycles_per_year": 13,
+ "weekly_cap_rule": "ceil(annual premium / 52)",
+ "digital_channels": [
+  "sgqr_nets_sim",
+  "other_digital_sim"
+ ],
+ "week_boundary": "7-day blocks counted from the policy-year start, SGT",
+ "suggested_cap": {
+  "min_days_observed": 30,
+  "share_of_avg_week_digital_sales": 0.015,
+  "max_multiple_of_base": 2
+ }
+}

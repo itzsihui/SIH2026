@@ -23,7 +23,7 @@ from .integration import boundaries
 from .ledger_repository import LedgerUnavailable, configured_repository
 from .engine import evaluate, replay, summarise
 from .rules import DEFAULT_RULES, RuleSet
-from . import dash, identity_api, evidence_api, lifecycle_api, billing_api, settlement_api, read_models_api, explanations_api, ops
+from . import dash, identity_api, evidence_api, lifecycle_api, billing_api, settlement_api, read_models_api, explanations_api, ops, collections_api, portfolio, app_wallet_api
 import os
 
 app = FastAPI(
@@ -41,6 +41,9 @@ app.include_router(settlement_api.router)
 app.include_router(read_models_api.router)
 app.include_router(explanations_api.router)
 app.include_router(ops.router)
+app.include_router(collections_api.router)
+app.include_router(portfolio.router)
+app.include_router(app_wallet_api.router)
 
 
 @app.exception_handler(LedgerUnavailable)
@@ -283,7 +286,7 @@ def pilot_ledger_health():
             unit.execute('SELECT version FROM pilot_schema_migrations WHERE version=1').fetchone()
     except (LedgerUnavailable, ValueError) as exc:
         raise HTTPException(503, 'Pilot ledger unavailable or requires migration.') from exc
-    return {'ready': True, 'backend': repository.backend, 'schema_version': 7, 'mode': 'simulation_only'}
+    return {'ready': True, 'backend': repository.backend, 'schema_version': 8, 'mode': 'simulation_only'}
 
 
 @app.get('/api/v1/integration')

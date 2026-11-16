@@ -16,7 +16,9 @@ import time
 from datetime import datetime, timezone
 from pathlib import Path
 
-EXPECTED_VERSIONS = list(range(1, 8))
+from .ledger_repository import LATEST_VERSION
+
+EXPECTED_VERSIONS = list(range(1, LATEST_VERSION + 1))
 KEY_TABLES = ("pilot_audit", "pilot_policies", "engine_decisions", "settlement_instructions", "billing_attempts", "auth_principals")
 RETENTION = {
     "auth_login_limits": {"action": "purge_after_seconds", "seconds": 86400},

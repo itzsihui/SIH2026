@@ -187,7 +187,7 @@ def test_migration_repeatability_and_legacy_tables_not_used(ledger_backend):
     ledger_backend.migrate(); ledger_backend.migrate()
     with ledger_backend.transaction() as c:
         assert c.execute('SELECT id FROM policies').fetchone()[0]=='legacy-sentinel'
-    assert count(ledger_backend,'pilot_schema_migrations')==7
+    assert count(ledger_backend,'pilot_schema_migrations')==8
     assert count(ledger_backend,'pilot_instructions')==1
     assert pilot_store.policy('HC001')['remaining_combined_sgd']==150
 

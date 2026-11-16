@@ -171,7 +171,7 @@ def test_sqlite_backup_restore_and_rollback(tmp_path):
         c.audit(None, "after_backup", {}, "2026-11-16T01:00:00+00:00")
     bk = tmp_path / "bk" / m["file"]
     out = recovery.sqlite_restore(bk, tmp_path / "restored.sqlite3")
-    assert out["integrity_ok"] and out["migration_versions"] == list(range(1, 8)) and out["matches_manifest_counts"]
+    assert out["integrity_ok"] and out["migration_versions"] == list(range(1, 9)) and out["matches_manifest_counts"]
     live = sqlite3.connect(src).execute("SELECT COUNT(*) FROM pilot_audit").fetchone()[0]
     back = sqlite3.connect(tmp_path / "restored.sqlite3").execute("SELECT COUNT(*) FROM pilot_audit").fetchone()[0]
     assert back == live - 1                                              # rollback point excludes post-backup write

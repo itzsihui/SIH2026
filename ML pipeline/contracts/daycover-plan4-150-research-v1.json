@@ -1,0 +1,18 @@
+{
+ "version": "candidate-plan4-150-proposal-v1",
+ "status": "research_candidate_not_issued_not_insurer_approved",
+ "source": "DayCover 3.0 Unified Architecture README, section 2.1 and 7 (Finding 19, Plan 4)",
+ "currency": "SGD",
+ "illustrative_annual_premium_sgd": 87.0,
+ "premium_note": "Research example only; not an insurer quote. Must be repriced on this exact design.",
+ "haze": {"moderate_psi": 101, "moderate_consecutive_days": 2, "moderate_benefit": 30, "moderate_max_days": 3,
+          "severe_psi": 201, "severe_benefit": 60, "severe_max_days": 2, "haze_annual_money_cap": 120},
+ "rain": {"daily_mm": 70, "benefit": 30, "max_paid_days": 1, "rain_reserved_money_cap": 30},
+ "daily_combined_cap": 60,
+ "annual_combined_cap": 150,
+ "same_day_priority": ["rain", "haze"],
+ "policy_period_basis": "issued_policy_anniversary",
+ "heat_or_flood_payable": false,
+ "open_policy_decisions": ["partial severe payment counts against severe-day allowance (assumed: yes)",
+                           "index finality timestamp", "fallback gauge rights", "settlement timing"]
+}

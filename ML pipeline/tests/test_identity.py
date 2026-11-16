@@ -284,7 +284,7 @@ def test_v2_checksum_refuses_tampered_migration(tmp_path,monkeypatch):
     monkeypatch.setenv('DAYCOVER_PILOT_DB',str(path))
     repo.migrate()
     with repo.transaction() as c:
-        assert len(c.execute('SELECT * FROM pilot_schema_migrations').fetchall())==7
+        assert len(c.execute('SELECT * FROM pilot_schema_migrations').fetchall())==8
         c.execute('UPDATE pilot_schema_migrations SET checksum=? WHERE version=2',('tampered',))
     with pytest.raises(ValueError,match='checksum'): repo.migrate()
 
@@ -336,6 +336,7 @@ def test_v1_upgrade_and_failure_preserve_ledger(ledger_backend,monkeypatch):
         for table in ('weather_observation_provenance','weather_station_presence','weather_station_versions','weather_alerts','weather_fetches','weather_runs','weather_transport_gate'):
             c.execute('DROP TABLE '+table)
         c.execute('DROP INDEX weather_observation_lookup')
+        c.execute('DROP TABLE collection_ignored_events');c.execute('DROP TABLE collection_accrual_entries')
         if c.backend=='postgres':
             c.execute('DROP FUNCTION weather_append_only()')
         for table in ('auth_credentials','auth_grants','auth_onboarding','auth_consent_events','auth_login_limits','auth_principals'):

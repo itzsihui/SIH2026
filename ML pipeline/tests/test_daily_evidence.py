@@ -373,6 +373,7 @@ def test_v4_migration_failure_preserves_v3_raw_evidence(ledger_backend,monkeypat
             c.execute('DROP TABLE '+table)
         for table in ('weather_evidence_selections','weather_daily_reviews','weather_daily_details','weather_closure_reviews','weather_closure_versions','weather_revision_reviews','weather_mapping_reviews'):
             c.execute('DROP TABLE '+table)
+        c.execute('DROP TABLE collection_ignored_events');c.execute('DROP TABLE collection_accrual_entries')
         c.execute('DELETE FROM pilot_schema_migrations WHERE version>=4')
     original=ledger_migrations._apply
     def interrupted(native,backend,script):

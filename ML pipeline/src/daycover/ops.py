@@ -275,7 +275,8 @@ def readiness(repo=None) -> dict:
         repo = repo or configured_repository()
         with repo.transaction() as c:
             versions = [r["version"] for r in c.execute("SELECT version FROM pilot_schema_migrations ORDER BY version").fetchall()]
-        checks["ledger_migrated"] = versions == list(range(1, 8))
+        from .ledger_repository import LATEST_VERSION
+        checks["ledger_migrated"] = versions == list(range(1, LATEST_VERSION + 1))
     except Exception:  # any failure to prove the ledger is migrated means not ready
         checks["ledger_migrated"] = False
     checks["environments_valid"] = not check_environments()

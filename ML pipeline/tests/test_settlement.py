@@ -347,7 +347,8 @@ def test_v7_migration_backfill_and_failure_preserve_existing_billing_and_entitle
     with ledger_backend.transaction() as c:
         for table in ('settlement_mock_wallet_entries','settlement_cash_entries','settlement_provider_events','settlement_dispatch_attempts','settlement_instruction_events','settlement_mock_jobs','settlement_mock_key','settlement_instructions','settlement_outbox','settlement_recipient_reviews','settlement_recipients'):
             c.execute('DROP TABLE '+table)
-        c.execute('DELETE FROM pilot_schema_migrations WHERE version=7')
+        c.execute('DROP TABLE collection_ignored_events');c.execute('DROP TABLE collection_accrual_entries')
+        c.execute('DELETE FROM pilot_schema_migrations WHERE version>=7')
     original=ledger_migrations._apply
     def fail(native,backend,script):
         original(native,backend,script)

@@ -1,0 +1,19 @@
+{
+ "note": "Sample fixtures for the MVP flow. SIMULATED data only: no real merchants, transactions or payments.",
+ "hawkers": [
+  {"alias": "mvp_auntie_mei", "role": "customer", "stall": "HC076", "centre": "HC076", "digital_heavy": true},
+  {"alias": "mvp_cash_uncle_tan", "role": "customer", "stall": "HC076-CASH", "centre": "HC076", "digital_heavy": false}
+ ],
+ "transactions": [
+  {"provider_event_id": "SIM-T1", "kind": "sale", "channel": "sgqr_nets_sim", "timestamp_sgt": "2026-11-16T12:05:00+08:00", "amount_cents": 500},
+  {"provider_event_id": "SIM-T2", "kind": "sale", "channel": "sgqr_nets_sim", "timestamp_sgt": "2026-11-16T12:30:00+08:00", "amount_cents": 1000},
+  {"provider_event_id": "SIM-T3", "kind": "sale", "channel": "other_digital_sim", "timestamp_sgt": "2026-11-16T13:00:00+08:00", "amount_cents": 2000},
+  {"provider_event_id": "SIM-T4", "kind": "sale", "channel": "cash_sim", "timestamp_sgt": "2026-11-16T13:10:00+08:00", "amount_cents": 800},
+  {"provider_event_id": "SIM-T1", "kind": "sale", "channel": "sgqr_nets_sim", "timestamp_sgt": "2026-11-16T12:05:00+08:00", "amount_cents": 500},
+  {"provider_event_id": "SIM-R1", "kind": "refund", "original_event_id": "SIM-T2", "channel": "sgqr_nets_sim", "timestamp_sgt": "2026-11-16T14:00:00+08:00", "amount_cents": 1000}
+ ],
+ "weather_events": [
+  {"day": "2026-11-15", "psi_south": 151, "rain_mm": 10.0, "note": "M1 severe haze day: S$60 entitlement (frozen M1 PSI 151)"},
+  {"day": "2026-11-16", "psi_south": 80, "rain_mm": 69.9, "note": "no trigger either peril"}
+ ]
+}

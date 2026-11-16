@@ -362,6 +362,7 @@ def test_v6_migration_rollback_preserves_terms_receipts_and_entitlements(ledger_
             c.execute('DROP TABLE '+table)
         for table in ('billing_mock_refunds','billing_mock_jobs','billing_mock_key','billing_refund_requests','billing_entry_links','billing_provider_events','billing_dispatches','billing_attempts','billing_authorizations','billing_bills','billing_schedules'):
             c.execute('DROP TABLE '+table)
+        c.execute('DROP TABLE collection_ignored_events');c.execute('DROP TABLE collection_accrual_entries')
         c.execute('DELETE FROM pilot_schema_migrations WHERE version>=6')
     original=ledger_migrations._apply
     def interrupted(native,backend,script):

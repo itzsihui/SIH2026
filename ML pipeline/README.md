@@ -59,7 +59,7 @@ unset DAYCOVER_PILOT_DATABASE_URL DAYCOVER_PILOT_PG_SCHEMA
 .venv/bin/python -m scripts.migrate_pilot_ledger
 ```
 
-The migration creates the parent folder and database if needed. Expected output includes `"schema_version": 7` and `"backend": "sqlite"`. SQLite also checks/applies supported migrations on ledger access. Keep `var/pilot.sqlite3` private; it holds identity, policy, evidence and financial simulation history.
+The migration creates the parent folder and database if needed. Expected output includes `"schema_version": 8` and `"backend": "sqlite"`. SQLite also checks/applies supported migrations on ledger access. Keep `var/pilot.sqlite3` private; it holds identity, policy, evidence and financial simulation history.
 
 ### 2B. PostgreSQL — local persistent service
 
@@ -84,7 +84,7 @@ export DAYCOVER_PILOT_DATABASE_URL="$(.venv/bin/python -c 'import os; from urlli
 .venv/bin/python -m scripts.migrate_pilot_ledger
 ```
 
-Expected output includes `"schema_version": 7` and `"backend": "postgres"`. This applies canonical `migrations/pilot/001_*` through `007_*` in the isolated `daycover_pilot` schema; no manual SQL import or legacy root migration is needed. The database role needs permission to create/use that schema and its objects. PostgreSQL requires explicit migration before API use and never silently falls back to SQLite.
+Expected output includes `"schema_version": 8` and `"backend": "postgres"`. This applies canonical `migrations/pilot/001_*` through `008_*` in the isolated `daycover_pilot` schema; no manual SQL import or legacy root migration is needed. The database role needs permission to create/use that schema and its objects. PostgreSQL requires explicit migration before API use and never silently falls back to SQLite.
 
 For an existing PostgreSQL server, set `DAYCOVER_PILOT_DATABASE_URL` to its connection URL instead and select `DAYCOVER_PILOT_BACKEND=postgres` explicitly. An optional schema must match `daycover_pilot` or `daycover_pilot_<lowercase_suffix>` (letters, digits and underscores). Always use the same backend, URL and schema for account provisioning, migrations and the API.
 
@@ -115,7 +115,7 @@ curl --fail http://127.0.0.1:8000/api/v1/ledger/health
 Expected response (the `backend` is `sqlite` or `postgres`):
 
 ```json
-{"ready":true,"backend":"postgres","schema_version":7,"mode":"simulation_only"}
+{"ready":true,"backend":"postgres","schema_version":8,"mode":"simulation_only"}
 ```
 
 The ledger endpoint checks the selected database/migration state; a general API health response alone does not establish database readiness. Contract discovery is public; policy, evidence, billing and settlement routes require the appropriate local role and merchant grant. Part 1 clients must call this API with bearer credentials rather than connect directly to the ledger database. See [the integration guide](docs/README.md) for payloads, scopes and simulation boundaries.

@@ -91,3 +91,7 @@ Run `.venv/bin/python -m scripts.build_digital_dataset --out data/processed/digi
 ## Phase 16 operations
 
 `scripts/ledger_backup.py` (verified backup/restore to a new path), `scripts/rotate_service_credential.py` (revoke-and-reissue, token printed once) and `scripts/local_release_check.py` (environment, contract, readiness, backup/restore rehearsal and code checksum; writes ignored `var/release/`). Procedures: `docs/RUNBOOK.md`.
+
+## MVP flow fixtures
+
+`tests/fixtures/mvp_sample.json` holds simulated hawkers, transactions (digital, cash, duplicate, refund) and weather events used by `tests/test_mvp_flow.py`. Run `.venv/bin/python -m pytest -q tests/test_mvp_flow.py tests/test_plan4.py`.

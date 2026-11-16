@@ -294,6 +294,7 @@ def test_v3_migration_failure_preserves_v2_accounts(ledger_backend,monkeypatch):
             c.execute('DROP TABLE '+table)
         for table in ('engine_replay_reviews','engine_replay_plans','engine_entitlement_entries','engine_cap_entries','engine_decisions','engine_period_modes','engine_lifecycle_events','engine_terms'):
             c.execute('DROP TABLE '+table)
+        c.execute('DROP TABLE collection_ignored_events');c.execute('DROP TABLE collection_accrual_entries')
         for table in ('weather_evidence_selections','weather_daily_reviews','weather_daily_details','weather_closure_reviews','weather_closure_versions','weather_revision_reviews','weather_mapping_reviews'):
             c.execute('DROP TABLE '+table)
         for table in ('weather_observation_provenance','weather_station_presence','weather_station_versions','weather_alerts','weather_fetches','weather_runs','weather_transport_gate'):

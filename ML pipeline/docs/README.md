@@ -450,3 +450,24 @@ Some registry/historical documents refer to original repository paths for compon
 ## Operations and recovery (Phase 16)
 
 Operator procedures: [RUNBOOK.md](RUNBOOK.md). Public `GET /api/v1/ops/ready`; operator-only `/api/v1/ops/status` and `/api/v1/ops/metrics`. All responses carry `X-Correlation-ID`; bodies over `DAYCOVER_MAX_BODY_BYTES` (default 1 MiB) return 413 and clients over `DAYCOVER_RATE_LIMIT_PER_MIN` (default 1200) return 429 with `Retry-After`. Environments are described in `configs/environments.json` (secret variable names only). Part 1 should forward or log the correlation ID and handle 413/429/503 as transient/user-correctable errors.
+
+
+## README-3.0 alignment: Plan 4 research contract, transaction-linked collection, dashboard
+
+- **Plan 4** (`contracts/daycover-plan4-150-research-v1.json`, `src/daycover/plan4.py`): the 3.0 architecture's research pilot (moderate PSI 101 ×2 days S$30 ≤3 days; severe PSI 201 S$60 ≤2 days; haze subcap S$120; rain 70 mm S$30 once per policy year, reserved bucket; S$60 daily ceiling with rain first; S$150 annual cap; anniversary policy years; missing evidence pending; closures excluded). It is a **separate research version** (`candidate-plan4-150-proposal-v1`) that is deliberately **not enrolable** and not wired to the ledger/billing; the frozen M1 contract remains the only executable simulation contract. Its S$87 premium is illustrative, not an insurer quote.
+- **Mock collection accrual** (`POST /api/v1/transactions/{stall}/{term_id}/ingest`, `GET|POST /api/v1/collections/{stall}/{term_id}[/confirm]`): requires the merchant's `transaction_retention` consent; digital channels only (cash ignored); idempotent by provider event ID; contribution is 2% of a sale, limited by weekly cap (ceil(premium/52)), the four-week cycle instalment and the annual premium; refunds reverse accrual; only mock-confirmed receipts count as collected. A collection *method* over the issued premium; never changes cover or claim decisions. Without consent or sales the fixed monthly mock GIRO billing is unchanged.
+- **Suggested weekly cap** (`POST /api/v1/collections/{stall}/{term_id}/suggested-cap`, scope `transactions:read`): advisory pacing from a consented digital-sales summary `{avg_day_cents, avg_week_cents, qr_share, days_observed}`; base = ceil(premium/52), data-informed up to 2x base at 1.5% of average weekly digital sales; never changes premium owed, benefits or claims.
+- **Storage**: collection accrual now lives in the canonical ledger (**schema v8**, migration `008`, append-only), so it survives redeploys with PostgreSQL; Railway's start command already runs `scripts.migrate_pilot_ledger` first.
+- **Dashboard**: `GET /api/v1/dashboard/portfolio` (operator/reviewer/service) summarises policies, mock premium, decisions, entitlements, mock payouts, queues and alerts.
+- Fixtures: `tests/fixtures/mvp_sample.json`; end-to-end test `tests/test_mvp_flow.py`.
+
+
+## App wallet bridge (sandbox payout delivery)
+
+Contract: `https://daycover-pay.vercel.app/docs/ENGINE_CONTRACT.md`. `POST /api/v1/settlements/{stall}/{term_id}/instructions/{instruction_id}/deliver-to-app` (scope `settlement:submit`, body `{"simulation_only": true}`) sends one **signed** `POST /api/engine/payouts` to the app backend for an instruction the settlement module currently deems eligible (current decision authority, reviewed recipient). `GET .../app-delivery` shows attempts and the latest status (`settled`, `rejected`, `uncertain`, `failed`, `response_mismatch`).
+
+- Off by default. Enable with `DAYCOVER_APP_WALLET_BRIDGE=1` and `ENGINE_SHARED_SECRET` (environment only; never committed, logged or audited). `DAYCOVER_APP_WALLET_URL` defaults to the app backend; optional `DAYCOVER_APP_STALL_MAP` (JSON engine stall → app stall).
+- Signature: lowercase hex HMAC-SHA256 over `instruction_id|stall_id|gross_cents|currency|event_id`, header `X-Engine-Signature`. The payload also carries `peril`, `reading` (e.g. `PSI 151`), `event_date` and **`centre_name`** (the app maps centres by name). The app's contract has no timestamp/replay window and its responses are unsigned, so replay protection is idempotency on `instruction_id` only.
+- Idempotent: the same `instruction_id` is reused for every retry; a timeout/5xx is `uncertain`; up to 5 attempts, then operator review. A delivered instruction is never re-sent.
+- The delivery record (audit entries) is separate from settlement: the app's answer **never** marks an engine payout confirmed or changes balances. The engine's mock settlement remains the authority; the app wallet is a sandbox.
+- Centre IDs: the engine has two numberings. `/api/v1/stalls` (123 reference stalls from the closures file) numbers Zion Riverside Food Centre `HC123`, while `data/processed/centres.csv` (120 centres) numbers it `HC113`. Always match by centre **name**.
