@@ -5,6 +5,24 @@ Team repository for the Singapore-India Hackathon 2026 (FinTech / InsurTech trac
 ## The idea (working title: DayCover+)
 A weather-income cover for Singapore's hawkers. When public NEA data shows haze (and, as a pilot, very heavy rain), the stallholder is paid automatically by PayNow, with no claim form. Delivered on WhatsApp and a web/mobile app, with a rules engine that decides, a digital twin that helps design the product, and humans who approve any change. This is a suggestion under discussion, not a final decision.
 
+## Live backend (Railway)
+- API: https://sih2026-production-5cd1e09d.up.railway.app
+- Health check: https://sih2026-production-5cd1e09d.up.railway.app/api/v1/health
+- All endpoints: https://sih2026-production-5cd1e09d.up.railway.app/docs
+
+**Auto-deploy:** Railway redeploys on every push to `main` of this repo. It builds from the `ML pipeline` folder:
+- Root Directory: `ML pipeline`
+- Build: `pip install -r requirements-daycover.txt`
+- Start: `uvicorn src.daycover.api:app --host 0.0.0.0 --port $PORT`
+
+So backend changes go in `ML pipeline/` here and land on `main` (via PR). Changes made only in other repos or branches are **not** deployed.
+
+Mobile app builds point at the API with:
+```
+flutter build apk --dart-define=API_BASE=https://sih2026-production-5cd1e09d.up.railway.app
+```
+Simulation only: no real payments. The pilot ledger is SQLite unless `DAYCOVER_PILOT_BACKEND=postgres` and `DAYCOVER_PILOT_DATABASE_URL` are set in Railway, so it resets on every redeploy.
+
 ## Where things are
 - Team build code lives here. Suggested layout, to be agreed:
   - `engine/` trigger rules, data adapter, simulated payout ledger and audit log
