@@ -59,3 +59,11 @@ Phase 7 uses scoped API routes documented in `../docs/README.md`. Provision a me
 ## Mock settlement worker operations
 
 Phase 8 worker operations are scoped APIs in `../docs/README.md`: sync pending outbox, queue a server-sized instruction, submit/recover its stable provider reference and reconcile signed mock outcomes. Use a merchant-granted service credential with `settlement:queue`, `settlement:submit`, `settlement:reconcile` and `coverage:read`; customer mock registration and reviewer approval have separate scopes. Three manual submissions per instruction are allowed, then reconcile only; no scheduler or real bank/wallet adapter is installed. Never infer failure from timeout or pay every positive entitlement entry separately.
+
+## Part 1 integration checks
+
+Run `.venv/bin/python -m pytest -q tests/test_read_models.py`. With `DAYCOVER_TEST_POSTGRES_URL` pointing to a dedicated disposable service, the same tests cover SQLite and generated PostgreSQL schemas. The HTTP consumer fixtures start/stop local Uvicorn, exercise safe GET retries and expired credentials, and leave no persistent app data. Routes and frontend handling are in `../docs/README.md` under “Part 1 versioned read models.” No frontend build or real provider is required.
+
+## Digital-only dataset foundation
+
+Run `.venv/bin/python -m scripts.build_digital_dataset --out data/processed/digital-v1.1` with the supplied CSVs present. Choose a new version path if it exists. This uses `configs/dataset-v1.json`, keeps raw inputs unchanged, and writes validated digital receipts, forward-time/merchant split membership, manifests and rejection/audit reports. It does not train a model or write to a ledger. `.venv/bin/python -m scripts.inventory_dataset_sources --out data/processed/digital-source-inventory-v1.json` separately inventories local source copies; it also refuses overwrite. Tests: `.venv/bin/python -m pytest -q tests/test_dataset_pipeline.py`. Read `../dataset/README.md` for exact filtering, provenance, refund and leakage boundaries. The older `build_dataset.py` remains a separate historical weather research tool, not the transaction adapter.

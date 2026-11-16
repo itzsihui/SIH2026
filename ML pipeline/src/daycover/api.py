@@ -23,7 +23,7 @@ from .integration import boundaries
 from .ledger_repository import LedgerUnavailable, configured_repository
 from .engine import evaluate, replay, summarise
 from .rules import DEFAULT_RULES, RuleSet
-from . import dash, identity_api, evidence_api, lifecycle_api, billing_api, settlement_api
+from . import dash, identity_api, evidence_api, lifecycle_api, billing_api, settlement_api, read_models_api
 import os
 
 app = FastAPI(
@@ -38,6 +38,7 @@ app.include_router(evidence_api.router)
 app.include_router(lifecycle_api.router)
 app.include_router(billing_api.router)
 app.include_router(settlement_api.router)
+app.include_router(read_models_api.router)
 
 
 @app.exception_handler(LedgerUnavailable)

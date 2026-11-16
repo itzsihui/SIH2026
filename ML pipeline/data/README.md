@@ -17,3 +17,11 @@ Canonical resumable API ingestion is in `src/daycover/weather_ingestion.py`; the
 The original model scripts also expect inputs that are not currently supplied, including full history under `raw/full/`, some `processed/*.csv.gz` files and synthetic QR-history `.npz` files. Existing JSON reports alone cannot reproduce a training run. Check prerequisites before downloading or training.
 
 Required provenance classes for future dataset builds: observed foreign, official Singapore, calibrated synthetic and consented Singapore. Keep raw versions and licensing/attribution records separate from generated features and labels. Never overwrite raw inputs to make a test pass.
+
+## Phase 10 inventory and derived digital dataset
+
+`data/sources-v1.json` is the versioned source catalogue; `.venv/bin/python -m scripts.inventory_dataset_sources --out data/processed/digital-source-inventory-v1.json` records checksums, columns, row/date counts, access date and explicit local-copy licence/origin uncertainty. Use a new output name when rebuilding. The inventory does not download, approve, join or rewrite sources.
+
+The 2017–2026 main rain sample has 43,329 station-day records but only 701 distinct dates; it is not a complete daily archive. Missing observations remain unknown. The older `daily_weather_records.csv` is separate coverage, not proof that the main sample is complete. `centre_wbgt_map.csv` is a derived location mapping, not an observed WBGT time series; flood/closure references likewise do not establish verified event labels. Synthetic transaction centres have no approved mapping to real centres, so Phase 10 creates no weather-income joins. The operational rain interval gate remains open.
+
+`processed/digital-v1.1/` holds the digital-only supplied-synthetic receipts, audit, manifest and forward-time/merchant splits described in `../dataset/README.md`. Generated digital versions and local inventories are ignored. No model, zero-sales imputation, cash extrapolation or real-world loss target is generated.

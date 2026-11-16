@@ -36,3 +36,8 @@ var/
 # Historical handoff copies are local notes even under reference folders.
 **/MILESTONE*_CONTEXT.md
 **/MILESTONE*_CONCLUSION.md
+
+# Derived research datasets, audits and local metadata inventories.
+/data/processed/digital*/
+/data/processed/.digital-build-*/
+/data/processed/digital*.json

@@ -1,0 +1,72 @@
+{
+  "schema_version": "daycover.source-catalog.v1",
+  "checked_on": "2026-11-16",
+  "research_candidates": [
+    {
+      "id": "mendeley:kcgf45y24m:2",
+      "url": "https://data.mendeley.com/datasets/kcgf45y24m/2",
+      "title": "Anonymous Transactional Dataset",
+      "attribution": "Engel, Gaol, Kurniawan and Budiharto; DOI 10.17632/kcgf45y24m.2",
+      "licence": "CC BY 4.0 (publisher dataset page)",
+      "provenance_class": "observed_foreign",
+      "description": "Indonesian F&B POS transactions from January–September 2025 and product metadata.",
+      "evaluation": "Receipt/product identity and duplicate monetary fields need auditing. Digital method mapping, currency and local timezone need raw-file inspection.",
+      "inspection": "publisher_metadata_only",
+      "raw_downloaded": false,
+      "sha256": null,
+      "digital_training_approved": false
+    },
+    {
+      "id": "mendeley:9hntk3wbwc:1",
+      "url": "https://data.mendeley.com/datasets/9hntk3wbwc/1",
+      "title": "Sandwich Analytics",
+      "attribution": "Cazier, Spaulding and Hassler; DOI 10.17632/9hntk3wbwc.1",
+      "licence": "CC BY 4.0 (publisher dataset page)",
+      "provenance_class": "observed_foreign",
+      "description": "US sandwich-location transactions and secondary weather/socioeconomic records for 2003–2013.",
+      "evaluation": "Potential foreign sales/weather benchmark; digital payment evidence, file units, location timezone and leakage between related releases remain unverified.",
+      "inspection": "publisher_metadata_only",
+      "raw_downloaded": false,
+      "sha256": null,
+      "digital_training_approved": false
+    },
+    {
+      "id": "mendeley:bfkvybtpj6:2",
+      "url": "https://data.mendeley.com/datasets/bfkvybtpj6/2",
+      "title": "Sandwich Analytics Part II",
+      "attribution": "Spaulding, Laws, Davenport, Hassler and Cazier; DOI 10.17632/bfkvybtpj6.2",
+      "licence": "CC BY 4.0 (publisher dataset page)",
+      "provenance_class": "observed_foreign",
+      "description": "Menu-item receipt rows and associated weather for ten quickserve locations, April 2012–March 2013.",
+      "evaluation": "Group line items by store and receipt before aggregation/splits. Check overlap with related releases. No digital-payment eligibility is established.",
+      "inspection": "publisher_metadata_only",
+      "raw_downloaded": false,
+      "sha256": null,
+      "digital_training_approved": false
+    },
+    {
+      "id": "cafe-data-2.0",
+      "url": "https://www.tandfonline.com/doi/full/10.1080/10691898.2016.1196064",
+      "title": "Café Data 2.0: New Data From a New and Improved Café",
+      "attribution": "DePaolo, Robinson and Jacobs (2016); DOI 10.1080/10691898.2016.1196064",
+      "licence": "supplemental data redistribution terms not verified; open article access alone is insufficient",
+      "provenance_class": "observed_foreign",
+      "description": "Student-run US café POS records; the article describes 7,288 transactions and separate daily series.",
+      "evaluation": "Article identifies cash, credit, debit and split tender. Use only verified digital credit/debit after inspecting originals; exclude mixed split tender without an explicit digital amount. Do not infer digital totals by subtracting reported cash totals.",
+      "inspection": "publisher_article_only",
+      "raw_downloaded": false,
+      "sha256": null,
+      "digital_training_approved": false
+    }
+  ],
+  "local_categories": {
+    "rain": {"paths": ["data/raw/rainfall_daily_stations_2017_2026.csv", "data/raw/daily_weather_records.csv", "data/raw/rainfall_stations.csv"], "provenance_class": "official_singapore", "verification": "legacy local copies; origin/licence and completeness require source-level verification", "warning": "Sampled days are not a full daily archive. Missing is unknown, never zero. Official interval timing gate remains open."},
+    "psi": {"paths": ["data/raw/psi_24hr_history.csv", "data/raw/psi_daily_max_by_region.csv", "data/raw/psi_daily_max_combined_2014_2026.csv", "data/raw/psi_daily_max_oct_nov_2026_api.csv"], "provenance_class": "official_singapore", "verification": "legacy local summaries; do not assume complete hourly provenance or validated daily maximum"},
+    "centres_closures": {"paths": ["data/raw/hawker_centres.csv", "data/raw/hawker_closures.csv", "data/raw/hawker_stalls_annual.csv"], "provenance_class": "official_singapore", "verification": "representative/reference data, not merchant identity or verified historical closure versions"},
+    "flood": {"paths": ["data/raw/pub_flood_locations.csv"], "provenance_class": "official_singapore", "verification": "local reference document-derived list; not verified event labels"},
+    "wbgt": {"paths": ["data/processed/centre_wbgt_map.csv"], "provenance_class": "official_singapore", "verification": "derived map only; full observed WBGT input archive missing"},
+    "transactions": {"paths": ["dataset/DayCover_transactions_part_1.csv", "dataset/DayCover_transactions_part_2.csv", "dataset/DayCover_transactions_part_3.csv"], "provenance_class": "calibrated_synthetic", "verification": "supplied synthetic receipts only, no merchant connector or measured income-loss labels"}
+  },
+  "normalization_gate": "Do not relabel foreign data as Singapore hawkers, assume currency conversion, infer timezone/payment methods, or join synthetic centre IDs to real reference IDs without an explicit versioned mapping. No foreign source is approved for this adapter.",
+  "consented_singapore": "No consented real merchant transaction dataset is available. Future source requires purpose-specific consent, retention/access controls and its own adapter."
+}

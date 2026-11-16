@@ -1,0 +1,42 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "daycover.dataset-contract.v1",
+  "description": "Dataset boundary contract. Receipt normalization is executable in dataset_pipeline.py. Foreign line-item/refund adapters and weather feature joins are not implemented by this contract.",
+  "provenance_classes": ["observed_foreign", "official_singapore", "calibrated_synthetic", "consented_singapore"],
+  "$defs": {
+    "receipt": {
+      "type": "object",
+      "required": ["receipt_id", "merchant_id", "centre_id", "trading_day", "timestamp_sgt", "currency", "amount_cents", "payment_method", "provenance_class", "country", "source_file", "source_row", "time_split", "merchant_split", "split"],
+      "properties": {
+        "receipt_id": {"type":"string", "description":"Namespaced transaction identity; one receipt, never a line item"},
+        "merchant_id": {"type":"string"}, "centre_id": {"type":"string"},
+        "trading_day": {"type":"string", "format":"date", "description":"SGT calendar date, not an inferred overnight trading session"},
+        "timestamp_sgt": {"type":"string", "format":"date-time"},
+        "currency": {"const":"SGD"}, "amount_cents": {"type":"integer", "minimum":1},
+        "payment_method": {"enum":["simulated_sgqr_nets", "simulated_other_digital"]},
+        "provenance_class": {"const":"calibrated_synthetic"}, "country": {"const":"SG"},
+        "source_file": {"type":"string"}, "source_row": {"type":"integer", "minimum":2},
+        "time_split": {"enum":["train","validation","test"]},
+        "merchant_split": {"enum":["development","holdout"]},
+        "split": {"enum":["train","validation","test","merchant_holdout"]}
+      },
+      "additionalProperties": false
+    },
+    "line_item": {
+      "type":"object", "required":["source_namespace","merchant_id","receipt_id","line_item_id","quantity","line_amount_minor","currency"],
+      "description":"Foreign adapter must validate units/currency and unique line identity. Group by source+merchant+receipt before aggregating or splitting. Never repeat receipt totals for each item. Split tender without verified digital portions is ineligible."
+    },
+    "refund": {
+      "type":"object", "required":["source_namespace","refund_id","original_receipt_id","amount_minor","currency","observed_at","provenance_class"],
+      "description":"Requires validated original digital receipt, matching currency, cumulative refund bounds and temporal availability. Current source has no link field, so flagged refunds are quarantined rather than guessed or mixed into sales."
+    },
+    "weather_observation": {
+      "type":"object", "required":["source","station","observed_at","metric","value","unit","quality","source_sha256"],
+      "description":"Canonical validation uses ingestion.py/weather_ingestion.py and reviewed daily evidence. Research raw CSVs are not automatically approved observations; sampled missing days remain unknown."
+    },
+    "observation_quality": {
+      "type":"object", "required":["source_file","source_row","record_sha256","reason"],
+      "description":"Quarantine contains hashes and bounded reasons, not raw personal records. Cash exclusion is counted separately. No absent sales/weather day is imputed as zero."
+    }
+  }
+}

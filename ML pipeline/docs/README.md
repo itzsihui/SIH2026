@@ -357,6 +357,69 @@ Current read models separate entitlement, confirmed net mock cash, reserved/unre
 
 The rain-method gate is unchanged: no operational final rain can create a payable instruction until its authoritative timestamp convention is verified. No billing balance, synthetic price alternative, ML recommendation or client amount can bypass a current policy-ledger decision. Public integration discovery advertises local mock availability while retaining all real-issuance/real-settlement flags as false.
 
+## Part 1 versioned read models (Phase 9)
+
+`read_models.py` and `read_models_api.py` project the existing canonical ledgers without creating decisions, bills, transfers or evidence selections. The payload version is **`daycover.part2.v1`**; OpenAPI `/openapi.json` describes the response models (`Snapshot`, `Identity`, `Policy`, `Coverage`, `Remaining`, `Terms`). No new database migration is needed; use schema v7. Part 1 screens remain external and have not been rebuilt or physically verified here.
+
+| Read operation | Route | Access |
+|---|---|---|
+| Discover explicitly accepted terms | `GET /api/v1/read-models/stalls/{stall}/terms` | `coverage:read` + current merchant grant |
+| Merchant/app projection | `GET /api/v1/read-models/stalls/{stall}/terms/{term_id}?day=YYYY-MM-DD` | Same |
+| Operator/reviewer work queues | `GET /api/v1/read-models/stalls/{stall}/terms/{term_id}/operations?day=YYYY-MM-DD` | Same + operator/reviewer/service role |
+
+Bearer identity is required even in demo mode. The `day` is an explicit Singapore event date within the selected accepted term. The policy `state` uses server time; `event_day_state` uses the event date. An expired term may still expose its historical covered event and outstanding reconciliation. A renewal has its own `term_id`/`period_id` and caps; the directory does not silently choose the newest future term for the client.
+
+Example consumer request (replace placeholders with returned identifiers; keep the token private):
+
+```sh
+curl --fail-with-body \
+  -H "Authorization: Bearer $DAYCOVER_ACCESS_TOKEN" \
+  "http://127.0.0.1:8000/api/v1/read-models/stalls/$DAYCOVER_STALL_ID/terms/$DAYCOVER_TERM_ID?day=2026-11-15"
+```
+
+Main response fields:
+
+| Field | Meaning / display rule |
+|---|---|
+| `schema_version`, `generated_at`, `state_sha256` | Payload contract, retrieval time and canonical projection fingerprint excluding retrieval time (not an HTTP-body checksum). Hash is not a payment/idempotency token; new source or ledger state changes it |
+| `identity` | Persisted `stall_id`, `merchant_id`, `operator_id`, `stall_entity_id`, canonical `centre_id` and reference `centre_ref`; no external wallet ownership or identity verification |
+| `policy` | Accepted version/hash/full terms, term/period IDs, acceptance and start/end dates, current/event-day simulation status |
+| `coverage.remaining` | Integer rain event/day counts and rain/haze/combined **cents**. Rain and haze sublimits are separate from the combined limit; use the deterministic decision for the actual payable amount, not a client calculation |
+| `weather` | Assigned/selected gauge, distance/fallback, PSI region in accepted terms, daily window/completeness/missing bins, versioned aggregate/raw-proof IDs, closure state and readiness gates |
+| `source_health` | Live feed freshness: latest fetch/observation timestamps, missing/stale/degraded/provisional state. Historical backfill never proves live freshness; healthy feed status never substitutes for selected station/day review |
+| `source_reviews` | Selected mapping, revision, daily and closure review IDs, reviewer, source reference and version bindings. These are local evidence reviews, not insurer/official approval |
+| `decisions` | Selected day's rain and haze outcomes/reasons. `NOT_EVALUATED` means no recorded assessment; `PENDING` means unresolved input, not a denial. `current_context_matches:false` flags a historical result whose current source/lifecycle fingerprint differs |
+| `billing` | Twelve projected/stored bills, collected/outstanding/pending cents, authorization and review status. `prepared:false` means a read-only projection, not posted obligations. Due dates are simulation projections |
+| `settlement` | Net entitlement, unresolved reservations, confirmed/reversed mock amounts, current qualification, outbox/instruction progress and reconciliation issues |
+| `receipts` | Up to 100 most recent validated applied/stale mock settlement observations, with cumulative gross/reversal amounts and instruction/event IDs. These are not real transfer receipts; do not sum cumulative snapshots. `receipts_truncated:true` means this is not a full export |
+| `boundaries` | Explicit simulation-only labels, real paid/collected zero, external wallet bridge false, unresolved rain timing gate and digital-only ML sales scope |
+| `operations` | Merchant-scoped source gaps, unevaluated perils, pending/review decisions, settlement and reconciliation queues, quarantined callback counts, replay/recipient reviews and lifecycle reasons. Read access grants no review/dispatch permission |
+
+All component reads reuse one policy-locked transaction and current evidence locks. The view never invokes a provider or recomputes a financial decision. Historical decision fields (including `disbursed:false` / `payment_instruction_created:false`) are original write-time facts, explicitly marked `historical_snapshot`; current instruction/confirmation status comes from `settlement`. Pending/uncertain/submitted states must never be labelled “paid.” Mock confirmed outcomes must always say “Simulated payment confirmed.”
+
+Errors use existing JSON `{"detail": ...}` responses; validation uses a sanitized `detail` list of `loc`/`type`, without echoing credentials or submitted personal values:
+
+| Response | Client handling |
+|---|---|
+| `401` missing/expired/revoked token | Stop showing live private data; refresh through the existing session flow or sign in. Retry the GET after successful authentication; a disabled principal cannot refresh access |
+| `403` scope/role missing | Show permission required; do not fall back to a demo/customer bypass |
+| `404` unknown/foreign stall or term, revoked merchant grant | Show unavailable without revealing another merchant's existence; clear that selection |
+| `409` date outside term or inconsistent accepted/ledger state | Re-select a term/date or request operator review; do not create a replacement policy/payment |
+| `422` malformed/missing date | Correct the input; do not retry unchanged |
+| `503` unavailable/unmigrated ledger | Show unavailable rather than zero balances. Retry GET with bounded backoff; preserve a last-good view only if clearly labelled stale |
+| Transport timeout/disconnect | The GET is read-only: retry the same identifiers with a bounded client timeout/backoff. Never retry by calling a financial write route |
+
+Successful responses use `Cache-Control: no-store`. Use a small retry budget (for example two retries with backoff) and an explicit request timeout. No response arrival ordering is guaranteed: Part 1 must discard responses for an old stall/term/day selection and prevent a slow response from replacing a newer refresh. Display text is English plain language; frontend locale, accessible announcements, device layout, TTS and end-user testing are the external owner's responsibilities.
+
+Part 1 integration checklist:
+
+- Persist the onboarding-returned identities; do not equate representative `HC...`, `LOCAL-STALL...`, merchant, term, period or external wallet IDs.
+- Discover accepted terms, choose the explicit event date, and use the version/hash returned by the view. Never merge balances across terms.
+- Render server explanations, source gaps, cap units, bills and mock settlement states. Keep historical decisions separate from current qualification and payments.
+- Require separate scoped reviewer/worker actions through the existing APIs or trusted evidence CLI; refresh this GET afterward. Show review source/version references; never expose credentials/account data in logs.
+- Exercise timeout, expired login, revoked grant, unavailable ledger, pending/closed/capped events, correction, renewal, uncertain mock outcome, partial/reversal and duplicate receipt cases. API fixtures cover backend behavior; external screen/locale/accessibility verification is still required.
+- Keep ML digital-sales-only. Do not estimate cash income or label digital receipts as total revenue/net income. No ML recommendation can rewrite an accepted contract or override a deterministic claim decision.
+
 ## Official weather sources and attribution
 
 Verified on 16 November 2026 against the official pages and public API responses:

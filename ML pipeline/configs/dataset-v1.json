@@ -1,0 +1,18 @@
+{
+  "schema_version": "daycover.digital-receipts.v1",
+  "source_namespace": "daycover_supplied_synthetic_v01",
+  "provenance_class": "calibrated_synthetic",
+  "source_origin": "synthetic_calibrated_to_imda_aggregate",
+  "country": "SG",
+  "currency": "SGD",
+  "timezone": "Asia/Singapore",
+  "digital_methods": {"SGQR_NETS_SIM": "simulated_sgqr_nets", "OTHER_DIGITAL_SIM": "simulated_other_digital"},
+  "cash_methods": ["CASH_SIM"],
+  "validation_start": "2025-09-01",
+  "test_start": "2025-11-01",
+  "merchant_holdout_percent": 20,
+  "split_seed": "daycover-digital-v1",
+  "access_date": "2026-11-16",
+  "licence": "not_supplied_no_redistribution_authorized",
+  "attribution": "User-supplied DayCover synthetic prototype; generator and companion calibration artifacts absent"
+}

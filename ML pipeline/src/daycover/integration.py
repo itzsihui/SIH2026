@@ -25,7 +25,7 @@ def boundaries() -> dict:
             'pilot': 'Existing SIM-POL identifiers retained; HC stall IDs are representative pilot centres.',
             'wallet_sandbox': 'Wallet IDs and balances remain external; never infer mapping from matching text.',
             'canonical_key': 'policy_id + product_version_id + policy_period_id',
-            'adapter_requirement': 'Explicit persisted merchant/stall mapping and versioned read-only adapter before integration.',
+            'adapter_requirement': 'Use persisted merchant/stall grants and the daycover.part2.v1 read-model API; no external wallet mapping is inferred.',
             'wallet_bridge_enabled': False,
             'engine_local': 'LOCAL-STALL IDs bind persisted local merchant/operator/stall entities; identities remain unverified.',
             'mapping_state': 'Hashed opaque manual_local/wallet_sandbox references; independent local eligibility review required.',
@@ -37,6 +37,7 @@ def boundaries() -> dict:
             'transaction_connector_connected': False,
             'optional_sales_consent_required_for_fixed_cover': False,
         },
+        'read_models': {'schema_version':'daycover.part2.v1', 'base_path':'/api/v1/read-models', 'read_only':True, 'canonical_key':'policy_id + accepted_version + term_id + period_id', 'scope':'coverage:read', 'external_part1_ui_verified':False},
         'mock_settlement': {'available':True, 'provider':'deterministic_mock_settlement_v1', 'recipient_review_scope':'local_mock_only', 'external_wallet_bridge':False, 'real_rail_enabled':False},
         'services': {
             'fastapi': 'Owns accepted simulation terms and deterministic pilot decisions.',
