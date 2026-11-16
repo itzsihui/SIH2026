@@ -19,7 +19,6 @@ data/processed/synthetic/
 var/
 
 # Local prompts and handoff notes (existing tracked docs stay tracked).
-/prompts.md
 *.local.md
 /docs/MILESTONE*_CONTEXT.md
 /docs/MILESTONE*_CONCLUSION.md
