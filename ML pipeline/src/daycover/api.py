@@ -23,7 +23,7 @@ from .integration import boundaries
 from .ledger_repository import LedgerUnavailable, configured_repository
 from .engine import evaluate, replay, summarise
 from .rules import DEFAULT_RULES, RuleSet
-from . import dash, identity_api, evidence_api, lifecycle_api, billing_api, settlement_api, read_models_api
+from . import dash, identity_api, evidence_api, lifecycle_api, billing_api, settlement_api, read_models_api, explanations_api, ops
 import os
 
 app = FastAPI(
@@ -39,6 +39,8 @@ app.include_router(lifecycle_api.router)
 app.include_router(billing_api.router)
 app.include_router(settlement_api.router)
 app.include_router(read_models_api.router)
+app.include_router(explanations_api.router)
+app.include_router(ops.router)
 
 
 @app.exception_handler(LedgerUnavailable)
@@ -69,6 +71,8 @@ app.add_middleware(
     allow_methods=["*"],
     allow_headers=["*"],
 )
+
+app.add_middleware(ops.OpsMiddleware)  # added last so it is outermost
 
 _STALLS = {s.id: s for s in data.load_stalls()}
 _EVENTS: List[dict] = []

@@ -67,3 +67,27 @@ Run `.venv/bin/python -m pytest -q tests/test_read_models.py`. With `DAYCOVER_TE
 ## Digital-only dataset foundation
 
 Run `.venv/bin/python -m scripts.build_digital_dataset --out data/processed/digital-v1.1` with the supplied CSVs present. Choose a new version path if it exists. This uses `configs/dataset-v1.json`, keeps raw inputs unchanged, and writes validated digital receipts, forward-time/merchant split membership, manifests and rejection/audit reports. It does not train a model or write to a ledger. `.venv/bin/python -m scripts.inventory_dataset_sources --out data/processed/digital-source-inventory-v1.json` separately inventories local source copies; it also refuses overwrite. Tests: `.venv/bin/python -m pytest -q tests/test_dataset_pipeline.py`. Read `../dataset/README.md` for exact filtering, provenance, refund and leakage boundaries. The older `build_dataset.py` remains a separate historical weather research tool, not the transaction adapter.
+
+## Phase 11 digital-sales baseline
+
+`.venv/bin/python -m scripts.run_income_baseline` fits weekday/pooled medians on the Phase 10 `split=train` rows only, scores validation/test/holdout (observed digital days only; gaps are unknown, not zero) and writes `data/processed/income-baseline-v1/` (ignored; never overwritten). Includes seeded labelled scenario panels and assumption-labelled margin scenarios on digital sales. Synthetic data only; no real-world accuracy claim and no weather response applied.
+
+## Phase 12 weather-impact audit
+
+`.venv/bin/python -m scripts.run_weather_impact` audits leakage/target/missingness and compares advisory weather candidates with a no-weather control (train-only fits, merchant-cluster bootstrap). Writes ignored `data/processed/weather-impact-v1/`. Current result on synthetic data: candidates rejected for insufficient weather exposure; baseline retained. No cash features, no filled weather, no real-world claim.
+
+## Phase 13 advisory recommendations
+
+`src/daycover/recommendation.py` + `configs/recommendation-bands-v1.json` price candidate benefit bands by replaying their exact trigger/cap rules, recommend with a fixed-M1 fallback (no history/consent needed), and record choices in a separate append-only store. `.venv/bin/python -m scripts.run_recommendation_audit` writes ignored `data/processed/recommendation-audit-v1/`. Advisory only: it cannot change the frozen contract, existing terms or entitlements; indicative prices are not approved prices.
+
+## Phase 14 protection and capital research
+
+`.venv/bin/python -m scripts.run_protection_research` replays M1 and research S$150 designs on identical PSI/rain assumptions, measures trigger quality against digital-sales disruption (low power on current synthetic data), gauge-to-gauge disagreement, sparse-PSI stress, liquidity timing and seeded portfolio scenarios. Writes ignored `data/processed/protection-research-v1/`. Research only: assumptions are not quotes, nothing guarantees solvency, and no result changes existing contract rules.
+
+## Phase 15 notifications
+
+`src/daycover/notifications.py` stores opt-in consent, simulated notification payloads and delivery status in a separate append-only SQLite store; tests use fake senders only. No real SMS/push/soundbox is contacted.
+
+## Phase 16 operations
+
+`scripts/ledger_backup.py` (verified backup/restore to a new path), `scripts/rotate_service_credential.py` (revoke-and-reissue, token printed once) and `scripts/local_release_check.py` (environment, contract, readiness, backup/restore rehearsal and code checksum; writes ignored `var/release/`). Procedures: `docs/RUNBOOK.md`.

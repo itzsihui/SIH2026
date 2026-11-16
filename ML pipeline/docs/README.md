@@ -440,3 +440,13 @@ Contains information from NEA **Rainfall across Singapore** and **Pollutant Stan
 - `DATA_CARD.md` and `reference/DATASET_ORIGINAL_README.md`: earlier research/dataset documentation; verify against actual files.
 
 Some registry/historical documents refer to original repository paths for components now archived or external. Those source references do not mean the components are included or executable here. The frozen contract and current code take precedence over historical completion claims. Keep evolving phase handoffs in `../prompts.md`, not additional handoff documents.
+
+
+## Read-only explanations (Phase 15)
+
+`GET /api/v1/explanations/stalls/{stall}/terms/{term_id}?day=YYYY-MM-DD&language=en|zh|ms|ta` returns a template-grounded, factually checked explanation of the authenticated Phase 9 snapshot (same grants/scopes, no-store). `POST .../ask?day=` selects an intent from a short message (max 500 chars) and refuses mutation/injection attempts; it never changes state. Non-English texts are drafts pending native review. All payments/billing remain local mock simulations; explanations and notifications cannot authorise money movement. Part 1 must treat `claim_ids`, `grounding` and `translation_status` as metadata and show the simulation label.
+
+
+## Operations and recovery (Phase 16)
+
+Operator procedures: [RUNBOOK.md](RUNBOOK.md). Public `GET /api/v1/ops/ready`; operator-only `/api/v1/ops/status` and `/api/v1/ops/metrics`. All responses carry `X-Correlation-ID`; bodies over `DAYCOVER_MAX_BODY_BYTES` (default 1 MiB) return 413 and clients over `DAYCOVER_RATE_LIMIT_PER_MIN` (default 1200) return 429 with `Retry-After`. Environments are described in `configs/environments.json` (secret variable names only). Part 1 should forward or log the correlation ID and handle 413/429/503 as transient/user-correctable errors.
